@@ -1,6 +1,6 @@
-@import "designGuide.css";
+@import "designGuide.css"; /* Importacion de los estilos base */
 p{
-    font-size: 14px;
+    font-size: 13px;
     color: #737373;
 }
 
@@ -17,13 +17,16 @@ p{
     margin-left: -12px;
     border-radius: 20px;
 }
+.card .logo{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: initial;
+}
 .color2{
     color: var(--sand);
 }
 
-.title{
-    color: #252B42;
-}
 
 .sideCard{
     margin-top: 200px;
@@ -39,10 +42,13 @@ p{
     margin-left: 510px;
     margin-top: -50px;
 }
+.logo--container{
+    display: flex;
+    justify-content: center;
+}
 
 
-
-@media (width < 1446px) {
+@media (width < 1446px) { /* Diseño responsivo para tablet */
     .sideCard,
     .sideCardMiddle,
     .centerCard,
@@ -59,3 +65,41 @@ p{
     }
   }
   
+
+@media (width < 415px ) { /* Diseño responsivo para celular */
+    .section--About{
+        background-color: var(--cement);
+    }
+    .section--About h2{
+        color: var(--pot);
+    }
+
+    #ricardo, #monica, #claudia, #miguel, #alan, #Abraham, #pablo, #damian, #gabriel, #sebastian{
+        background-color: white;
+        height: 403px;
+        width: 316px;
+        display: block;
+        text-align: center;
+        border-radius: initial;
+        margin-top: 20px;
+        margin-left: initial;
+    }
+
+    #ricardo img, #monica img, #claudia img, #miguel img, #alan img, #Abraham img, #pablo img, #damian img, #gabriel img, #sebastian img {
+        width: 316px;
+        height: 231px;
+        border-radius: initial;
+    }
+    
+    #ricardo .logo, #monica .logo, #claudia .logo, #miguel .logo, #alan .logo, #Abraham .logo, #pablo .logo, #damian .logo, #gabriel .logo, #sebastian .logo{
+        width: 24px;
+        height: 24px;
+    }
+
+    #ricardo h3, #monica h4, #claudia h3, #miguel h3, #alan h3, #Abraham h3, #pablo h3, #damian h3, #gabriel h3, #sebastian h3{
+        font-size: 16px;
+    }
+    #ricardo p, #monica p, #claudia p, #miguel p, #alan p, #Abraham p, #pablo p, #damian p, #gabriel p, #sebastian p{
+        font-size: 14px;
+    }
+}
