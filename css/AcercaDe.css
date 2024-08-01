@@ -1,0 +1,101 @@
+/* 
+.Diseño-gráfico-1-hex { color: #F2F2F2; }
+.Diseño-gráfico-2-hex { color: #BFBAB0; }
+.Diseño-gráfico-3-hex { color: #D9D4CC; }
+.Diseño-gráfico-4-hex { color: #735F46; }
+.Diseño-gráfico-5-hex { color: #8C7E6C; }
+*/
+/* Index */
+body {
+    background-color: #D9D4CC;
+    font-family: "Montserrat";
+    max-width: 100%;
+    font-size: 16px;
+    
+}
+
+/*Seccion de Acerca de nostros*/
+
+.aboutUs--container{
+    display: flex;
+    justify-content: center; 
+    font-weight: bold;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    height: 853px;
+}
+
+/*Seccion de valores*/
+.values {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#ourValues {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 48px;
+    color: #735F46;
+} 
+
+#card--values{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #FFFF;
+    align-items: center;
+    height: 356px;
+    width: 273px;
+    margin: 41px;
+    color: #827979;
+}
+
+#image {
+    display:flex;
+    flex-wrap: wrap;
+    height: 231px;
+    width: 273px;
+    margin-top: -30px;
+    margin-bottom: 0.6cm;
+} 
+
+.misionVision {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 272px;
+}
+
+#vm {
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 48px;
+    color: #735F46;
+}
+
+#mv--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    font-weight: 400;
+    font-size: 20px;
+    width: 540px;
+    height: 213px;
+    margin: 60px;
+    color: #827979;
+}
+
