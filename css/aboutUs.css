@@ -1,0 +1,61 @@
+@import "designGuide.css";
+p{
+    font-size: 14px;
+    color: #737373;
+}
+
+.card{
+    background-color: var(--smoke);
+    height: 240px;
+    width: 470px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.card img{
+    width: 210px;
+    margin-left: -12px;
+    border-radius: 20px;
+}
+.color2{
+    color: var(--sand);
+}
+
+.title{
+    color: #252B42;
+}
+
+.sideCard{
+    margin-top: 200px;
+}
+.sideCardMiddle{
+    margin-top: 150px;
+}
+
+.centerCard{
+    margin-top: -50px;
+}
+.centerCardEnd{
+    margin-left: 510px;
+    margin-top: -50px;
+}
+
+
+
+@media (width < 1446px) {
+    .sideCard,
+    .sideCardMiddle,
+    .centerCard,
+    .centerCardEnd {
+      margin-top: initial;
+      margin-bottom: 10px;
+    }
+  
+    .centerCardEnd {
+      margin-left: 20px;
+    }
+    .section--About{
+        justify-content: center;
+    }
+  }
+  
