@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el viewport para hacer el sitio web responsivo -->
+    <link rel="stylesheet" href="css/navBar.css"> <!-- Enlace al archivo de estilos CSS -->
+
+    <!-- Conexión anticipada con Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Carga de la fuente Montserrat con diferentes pesos -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    
+    <title>Navbar</title> <!-- Título del documento -->
+</head>
+
+<body>
+    <!-- Encabezado principal del sitio -->
+    <header class="navbar">
+        <!-- Enlace de logo -->
+        <a href="#" class="logo">Construclick</a>
+        
+        <!-- Navegación principal del sitio -->
+        <nav class="menu">
+            <!-- Menú desplegable -->
+            <div class="dropdown">
+                <a href="#">Contrata <span class="arrow-down"></span></a> <!-- Enlace con un ícono de flecha hacia abajo -->
+                <div class="dropdown-content">
+                    <!-- Opciones del menú desplegable -->
+                    <a href="#">Albañilería</a>
+                    <a href="#">Plomería</a>
+                    <a href="#">Carpintería</a>
+                    <a href="#">Herrería</a>
+                    <a href="#">Vidrería</a>
+                    <a href="#">Jardinería</a>
+                    <a href="#">Otros</a>
+                </div>
+            </div>
+            <a href="#">Anúnciate</a> <!-- Enlace del menú -->
+            <a href="#">Conócenos</a> <!-- Enlace del menú -->
+        </nav>
+        
+        <!-- Opciones del usuario, incluyendo cuenta y carrito -->
+        <div class="user-options">
+            <a href="#" class="account">
+                <img src="assets/navbarIcon/iconUser.png" alt="Mi cuenta"> Mi cuenta <!-- Icono de usuario y texto "Mi cuenta" -->
+            </a>
+            <a href="#" class="cart">
+                <img src="assets/navbarIcon/iconCarrito.png" alt="Carrito de compras"> <!-- Icono del carrito de compras -->
+            </a>
+            <!-- Barra de búsqueda -->
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar"> <!-- Campo de entrada de búsqueda -->
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
