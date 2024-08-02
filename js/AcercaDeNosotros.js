@@ -17,8 +17,14 @@ function actualizarTexto() {
                 // Guardar el texto original
                 textosOriginales[i] = parrafos[i].textContent;
             }
-            parrafos[i].textContent = 'Desarrollador Java Fullstack';
         }
+        for (let i = 0; i < parrafos.length; i++) {
+            if (i === 1 || i === 2) {
+              parrafos[i].textContent = 'Desarrolladora Java Fullstack';
+            } else {
+              parrafos[i].textContent = 'Desarrollador Java Fullstack';
+            }
+          }
     } else {
         // Restaurar el texto original si la condición no se cumple
         for (let i = 0; i < parrafos.length; i++) {
