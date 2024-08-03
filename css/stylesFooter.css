@@ -1,0 +1,63 @@
+/*********************************************** Sección del footer*************************************** */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    font-family: "Montserrat";
+    color: #735F46;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    position:static;
+    bottom: 0cm;
+    margin:none;
+    width: 100%; 
+    border-radius: 5px;
+      
+   
+}
+
+footer h3 {
+    color: #735F46;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: .1px;
+    line-height: 32px;
+       
+
+}
+footer h6{
+    color: #8C7E6C;
+    font-size: 14px;
+    letter-spacing: .2px;
+    line-height: 20px;   
+}
+
+footer a {
+    text-decoration: none; 
+    list-style-type: none;  
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.socialMedia img{
+    max-width: 60px;
+}
+
+@media (max-width: 600px){ 
+
+    footer{
+        flex-wrap: wrap;
+        display: list-item;
+        padding-top: 6%;
+        padding-bottom: 6%;   
+        text-align: center;
+  }
+}
