@@ -1,10 +1,10 @@
 @import "GuiaDeDiseno.css"; /* Importacion de los estilos base */
-p{
+.section--About p{
     font-size: 13px;
     color: #737373;
 }
 
-.card{
+.section--About .card{
     background-color: var(--smoke);
     height: 240px;
     width: 470px;
@@ -12,52 +12,52 @@ p{
     margin-left: 20px;
 }
 
-.card img{
+.section--About .card img{
     width: 210px;
     margin-left: -12px;
     border-radius: 20px;
 }
-.card .logo{
+.section--About .card .logo{
     width: 30px;
     height: 30px;
     margin-left: 10px;
     border-radius: initial;
 }
-.color2{
+.section--About .color2{
     color: var(--sand);
 }
 
 
-.sideCard{
+.section--About .sideCard{
     margin-top: 200px;
 }
-.sideCardMiddle{
+.section--About .sideCardMiddle{
     margin-top: 150px;
 }
 
-.centerCard{
+.section--About .centerCard{
     margin-top: -50px;
 }
-.centerCardEnd{
+.section--About .centerCardEnd{
     margin-left: 510px;
     margin-top: -50px;
 }
-.logo--container{
+.section--About .logo--container{
     display: flex;
     justify-content: center;
 }
 
 
 @media (width < 1446px) { /* Diseño responsivo para tablet */
-    .sideCard,
-    .sideCardMiddle,
-    .centerCard,
-    .centerCardEnd {
+    .section--About .sideCard,
+    .section--About .sideCardMiddle,
+    .section--About .centerCard,
+    .section--About.centerCardEnd {
       margin-top: initial;
       margin-bottom: 10px;
     }
   
-    .centerCardEnd {
+    .section--About .centerCardEnd {
       margin-left: 20px;
     }
     .section--About{
