@@ -14,16 +14,211 @@ body {
     
 }
 
-/*Seccion de Acerca de nostros*/
+.aboutUs {
+    background-color: #D9D4CC;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+}
 
 .aboutUs--container{
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    
+}
+
+.aboutUs--left {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutUs--header{
+    color: #735F46;
+    font-size: 58px;
+    font-weight: bold;
+    max-width: 618px;
+}
+.aboutUs--buildFuture{
+    font-weight: normal;
+    color: #737373;
+    font-size: 20px;
+}
+
+.aboutUs--button {
+    background-color: #735F46;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+}
+.aboutUs--button:hover {
+    opacity: 0.8;
+}
+
+.aboutUs--right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;  
+    margin-top: 30px;
+}
+
+.aboutUs--person{
+    max-width: 632px;
+    height: 274px;
+}
+
+
+.aboutUs--cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.aboutUs--paragraph {
+    color: #8C7E6C;
+    font-weight: 400;
+    font-size: 20px; 
+    line-height: 1.5;
+    max-width: 70%;
+    margin: 20px auto;
+}
+
+.aboutUs--cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 100%; 
+    max-width: 254px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card--text {
+    color: #735F46;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card--image {
+    width: 50px; 
+    height: 50px;
+    border-radius: 9999px;
+}
+
+.card--textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card--header {
+    font-weight: 600;
+    font-size: 1rem; 
+    color: #735F46;
+}
+
+.card--footer {
+    font-weight: 400;
+    font-size: 0.875rem; 
+    color: #735F46;
+}
+
+@media (max-width: 863px) {
+    .aboutUs {
+        background-color: white; 
+    }
+
+    .aboutUs--container {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .aboutUs--header {
+        font-size: 40px; 
+    }
+
+    .aboutUs--buildFuture {
+        font-size: 18px; 
+    }
+
+    .aboutUs--button {
+        background-color: #827979; 
+        color: white; 
+        width: 195px; 
+        height: 50px; 
+        font-size: 14px; 
+        margin: 0 auto;
+    }
+
+    .aboutUs--paragraph {
+        color: #827979; 
+    }
+
+    .aboutUs--container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutUs--left {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .aboutUs--right {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .aboutUs--person{
+        margin: 0 auto;
+        max-width:100%;
+}
+
+}
+
+/*Seccion de Acerca de nostros*/
+
+.aboutUs--container2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
     font-weight: bold;
     align-items: center;
     margin: 0 auto;
-    height: 853px;
+    background-color: #D9D4CC;
+
 }
 
 /*Seccion de valores*/
@@ -73,7 +268,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 272px;
+
 }
 
 #vm {
@@ -94,7 +289,6 @@ body {
     font-weight: 400;
     font-size: 20px;
     width: 540px;
-    height: 213px;
     margin: 60px;
     color: #827979;
 }
@@ -134,3 +328,251 @@ body {
         padding: 10px;
     }
 }
+
+/*Inicia seccion de Colaboradores*/
+
+@import "./GuiaDeDiseno.css"; /* Importacion de los estilos base */
+.section--About p{
+    font-size: 13px;
+    color: #737373;
+}
+
+/* .section--About {
+    padding-left: 230px;
+} */
+
+.section--About .card{
+    background-color: var(--smoke);
+    height: 240px;
+    width: 470px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.section--About .card img{
+    width: 210px;
+    margin-left: -12px;
+    border-radius: 20px;
+}
+.section--About .card .logo{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: initial;
+}
+.section--About .color2{
+    color: var(--sand);
+}
+
+
+.section--About .sideCard{
+    margin-top: 200px;
+}
+.section--About .sideCardMiddle{
+    margin-top: 150px;
+}
+
+.section--About .centerCard{
+    margin-top: -50px;
+}
+.section--About .centerCardEnd{
+    margin-left: 510px;
+    margin-top: -50px;
+}
+.section--About .logo--container{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (width < 1446px) { /* Diseño responsivo para tablet */
+    .section--About .sideCard,
+    .section--About .sideCardMiddle,
+    .section--About .centerCard,
+    .section--About.centerCardEnd {
+      margin-top: initial;
+      margin-bottom: 10px;
+    }
+  
+    .section--About .centerCardEnd {
+      margin-left: 20px;
+    }
+    .section--About{
+        justify-content: center;
+    }
+  }
+  
+
+@media (width < 415px ) { /* Diseño responsivo para celular */
+    .section--About{
+        background-color: var(--cement);
+    }
+    .section--About h2{
+        color: var(--pot);
+    }
+
+    #ricardo, #monica, #claudia, #miguel, #alan, #Abraham, #pablo, #damian, #gabriel, #sebastian{
+        background-color: white;
+        height: 450px;
+        width: 316px;
+        display: block;
+        text-align: center;
+        border-radius: initial;
+        margin-top: 20px;
+        margin-left: initial;
+    }
+
+    #ricardo img, #monica img, #claudia img, #miguel img, #alan img, #Abraham img, #pablo img, #damian img, #gabriel img, #sebastian img {
+        width: 316px;
+        height: 231px;
+        border-radius: initial;
+    }
+    
+    #ricardo .logo, #monica .logo, #claudia .logo, #miguel .logo, #alan .logo, #Abraham .logo, #pablo .logo, #damian .logo, #gabriel .logo, #sebastian .logo{
+        width: 24px;
+        height: 24px;
+    }
+
+    #ricardo h3, #monica h4, #claudia h3, #miguel h3, #alan h3, #Abraham h3, #pablo h3, #damian h3, #gabriel h3, #sebastian h3{
+        font-size: 16px;
+    }
+    #ricardo p, #monica p, #claudia p, #miguel p, #alan p, #Abraham p, #pablo p, #damian p, #gabriel p, #sebastian p{
+        font-size: 14px;
+}
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #735F46;
+    box-sizing: border-box;
+}
+
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    max-width: 600px;
+}
+.text-section h1 {
+    margin: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.text-section h2 {
+    margin: 10px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+}
+.text-section p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+.text-section button {
+    background-color: #735F46;
+    color: #ffffff;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 22px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+}
+.text-section button:hover{opacity: 0.8;}
+.image-section{
+    max-width: 400px;
+    height: 400px;
+    margin-right: 0;
+}
+.image-section img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width:400px;
+    height: 400px;
+
+}
+@media(max-width: 768px){
+    .image-section {
+    display: none;
+    }
+    .text-section{
+        margin: 0 auto;
+    }
+    .text-section h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin: 0;
+    text-align: center;
+    }
+}
+    .text-section h2 {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        font-style: normal;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 0.2px;
+
+    }
+    .text-section p {
+        font-size: 14px;  
+        text-align: center; 
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+
+}
+
+@media(max-width: 990px){
+    .image-section {
+        max-width: 300;
+        height: 300;
+            }
+    }
+    .text-section h1 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center;
+    }
+    .text-section h2 {
+        margin: 10px 0;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .text-section p {
+        margin: 20px 0;
+        font-size: 14px;  
+        text-align: center; 
+}
+

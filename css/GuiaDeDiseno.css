@@ -1,0 +1,37 @@
+/* Importamos la fuente Monserrat de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Definimos la paleta de colores */
+:root {
+    --shell: #f2f2f2; /* Cascaron */
+    --smoke: #bfbab0; /* Humo */
+    --cement: #d9d4cc; /* Cemento */
+    --pot: #735f46; /* Cazuela */
+    --sand: #8C7E6C; /* Arena */
+  }
+
+/* Definimos el tipo y tamaño de fuente */
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    
+    color: var(--pot);
+}
+h1{
+    font-size: 58px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 20px;
+}
+/* Se define el estilo de los botones */
+button{
+    background-color: var(--pot);
+    color: white;
+}
+/* Se definen los estilos del footer */
+footer{
+    color: var(--pot);
+}
