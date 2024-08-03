@@ -1,123 +1,215 @@
-/* 
-.Diseño-gráfico-1-hex { color: #F2F2F2; }
-.Diseño-gráfico-2-hex { color: #BFBAB0; }
-.Diseño-gráfico-3-hex { color: #D9D4CC; }
-.Diseño-gráfico-4-hex { color: #735F46; }
-.Diseño-gráfico-5-hex { color: #8C7E6C; }
-*/
-/* Index */
-body{
+/*************************************Sección del body*************************************** */
+body {
     background-color: #D9D4CC;
     font-family: "Montserrat";
-    font-size: 14px;
+    color: #8C7E6C;
+    font-size: 12px;
 }
 
-/*Seccion de contacto*/
-.container--contact{
+/**************************************Sección de contacto***************************************/
+.text-center {
+    max-width: 90%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: auto;
-    padding-top: 50px;
-   
-
+    gap: 20px;
+    margin-top: 20px;
 }
 
+.text-center h2 {
+    color: #735F46;
+    font-size: 40px;
+    font-weight: bold;
+}
 
+.text-center p {
+    color: #8C7E6C;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
 
-/* sección del formulario */
-.main--form{
-    display:flex;
+/****************************************Sección del formulario **************************************/
+.main--form {
+    display: flex;
     flex-direction: row;
-    padding-left: 25%;
-    
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
 }
-.form--inputs{
-    height: 860px;
-    width: 500px;
+
+.form--inputs {
+    max-width: 600px;
     padding-left: 10px;
-    margin-right: 100px;
     background-attachment: #E6E6E6;
 }
-/*Seccion Card*/
 
-/* Sección del footer */
-.main--footer {
+.form--inputs input {
+    max-width: 450px;
+}
 
+.form--inputs textarea {
+    max-width: 450px;
+}
+
+#userName::placeholder {
+    color: #D9D4CC;
+}
+
+#userEmail::placeholder {
+    color: #D9D4CC;
+}
+
+#userPhone::placeholder {
+    color: #D9D4CC;
+}
+
+#userCompany::placeholder {
+    color: #D9D4CC;
+}
+
+#userComment::placeholder {
+    color: #D9D4CC;
+}
+
+#form--checkbox {
+    width: 5%;
+    margin: 10px;
+    padding: 0;
+}
+
+#form--statement p {
+    text-align: justify;
+    justify-content: center;
+}
+
+.contact--information {
     display: flex;
     flex-direction: row;
+    max-width: 450px;
+}
+
+.form--buttom {
+    display: flex;
+    justify-content: center;
+    /* Centra el botón horizontalmente dentro del contenedor */
+}
+.form--buttom button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #f2f2f2;
+    background-color: #735F46;
+    font-family: "Montserrat";
+    width: 170px;
+    height: 45px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.form--buttom button:hover {
+    color: #735F46;
+    background-color: #F2F2F2;
+    border-color: #F2F2F2;
+}
+
+/*********************************************** Sección del footer*************************************** */
+footer {
+    display: flex;
+    justify-content: center;
     background-color: #f2f2f2;
-    text-align: left;
     font-family: "Montserrat";
     color: #735F46;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     position:static;
     bottom: 0cm;
     margin:none;
+    margin-top: 3%;
     width: 100%; 
     border-radius: 5px;
+      
+   
 }
-.footer--sections{
-    width: 50%;
-}
-#footer--section1{
-    padding-right: 20px;
-}
-.main--footer a {
-    text-decoration: none;
+
+footer h3 {
     color: #735F46;
-}
-
-#redes--sociales{
-    padding-top: 20px;
-}
-#redes--sociales img {
-    width: 20px;
-}
-.btn1 {
-text-align: center;
-justify-content: center;
-
-}
-
-.btn:hover{
-    cursor: pointer;
-    text-decoration-color: none;
-    background-color: #735F46;
-}
-
-.btn {
-    text-align: center;
-    color: #f2f2f2;
-    background-color:#735F46 ; 
-
-    font-family: "Monserrat";
-    width: 233px;
-    height: 63px;
-    padding: 25px,28px,28px,25px;
+    font-weight: bold;
     font-size: 24px;
-    text-decoration: none;
+    letter-spacing: .1px;
+    line-height: 32px;
+       
+
 }
-#navbar10{
-    
-    display:flex;
-    color: red;
-    width: 100px;
-    height: 100px;
-    
+footer h6{
+    color: #8C7E6C;
+    font-size: 14px;
+    letter-spacing: .2px;
+    line-height: 20px;   
 }
-/* about us */
-/* propuesta cada página tendría su hoja de estilos  */
-.image-email img{
-    width: 30%;
-    height: auto;
-    
-    
+
+footer a {
+    text-decoration: none; 
+    list-style-type: none;  
 }
-.image-head{
+
+.socialMedia{
     display: flex;
     flex-direction: row;
-    gap:10px;
-    
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    margin-left: -20px;
 }
+.socialMedia img{
+    max-width: 60px;
+}
+
+/*********************************Seccion Card*************************************/
+#mycard {
+    border: 2px #DCDCDC;
+    color: #735F46;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+}
+#mycard img{
+    max-width: 40px;
+}
+.image--head{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.card-body {
+    margin-top: 0;
+}
+
+@media (max-width: 800px) {
+    body {
+        background-color: #ffffff
+    }
+
+    #mycard {
+        display: none;
+    }
+}
+
+    @media (max-width: 600px){ 
+
+        footer{
+            flex-wrap: wrap;
+            display: list-item;
+            padding-top: 6%;
+            padding-bottom: 6%;   
+            text-align: center;
+      }
+    }
