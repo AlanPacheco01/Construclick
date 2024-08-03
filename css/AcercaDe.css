@@ -18,11 +18,11 @@ body {
 
 .aboutUs--container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center; 
     font-weight: bold;
     align-items: center;
     margin: 0 auto;
-    padding-top: 10px;
     height: 853px;
 }
 
@@ -39,7 +39,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     font-size: 48px;
     color: #735F46;
 } 
@@ -99,3 +99,38 @@ body {
     color: #827979;
 }
 
+@media ( max-width: 700px){
+
+    .aboutUs--container {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+}
+
+@media ( max-width: 480px){
+
+    .aboutUs--container {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+}
+
+@media ( max-width: 320px){
+
+    .aboutUs--container {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+}
