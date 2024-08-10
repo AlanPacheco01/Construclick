@@ -1,0 +1,200 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #ffffff;
+}
+
+.dropdown2{
+    position: relative;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.dropdown--content2 {
+    display: none;
+    /* Oculta el contenido desplegable por defecto */
+    position: absolute;
+    /* Posiciona el contenido desplegable de forma absoluta */
+    background-color: #D9D4CC;
+    /* Color de fondo del contenido desplegable */
+    min-width: 160px;
+    /* Ancho mínimo del contenido desplegable */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* Sombra del contenido desplegable */
+    z-index: 1;
+    /* Asegura que el contenido desplegable esté por encima de otros elementos */
+}
+.dropdown2 h2{
+    font-size: 14px;
+    font-weight:500;
+    color: #252B42;
+    padding: 20px 0px 0px 10px;
+}
+.dropdown2 h5{
+    font-size: 16px;
+    font-weight: bold;
+    color: #252B42;
+    padding: 20px 0px 0px 10px;
+}
+
+/* Estilo de los enlaces dentro del contenido desplegable */
+.dropdown--content2 a {
+    color: #737373;
+    /* Color del texto de los enlaces en el desplegable */
+    /* Relleno alrededor del texto de los enlaces */
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    display: block;
+    /* Hace que los enlaces ocupen toda la anchura del contenedor */
+    font-size: 14px;
+    /* Ajusta el tamaño de la letra */
+    font-weight: bold;
+    text-align: center;
+    /* Alinea el texto a la izquierda */
+    /* Asegura que no haya margen extra */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Efecto de transición suave */
+    padding: 12px;
+}
+
+/* Parte del efecto de transición suave del contenido desplegable*/
+.dropdown--content2 a:hover {
+    background-color: #8C7E6C;
+    /* Color de fondo al pasar el cursor */
+    color: white;
+    /* Color del texto al pasar el cursor */
+}
+
+/* Muestra el contenido desplegable al pasar el ratón sobre el contenedor desplegable */
+.menu2 .dropdown2:hover .dropdown--content2 {
+    display: block;
+    /* Muestra el contenido desplegable */
+}
+.arrow--down2 {
+    display: inline-block;
+    /* Muestra la flecha como un bloque en línea */
+    /* margin-left: 5px; */
+    /* Espacio a la izquierda de la flecha */
+    width: 0;
+    /* Ancho de la flecha */
+    height: 0;
+    /* Altura de la flecha */
+    border-left: 5px solid transparent;
+    /* Borde izquierdo transparente para crear la forma de la flecha */
+    border-right: 5px solid transparent;
+    /* Borde derecho transparente para crear la forma de la flecha */
+    border-top: 5px solid #333;
+    /* Borde superior para el color de la flecha */
+    font-size: 14px;
+}
+.container{
+    display: flex;
+     align-items: center; 
+    background-color: #ffffff;
+    margin: 0px 10px 0px 40px;
+    padding: 0 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#store {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas, cada casilla ocupa 1fr (una fracción del espacio disponible) */
+    gap: 20px; /* Espacio entre las casillas */
+    font-size: 24;
+    font-weight: bold;
+    padding: 0px 20px 20px 20px;
+    max-width: 100%;
+    
+    
+}
+
+.item {
+    background-color: #FCFBFA;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 317px;
+    height: 488px;
+    overflow: hidden;
+    overflow: auto;
+    
+}
+
+.item img {
+    max-width: 239.5px;
+    height: 302px;
+    margin-bottom: 15px;
+}
+
+.item h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    color: #252B42;
+    max-width: 239.5px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.item h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #737373;
+    padding-bottom: 5px;
+    max-width: 239.5px;
+    margin: 0 auto;
+}
+.item p{
+    color: #BDBDBD;
+    font-size: 16px;
+}
+
+.item:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+ @media screen and (max-width:1200px){
+           #store .item img{
+            width: 100%;
+           }
+
+ }  
+ @media screen and (max-width:700px){
+ .container #store .item  {
+     width: 90%;
+     margin: 5px;
+
+    }
+
+}  
+@media screen and (max-width: 600px){
+          #store {
+            width: 80%;
+         text-align: center;
+          align-items: center;
+            grid-template-columns: none;
+        justify-items: center;
+        justify-content: center;
+        
+        margin: 0%;
+
+         }
+}
+    
+@media screen and (max-width:500px) {
+    #sidebar {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        justify-items:center ;
+        width: 400px;
+        height: 30px;
+        display:center;
+    }
+}
