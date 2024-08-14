@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/stylesNavBar.css">
+</head>
+
+<body>
+  <header class="navBar">
+
+        <!-- Enlace de logo -->
+
+        <!-- Navegación principal del sitio -->
+        <nav class="menu">
+            
+            <a href="../index.html" class="logo">Construclick</a>
+            <!-- Menú desplegable -->
+            <div class="dropdown">
+                <a href="#">Contrata <span class="arrow--down"></span></a> <!-- Enlace con un ícono de flecha hacia abajo -->
+                <div class="dropdown--content">
+                    <!-- Opciones del menú desplegable -->
+                    <a href="#">Albañilería</a>
+                    <a href="#">Plomería</a>
+                    <a href="#">Carpintería</a>
+                    <a href="#">Herrería</a>
+                    <a href="#">Vidrería</a>
+                    <a href="#">Jardinería</a>
+                    <a href="#">Otros</a>
+                </div>
+            </div>
+            <a href="publicarServicio.html">Anúnciate</a> <!-- Enlace del menú -->
+            <a href="AcercaDeNosotros.html">Conócenos</a> <!-- Enlace del menú -->
+            <div class="user--options">
+                <a href="login.html" class="account">
+                    <img src="../assets/navbarIcon/iconUser.png" alt="Mi cuenta"> Mi cuenta <!-- Icono de usuario y texto "Mi cuenta" -->
+                </a>
+                <a href="#" class="cart">
+                    <img src="../assets/navbarIcon/iconCarrito.png" alt="Carrito de compras"> <!-- Icono del carrito de compras -->
+                </a>
+                <!-- Barra de búsqueda -->
+                <div class="search--bar">
+                    <input class="navBar--input" type="text" placeholder="Buscar"> <!-- Campo de entrada de búsqueda -->
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Opciones del usuario, incluyendo cuenta y carrito -->
+      
+    </header>
+
+     <!-- Aquí empieza diseño para celular -->
+     <div class="navBar--mobile">
+        <div class="navBar--right">
+            <img class="navBar--image" src="../assets/navbarIcon/logoConstruclick.png" alt="Logo Construclick">
+            <h2 class="navBar--header">Construclick</h2>
+        </div>
+        <div class="navBar--left">
+            <a href=""><img class="navBar--icon" src="../assets/navbarIcon/search.png" alt="Barra de busqueda"></a>
+            <a href=""><img class="navBar--icon" src="../assets/navbarIcon/iconCarritom.png" alt="Carrito de compras"></a>
+            <a href=""><img class="navBar--icon" src="../assets/navbarIcon/menu.png" alt="Menu de hamburguesa"></a>
+        </div>
+    </div>
+         <!-- termina NavBar -->
+
+    <!-- Sección del header -->
+    <header class="text-center">
+        <h2>Contacto</h2>
+        <p>Puedes comunicarte con nosotros llenando la forma de contacto que se encuentra aquí:</p>
+    </header>
+
+    <!-- Sección del formulario -->
+    
+<div class="form--body">        
+    <form id="contact">
+                <div class="main--form">  
+                    <div class="form--inputs">
+                        <div class="mb-3"> Nombre*
+                            <input type="text" class="form-control" id="userName" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3"> Correo*
+                            <input type="email" class="form-control" id="userEmail" placeholder="name@ejemplo.com">
+                        </div>
+                        <div class="mb-3">Teléfono*
+                            <input type="text" class="form-control" id="userPhone" placeholder="55 XX XX XX XX">
+                        </div>
+                        <div class="mb-3">Empresa (opcional)
+                            <input type="text" class="form-control" id="userCompany"
+                                placeholder="Razón social u Organización">
+                        </div>
+                        <div class="mb-3"> Mensaje*
+                            <textarea class="form-control" id="userComment" rows="3"
+                                placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+                        <!-- Sección de la checkbox donde el usuario acepta los términos y condiciones -->
+                        <div class="contact--information">
+                            <div id="form--checkbox">
+                                <input class="data_information" type="checkbox" value="data" id="from--chechOk">
+                                <label class="information" id="information1">
+                            </div>
+                            <div id="form--statement">
+                                <p>Al enviar tus datos de contacto, usted aprueba que sean procesados de acuerdo a la politica de privacidad de Construclick, con lo que usted confirma que ha leido y comprendido.
+                                </p>
+                            </div>
+                            </label>
+                        </div>
+                        <br>
+
+                        <div class="form--buttom">
+                            <button class="send--info" type="submit" id="send--form">Enviar</button>
+                        </div>
+
+                    </div>
+            </form>
+       
+        <!-- Sección de la card -->
+           
+                <div id="mycard" class="card border-dark mb-3" style="max-width: 300px;">
+
+                    <div class="card-body">
+                        <div class="image--head">
+                            <div class="image-email"><img src="../assets/contact/mailIcon.png"></div>
+                            <div>
+                                <h5 class="card-title">Correo Electronico</h5>
+                            </div>
+                        </div>
+                        <br />
+                        <p class="card-text">Si prefieres, nuestros asociados con gusto atenderán tus dudas y
+                            comentarios
+                            por correo electrónico.</p>
+                        <p class="card-text">callcenter@construclik.com.mx</p>
+                        <p class="card-text"> Horario de atención</p>
+                        <p class="card-text"> Lunes a Viernes 8:00 a.m. - 10:00 p.m.</p>
+                        <p class="card-text"> Sábados y Domingos 10:00 a.m. - 18:30 p.m.</p>
+                        <a href="">
+                            <p class="card-text"> Enviar correo electrónico</p>
+                        </a>
+                    </div>
+                </div>
+           
+    </div>
+
+    <footer>
+        <ul class="footer--contacto">
+            
+            <a href="contacto.html">
+                    <h3>Contacto</h3>
+                </a>
+            
+                <a href=""><h6>service@construclick.com</h6></a><br>
+                  <div class="socialMedia">
+                      <a href="https://www.facebook.com/" target="_blank">
+                          <img src="../assets/footerIcon/facebook.png" alt="facebook">
+                        </a><br>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="../assets/footerIcon/instagram.png" alt="instagram">
+                        </a><br>
+                        <a href="https://x.com/X" target="_blank">
+                            <img src="../assets/footerIcon/twitter.png" alt="x">
+                        </a>
+                    </div>      
+         </ul>
+
+        <ul class="footer--catalogo">
+                <a href="">
+                    <h3>Catálogo</h3>
+                </a>
+            
+                <a href="./ContratarServicios.html">
+                    <h6>Contrata</h6>
+                </a>
+            
+                <a href="">
+                    <h6>Anúnciate</h6>
+                </a>
+            </ul>
+
+        <ul class="footer--MiCuenta">
+           
+                <a href="">
+                
+                    <h3>Mi cuenta</h3>
+                </a>
+            
+            
+                <a href="registro.html">
+                    <!-- h6 para los demas links -->
+                    <h6>Regístrate</h6>
+                </a>
+            
+           
+                <a href="login.html">
+                    <h6>Inicia sesión</h6>
+                </a>
+            
+        </ul>
+        <!-- readme con la nomemclatura, lineas en donde se usan -->
+        <ul class="footer--conocenos">
+            
+                <a href="">
+                    <h3>Conócenos</h3>
+                </a>
+            
+                <a href="./Terminos Y Condiciones.html">
+                    <h6>Términos y condiciones</h6>
+                </a>
+    
+                <a href="">
+                    <h6>Aviso de privacidad</h6>
+                </a>
+            
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../javascript/contacto.js"></script>
+</body>
+
+</html>

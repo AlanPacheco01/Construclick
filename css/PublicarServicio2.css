@@ -1,0 +1,26 @@
+.body {
+    background-color: #D9D4CC;
+    box-sizing: border-box;
+    color: #735F46;
+
+}
+
+.form--container {
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+    max-width: 784px;
+    background-color: white;
+    padding: 50px;
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+}
+
+.option{
+    color: #735F46;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
