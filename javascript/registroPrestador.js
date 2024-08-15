@@ -9,6 +9,8 @@ form.addEventListener('submit', () => {
     const nombre = document.getElementById('userName').value
     //validación del nombre del usuario mediante regex
     const nombreRegex = /^[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ\s]+$/;   //nota :el \s permite que haya espacios
+    //Lectura de foto de perfil
+    const fotoperfil = document.getElementById('fotoperfil').value
     //Lectura del correo del usuario
     const correo = document.getElementById('userEmail').value
     //validación del correo del usuario mediante regex
@@ -20,9 +22,13 @@ form.addEventListener('submit', () => {
     //lectura de la contraseña del usuario
     const contraseña = document.getElementById('contraseña').value
     //Validación de de la contraseña mediante regex
-    const contraseñaRegex = /^\d{10}$/;
+    const contraseñaRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
     //Lectura de confirmacionde contraseña del usuario
     const confirmaContraseña = document.getElementById('confirmaContraseña').value
+    //l
+    const ine = document.getElementById('ine').value
+    //d
+    const cartaRecomendacion = document.getElementById('cartaRecomendacion').value
     
 //Condicionales que le dicen al usuario que los datos son erroneos
     if (!nombreRegex.test(nombre)) {
@@ -52,9 +58,12 @@ form.addEventListener('submit', () => {
 
 //Almacenamiento local de los datos ingresados en el form
     localStorage.setItem('name', nombre)
+    localStorage.setItem('fotoperfil', fotoperfil)
     localStorage.setItem('email', correo)
     localStorage.setItem('telephone', telefono)
     localStorage.setItem('contraseña', contraseña)
     localStorage.setItem('confirmaContraseña', confirmaContraseña)
+    localStorage.setItem('ine', ine)
+    localStorage.setItem('cartaRecomendacion', cartaRecomendacion)
     alert('Datos Guardados Correctamente')
 })
