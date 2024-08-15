@@ -60,9 +60,7 @@ body {
     /* Usa flexbox para alinear los elementos del menú */
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 2000px;
     /* Alinea verticalmente los elementos del menú al centro */
     gap: 15px;
     
