@@ -55,6 +55,7 @@ const url = `catalagoHerramientas.json`;
     .then(data => {
         const container = document.getElementById('store');
         data.forEach(item => {
+     
             const div = document.createElement('div');
             div.classList.add('item');
         
@@ -69,6 +70,10 @@ const url = `catalagoHerramientas.json`;
                
             `;
             container.appendChild(div);
+           
+            
         });
     })
     .catch(error => console.error('Error al cargar el JSON:', error));
+
+    
