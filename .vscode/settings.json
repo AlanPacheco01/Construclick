@@ -1,3 +1,8 @@
 {
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#561909",
+        "titleBar.activeBackground": "#78220D",
+        "titleBar.activeForeground": "#FFFCFB"
+    }
 }
