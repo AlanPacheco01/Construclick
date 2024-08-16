@@ -64,6 +64,8 @@
     </header>
 
     <!-- Aquí empieza diseño para celular -->
+     
+
     <div class="navBar--mobile">
         <div class="navBar--right">
             <img class="navBar--image" src="../assets/navbarIcon/logoConstruclick.png" alt="Logo Construclick">
@@ -79,80 +81,72 @@
     <!-- termina NavBar -->
 
     <!-- Sección del header -->
-    <header class="text-center">
-        <h1>Prestador de Servicios</h1>
-    </header>
-
+    
 
     <!-- Seccion formulario-->
-
+    
     <div class="container">
-        <form class="row gy-3 gx-2 align-items-center" id="contact">
-            <div class="col-md-6">
-                <div class="main--form">
-                    <div class="form--inputs">
-                        <div class="mb-3"> Nombre
-                            <input type="text" class="form-control" id="userName" placeholder="Nombre">
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label for="formFile" class="form-label">Sube tu foto de perfil. (Opcional)</label>
-                            <div class="custom-file-upload">
-                                <input type="file" id="fileUpload">
-                            </div>
-                        </div>
-                        <div class="mb-3"> Correo
-                            <input type="email" class="form-control" id="userEmail"
-                                placeholder="Ingrese su correo electronico">
-                        </div>
-                        <div class="mb-3">Contraseña
-                            <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su contraseña">
-                        </div>
-                        <div class="mb-3">Confirmar contraseña
-                            <input type="password" class="form-control" id="confirmaContraseña"
-                                placeholder="Confirme su contraseña">
-                        </div>
+        <header class="text-center">
+            <h1>Prestador de Servicios</h1>
+        </header>
+
+        <form id="contact">
+            <div class="form-grid">
+                <div class="grid-item form-group">
+                    <label for="userName">Nombre</label>
+                    <input type="text" class="form-control" id="userName" placeholder="Nombre">
+                </div>
+                <div class="grid-item form-group">
+                    <label for="userPhone">Número de Teléfono</label>
+                    <input type="text" class="form-control" id="userPhone" placeholder="55 XX XX XX XX">
+                </div>
+                <div class="grid-item form-group">
+                    <label for="formFile" class="form-label">Sube tu foto de perfil. (Opcional)</label>
+                    <div class="custom-file-upload">
+                        <input type="file" id="fotoperfil">
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 ">
-                <div class="main--form">
-                    <div class="form--inputs" id="col2">
-                        <div class="mb-3">Teléfono
-                            <input type="text" class="form-control" id="userPhone" placeholder="55 XX XX XX XX">
-                        </div>
-                        <div class="mb-3">
-                            <label for="formFile" class="form--buttom">¿Ofreces servicios en CDMX o Estado de
-                                México?</label>
-                            <div class="d-grid gap-2 d-md-block" id="buttons">
-                                <button class="btn-primary" type="button">Sí</button>
-                                <button class="btn-primary" type="button">No</button>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="formFile" class="form-label">Subir INE</label>
-                            <div class="custom-file-upload">
-                                <input type="file" id="fileUpload">
-                            </div>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="formFile" class="form-label">Subir referencia de trabajo (carta recomendación,
-                                cursos, evidencia de trabajos anteriores, carta patronal, etc)</label>
-                            <div class="custom-file-upload">
-                                <input type="file" id="fileUpload">
-                            </div>
-                        </div>
-
-                        <div class="form--buttom2">
-                            <button class="send--info" type="submit" id="send--form">Listo</button>
-                        </div>
+                <div class="grid-item form-group">
+                    <label for="formFile" class="form--buttom">¿Ofreces servicios en CDMX o Estado de
+                        México?</label>
+                    <div class="d-grid gap-2 d-md-block" id="buttons">
+                        <button class="btn-primary" type="button">Sí</button>
+                        <button class="btn-primary" type="button">No</button>
                     </div>
                 </div>
+                <div class="grid-item form-group">
+                    <label for="userEmail">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="userEmail" placeholder="Ingrese su correo electronico">
+                </div>
+                <div class="grid-item form-group">                    
+                    <label for="formFile" class="form-label">Subir INE</label>
+                    <div class="custom-file-upload">
+                        <input type="file" id="ine">
+                    </div>
+                </div>
+                <div class="grid-item form-group">
+                    <label for="userPassword">Contraseña</label>
+                    <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su contraseña">
+                </div>
+                <div class="grid-item form-group">
+                    <label for="formFile" class="form-label"> Subir referencia de trabajo (carta recomendación, cursos, evidencia de trabajos anteriores, carta patronal, etc) </label>
+                    <div class="custom-file-upload">
+                        <input type="file" id="cartaRecomendacion">
+                    </div>
+                </div>
+                <div class="grid-item form-group">
+                    <label for="userPassword2">Confirmación de contraseña</label>
+                    <input type="password" class="form-control" id="confirmaContraseña"
+                        placeholder="Confirme su contraseña">
+                </div>
+                <div class="form--buttom2">
+                    <button class="send--info" type="submit" id="send--form">Listo</button>
+                </div>
+    
             </div>
         </form>
     </div>
-    
+     
 
     <!-- Sección footer -->
     <footer>
