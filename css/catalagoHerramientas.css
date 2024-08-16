@@ -26,10 +26,10 @@ body {
     /* Asegura que el contenido desplegable esté por encima de otros elementos */
 }
 .dropdown2 h2{
-    font-size: 14px;
+    font-size: 16px;
     font-weight:500;
     color: #252B42;
-    padding: 20px 0px 0px 10px;
+    padding: 20px 0px 0px 20px;
 }
 .dropdown2 h5{
     font-size: 16px;
@@ -90,14 +90,13 @@ body {
 }
 .container{
     display: flex;
-     align-items: center; 
+    align-items: center; 
     background-color: #ffffff;
-    margin: 0px 10px 0px 40px;
-    padding: 0 20px;
-    max-width: 100%;
-    max-height: 100%;
+    margin: 0 auto; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%;
 }
-
 #store {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas, cada casilla ocupa 1fr (una fracción del espacio disponible) */
