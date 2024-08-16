@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- Enlaza el archivo CSS externo que contiene los estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Título fuera del contenedor, se coloca en la parte superior de la página -->
+    <h1>Contratar servicios</h1>
+    <!-- Contenedor principal que agrupa el formulario y le da estilo -->
+    <div class="container">
+        <!-- Formulario con id "register3" -->
+        <form id="register3">
+            <!-- Contenedor que organiza los campos del formulario en una cuadrícula -->
+            <div class="form-grid">
+                <!-- Columna Izquierda: Primer conjunto de campos -->
+                <div class="grid-item form-group">
+                    <!-- Etiqueta para el campo de nombre -->
+                    <label for="userName">Nombre</label>
+                    <!-- Campo de entrada de texto para el nombre -->
+                    <input type="text" id="userName" placeholder="Ingrese su(s) nombre(s)">
+                </div>
+                <div class="grid-item form-group">
+                    <!-- Etiqueta para el campo de correo electrónico -->
+                    <label for="userEmail">Correo Electrónico</label>
+                    <!-- Campo de entrada de texto para el correo electrónico -->
+                    <input type="email" id="userEmail" placeholder="Ingrese su correo electrónico">
+                </div>
+                <div class="grid-item form-group">
+                    <!-- Etiqueta para el campo de contraseña -->
+                    <label for="userPassword">Contraseña</label>
+                    <!-- Campo de entrada de texto para la contraseña -->
+                    <input type="password" id="userPassword" placeholder="Ingrese su contraseña">
+                </div>
+                <div class="grid-item form-group">
+                    <!-- Etiqueta para el campo de confirmación de contraseña -->
+                    <label for="userPassword2">Confirmación de contraseña</label>
+                    <!-- Campo de entrada de texto para confirmar la contraseña -->
+                    <input type="password" id="userPassword2" placeholder="Confirme su contraseña">
+                </div>
+                <div class="grid-item form-group">
+                    <!-- Etiqueta para el campo de subir imagen de perfil -->
+                    <label for="userImage">Sube tu foto de perfil (opcional)</label>
+                    <!-- Campo para seleccionar un archivo de imagen -->
+                    <input type="file" id="userImage">
+                </div>
+                <!-- Columna Derecha: Segundo conjunto de campos -->
+                <div class="grid-item form-group">
+                    <!-- Etiqueta para el campo de número de teléfono -->
+                    <label for="userPhone">Número de Teléfono</label>
+                    <!-- Campo de entrada de texto para el número de teléfono -->
+                    <input type="text" id="userPhone" placeholder="Ingrese su número de celular">
+                </div>
+                <div class="grid-item form-group">
+                    <!-- Etiqueta para el campo de ubicación -->
+                    <label for="tipo-locacion">¿Necesitas servicios en CDMX o zona metro?</label>
+                    <!-- Campo de entrada con lista desplegable para ubicación -->
+                    <input list="location" id="tipo-locacion" placeholder="CDMX o zona metro">
+                    <!-- Lista de opciones para la ubicación -->
+                    <datalist id="location">
+                        <option value="CDMX">
+                        <option value="zona metro">
+                    </datalist>
+                </div>
+            </div>
+            <!-- Contenedor del botón de envío -->
+            <div class="button-container">
+                <!-- Botón para enviar el formulario -->
+                <button type="submit" id="send--form">¡Listo!</button>
+            </div>
+        </form>
+    </div>
+    <!-- Enlaza el archivo JavaScript externo que contiene la lógica de interacción -->
+    <script src="../javascript/registroP3.js"></script>
+</body>
+</html>
