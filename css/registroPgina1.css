@@ -77,7 +77,15 @@ height: 50px;
     }
 }
 
-
+@media screen and (max-width: 750px) {
+    #lenguajes  {
+        max-width: 450px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: center;
+    }
+}
 
 
 @media screen and (max-width: 600px) {
@@ -159,6 +167,15 @@ height: 50px;
     }
 }
 
-
-
-
+@media screen and (max-width: 500px) {
+    #lenguajes  {
+        max-width: 300px;
+        margin-left: 184px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #future {
+           margin-bottom: 10px; 
+    }
+    }
