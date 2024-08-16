@@ -1,0 +1,295 @@
+/* Estilo general del cuerpo del documento */
+body {
+    font-family: "Montserrat", sans-serif;
+    max-width: 100%;
+}
+.navBar--input{
+    max-width: 300px;
+    height: 30px;
+}
+
+/* Estilo de la barra de navegación */
+.navBar {
+    max-width: 100%;
+    /* La barra de navegación ocupa el 100% del ancho de la página */
+    display: flex;
+    /* Usa flexbox para alinear los elementos */
+    margin: 0 auto;
+    /* Alinea verticalmente los elementos al centro */
+       /* Espacia los elementos con el máximo espacio posible entre ellos */
+    /* Añade relleno alrededor del contenido */
+    background-color: white;
+    /* Color de fondo de la barra de navegación */
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil para dar un efecto de elevación */
+    box-sizing: border-box;
+    height: 110px;
+    
+}
+
+/* Estilo para los enlaces en el menú de navegación */
+ .menu a {
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    color: #737373;
+    /* Color del texto de los enlaces */
+    /* Espacio a los lados de cada enlace en el menú */
+    font-size: 14px;
+    font-weight: bold;
+    /* Tamaño de la fuente de los enlaces */
+    /*cambie el tamaño de la funete porque se veia muy grande de 28 a 20*/
+}
+
+/* Estilo del logo en la barra de navegación */
+.logo {
+    font-family: "Montserrat", sans-serif;
+    /* Fuente del logo */
+    font-size: 52px;
+    /* Tamaño de la fuente del logo */
+    /*font-weight: bold; cambio de peso de la fuente*/
+    /* font-weight: 600; */
+    /* Grosor de la fuente del logo */
+    color: #8C7E6C;
+    font-weight: bold;
+    /* Color del texto del logo */
+}
+
+/* Estilo del menú dentro de la barra de navegación */
+ .menu {
+    display: flex;
+    /* Usa flexbox para alinear los elementos del menú */
+    align-items: center;
+    justify-content: space-between;
+    width: 2000px;
+    /* Alinea verticalmente los elementos del menú al centro */
+    gap: 15px;
+    
+}
+
+/* Estilo del contenedor de desplegable en el menú */
+.dropdown {
+    position: relative;
+    /* Permite que el contenido desplegable se posicione absolutamente con respecto a este contenedor */
+}
+
+/* Estilo del contenido desplegable */
+.dropdown--content {
+    display: none;
+    /* Oculta el contenido desplegable por defecto */
+    position: absolute;
+    /* Posiciona el contenido desplegable de forma absoluta */
+    background-color: #f2f2f2;
+    /* Color de fondo del contenido desplegable */
+    min-width: 160px;
+    /* Ancho mínimo del contenido desplegable */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* Sombra del contenido desplegable */
+    z-index: 1;
+    /* Asegura que el contenido desplegable esté por encima de otros elementos */
+}
+
+/* Estilo de los enlaces dentro del contenido desplegable */
+.dropdown--content a {
+    color: #737373;
+    /* Color del texto de los enlaces en el desplegable */
+    /* Relleno alrededor del texto de los enlaces */
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    display: block;
+    /* Hace que los enlaces ocupen toda la anchura del contenedor */
+    font-size: 16px;
+    /* Ajusta el tamaño de la letra */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    /* Asegura que no haya margen extra */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Efecto de transición suave */
+}
+
+/* Parte del efecto de transición suave del contenido desplegable*/
+.dropdown--content a:hover {
+    background-color: #8C7E6C;
+    /* Color de fondo al pasar el cursor */
+    color: white;
+    /* Color del texto al pasar el cursor */
+}
+
+/* Muestra el contenido desplegable al pasar el ratón sobre el contenedor desplegable */
+.menu .dropdown:hover .dropdown--content {
+    display: block;
+    /* Muestra el contenido desplegable */
+}
+
+/* Estilo para las opciones de usuario en la barra de navegación */
+.user--options {
+    display: flex;
+    /* Usa flexbox para alinear los elementos de las opciones de usuario */
+    align-items: center;
+    /* Alinea verticalmente los elementos al centro */
+    gap: 15px;
+}
+
+/* Estilo del contenedor de la cuenta de usuario */
+.account {
+    display: flex;
+    /* Usa flexbox para alinear los elementos de la cuenta de usuario */
+    align-items: center;
+    /* Alinea verticalmente los elementos al centro */
+    gap: 15px;
+    /* Espacio a la derecha del contenedor de la cuenta de usuario */
+    font-size: 14px;
+}
+
+/* Estilo del contenedor del carrito */
+.cart {
+    display: flex;
+    gap: 15px;
+    /* Usa flexbox para alinear los elementos del carrito */
+    align-items: center;
+    /* Alinea verticalmente los elementos al centro */
+}
+
+/* Estilo de las imágenes en las opciones de usuario */
+ .account img,
+ .cart img {
+    width: 16px;
+    height: 16px;
+    /* Ancho de las imágenes */
+    /* Espacio a la derecha de las imágenes */
+    filter: invert(22%) sepia(27%) saturate(190%) hue-rotate(10deg) brightness(90%) contrast(85%);
+    /* Aplica un filtro para aproximar el color */
+}
+
+/* Estilo de la barra de búsqueda en la barra de navegación */
+
+
+/* Estilo del input de búsqueda */
+.search--bar input {
+    /* Relleno interno del input de búsqueda */
+    border: 1px solid #ccc;
+    /* Color del borde del input de búsqueda */
+    border-radius: 4px;
+    max-width: 315px;
+    /* Bordes redondeados del input de búsqueda */
+}
+
+/* Estilo para la flecha hacia abajo en el menú desplegable */
+.arrow--down {
+    display: inline-block;
+    /* Muestra la flecha como un bloque en línea */
+    /* margin-left: 5px; */
+    /* Espacio a la izquierda de la flecha */
+    width: 0;
+    /* Ancho de la flecha */
+    height: 0;
+    /* Altura de la flecha */
+    border-left: 5px solid transparent;
+    /* Borde izquierdo transparente para crear la forma de la flecha */
+    border-right: 5px solid transparent;
+    /* Borde derecho transparente para crear la forma de la flecha */
+    border-top: 5px solid #333;
+    /* Borde superior para el color de la flecha */
+}
+
+/* Media query para pantallas de menos de 768px de ancho (típicamente móviles) */
+@media (max-width: 600px){
+
+    .navBar {
+        width: 100%;
+        /* La barra de navegación ocupa el 100% del ancho de la página */
+        margin: 0;
+        /* Elimina el margen por defecto */
+        display: flex;
+        /* Usa flexbox para alinear los elementos */
+        align-items: center;
+        /* Alinea verticalmente los elementos al centro */
+        justify-content: space-between;
+        /* Espacia los elementos con el máximo espacio posible entre ellos */
+        padding: 10px 20px;
+        /* Añade relleno alrededor del contenido */
+        background-color: #f2f2f2;
+        /* Color de fondo de la barra de navegación */
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+        /* Sombra sutil para dar un efecto de elevación */
+    }
+    
+     .logo {
+        font-family: "Montserrat", sans-serif;
+        /* Fuente del logo */
+        font-size: 16px;
+        /* Tamaño de la fuente del logo */
+        /*font-weight: bold; cambio de peso de la fuente*/
+        font-weight: 300;
+        /* Grosor de la fuente del logo */
+        color: #8C7E6C;
+        /* Color del texto del logo */
+    }
+}
+
+
+/* CSS celular */
+
+
+.navBar--mobile{
+    display: none;
+}
+
+
+.navBar--header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #735F46;
+}
+
+
+@media (max-width: 700px){
+    .navBar{
+        display: none;
+    }
+
+    .navBar--mobile{
+        background-color: white;
+        max-width: 500px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 30px;
+        margin: 0 auto;
+    }
+    
+    .navBar--right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 200px;
+    }
+    
+    .navBar--left{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        max-width: 187px;
+    }
+
+    .navBar--icon{
+        width: 33px;
+        height: 32px;
+        margin-left: 15px;
+    }
+
+}
+
+
+.user--options{
+    max-width: 500px;
+}
+
+
+
