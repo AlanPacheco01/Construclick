@@ -1,0 +1,100 @@
+/* Estilo general del body, aplica a toda la página */
+body {
+    font-family: Arial, sans-serif; /* Define la fuente de texto */
+    background-color: #fafafa; /* Color de fondo de la página */
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Establece la altura del viewport */
+    margin: 0; /* Elimina el margen alrededor de la página */
+    flex-direction: column; /* Coloca los elementos en una columna */
+}
+
+/* Estilo para el título <h1>, que está fuera del contenedor principal */
+h1 {
+    font-size: 24px; /* Tamaño de la fuente del título */
+    color: #3b2a1a; /* Color del texto del título */
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 10px; /* Espacio entre el título y el contenedor */
+}
+
+/* Estilo para el contenedor principal del formulario */
+.container {
+    width: 700px; /* Ancho del contenedor */
+    padding: 30px; /* Espacio interior del contenedor */
+    background-color: #fff; /* Color de fondo del contenedor */
+    border-radius: 8px; /* Bordes redondeados del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del contenedor */
+    border: 2px solid #d3c5b0; /* Borde alrededor del contenedor */
+}
+
+/* Estilo para el contenedor de la cuadrícula del formulario */
+.form-grid {
+    display: grid; /* Utiliza grid layout para organizar los campos */
+    grid-template-columns: 1fr 1fr; /* Define dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las columnas y filas */
+}
+
+/* Estilo para cada ítem dentro de la cuadrícula */
+.grid-item {
+    width: 100%; /* Ancho completo del ítem en la columna */
+}
+
+/* Estilo para cada grupo de formulario (etiquetas y campos) */
+.form-group {
+    margin-bottom: 15px; /* Espacio inferior entre cada grupo */
+}
+
+/* Estilo para las etiquetas de los campos del formulario */
+label {
+    display: block; /* Hace que cada etiqueta ocupe una línea completa */
+    font-size: 14px; /* Tamaño de la fuente de las etiquetas */
+    color: #3b2a1a; /* Color del texto de las etiquetas */
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo de entrada */
+}
+
+/* Estilo para los campos de entrada de texto, email, contraseña, etc. */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[list],
+select {
+    width: calc(100% - 20px); /* Ancho del input, ajustado para el padding */
+    padding: 10px; /* Espacio interno del input */
+    border: 1px solid #d3c5b0; /* Borde del input */
+    border-radius: 4px; /* Bordes redondeados del input */
+    box-sizing: border-box; /* Incluye padding y borde en el cálculo del ancho */
+    font-size: 14px; /* Tamaño de la fuente dentro del input */
+    color: #3b2a1a; /* Color del texto dentro del input */
+}
+
+/* Estilo para el campo de entrada de archivo */
+input[type="file"] {
+    padding: 5px; /* Espacio interno del input de archivo */
+    font-size: 14px; /* Tamaño de la fuente dentro del input de archivo */
+}
+
+/* Estilo para el contenedor del botón de envío */
+.button-container {
+    grid-column: span 2; /* El botón ocupa ambas columnas en la cuadrícula */
+    display: flex; /* Utiliza flexbox para centrar el botón */
+    justify-content: center; /* Centra el botón horizontalmente */
+}
+
+/* Estilo para el botón de envío */
+button {
+    width: 15%; /* Ancho del botón */
+    padding: 7px; /* Espacio interno del botón (ajusta la altura) */
+    background-color: #6e5833; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde en el botón */
+    border-radius: 50px; /* Bordes redondeados del botón */
+    font-size: 16px; /* Tamaño de la fuente del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin-top: 10px; /* Espacio superior del botón */
+}
+
+/* Estilo para el botón cuando se pasa el cursor por encima */
+button:hover {
+    background-color: #5a4a29; /* Color de fondo del botón en hover */
+}
