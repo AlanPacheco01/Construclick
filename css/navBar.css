@@ -1,4 +1,3 @@
-/* Estilo general del cuerpo del documento */
 body {
     font-family: "Montserrat", sans-serif;
     max-width: 100%;
@@ -292,6 +291,8 @@ body {
 .user--options{
     max-width: 500px;
 }
+
+
 
 
 

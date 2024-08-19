@@ -1,11 +1,3 @@
-/* 
-.Diseño-gráfico-1-hex { color: #F2F2F2; }
-.Diseño-gráfico-2-hex { color: #BFBAB0; }
-.Diseño-gráfico-3-hex { color: #D9D4CC; }
-.Diseño-gráfico-4-hex { color: #735F46; }
-.Diseño-gráfico-5-hex { color: #8C7E6C; }
-*/
-/* Index */
 body {
     background-color: #D9D4CC;
     font-family: "Montserrat";
@@ -399,7 +391,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
 
 @media (width < 1446px) { /* Diseño responsivo para tablet */
     .section--About .sideCard,
