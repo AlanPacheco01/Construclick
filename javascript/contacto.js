@@ -1,6 +1,14 @@
+//Alertas boostrap, atributo hidden por default
+document.getElementById("name--alert").hidden=true;
+document.getElementById("email--alert").hidden=true;
+document.getElementById("phone--alert").hidden=true;
+document.getElementById("text--alert").hidden=true;
+document.getElementById("mesage--alert").hidden=true;
+document.getElementById("saved--alert").hidden=true;
+
 //Activación de la check box
 //obteniendo información de la checkbox
-const checkBox = document.getElementById('from--chechOk');
+const checkBox = document.getElementById('form--chechOk');
 //obteniendo informaciónd del boton
 const button = document.getElementById('send--form');
 //desactivando el botón para evitar envíos inesperados
@@ -14,8 +22,10 @@ button.disabled =false;
 
 //Recepción de los datos del usuario en el formulario
 const form = document.getElementById('contact');
+
 //detonación del evento
-form.addEventListener('submit', () => {
+form.addEventListener('submit', (evt) => {
+    evt.preventDefault();
     //Lectura del nombre del usuario
     const nombre = document.getElementById('userName').value
     //validación del nombre del usuario mediante regex
@@ -30,32 +40,58 @@ form.addEventListener('submit', () => {
     const telefonoRegex = /^\d{10}$/;
     //lectura de la empresa del usuario
     const compania = document.getElementById('userCompany').value
+    const companiaRegex = /^[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ,\s0-9._%-]+$/;
     //Lectura del comentario del usuario
     const comentario = document.getElementById('userComment').value
     //Validación del comentario mediante regex
-    const comentarioRegex = /^[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ\s0-9._%-]+$/;
+    const comentarioRegex = /^[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ,\s0-9._%-]+$/;
+
 //Condicionales que le dicen al usuario que los datos son erroneos
     if (!nombreRegex.test(nombre)) {
-        alert('El nombre no es válido.');
-        return;
+        document.getElementById("name--alert").hidden=false;
+     return;
+    } else{
+        document.getElementById("name--alert").hidden=true;
     }
     if (!emailRegex.test(correo)) {
-        alert('El email no es válido.');
+        document.getElementById("email--alert").hidden=false;
         return;
+    }else{
+        document.getElementById("email--alert").hidden=true;
     }
     if (!telefonoRegex.test(telefono)) {
-        alert('El número no es válido.');
+        document.getElementById("phone--alert").hidden=false;
         return;
+    }else{
+        document.getElementById("phone--alert").hidden=true;
     }
+    if (!companiaRegex.test(compania)) {
+        document.getElementById("text--alert").hidden=false;
+        return;
+    }else{
+        document.getElementById("text--alert").hidden=true;
+    }
+
     if (!comentarioRegex.test(comentario)) {
-        alert('EL MENSAJE SE ENCUENTRA VACIO o tiene algun caracter no valido');
+        document.getElementById("mesage--alert").hidden=false;
         return;
+    }else{
+        document.getElementById("mesage--alert").hidden=true;
     }
-//Almacenamiento local de los datos ingresados en el form
+
+    //Almacenamiento local de los datos ingresados en el form
     localStorage.setItem('name', nombre)
     localStorage.setItem('email', correo)
     localStorage.setItem('telephone', telefono)
     localStorage.setItem('company', compania)
     localStorage.setItem('mail', comentario)
-    alert('saved')
+    document.getElementById("saved--alert").hidden=false;
+    //ocultar la
+    setTimeout(()=>{
+        const hide = document.getElementById("saved--alert");
+        hide.style.display = 'none';
+    },3500)    
+    form.reset();
 })
+
+
