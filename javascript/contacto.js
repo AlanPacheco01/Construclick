@@ -1,10 +1,18 @@
 //Alertas boostrap, atributo hidden por default
-document.getElementById("name--alert").hidden=true;
-document.getElementById("email--alert").hidden=true;
-document.getElementById("phone--alert").hidden=true;
-document.getElementById("text--alert").hidden=true;
-document.getElementById("mesage--alert").hidden=true;
-document.getElementById("saved--alert").hidden=true;
+let nameAlert = document.getElementById("name--alert");
+nameAlert.hidden=true;
+let emailAlert = document.getElementById("email--alert");
+emailAlert.hidden=true;
+let phoneAlert = document.getElementById("phone--alert");
+phoneAlert.hidden=true
+let textAlert = document.getElementById("text--alert");
+textAlert.hidden=true;
+let mesageAlert = document.getElementById("mesage--alert");
+mesageAlert.hidden=true;
+let savedAlert = document.getElementById("saved--alert");
+savedAlert.hidden=true;
+
+
 
 //Activación de la check box
 //obteniendo información de la checkbox
@@ -13,7 +21,8 @@ const checkBox = document.getElementById('form--chechOk');
 const button = document.getElementById('send--form');
 //desactivando el botón para evitar envíos inesperados
 button.disabled = true;
-//detonación del evento
+
+//detonación del evento de la checkbox
 checkBox.addEventListener('change', ()=>{
     if(checkBox.checked===true){
 button.disabled =false;
@@ -48,45 +57,46 @@ form.addEventListener('submit', (evt) => {
 
 //Condicionales que le dicen al usuario que los datos son erroneos
     if (!nombreRegex.test(nombre)) {
-        document.getElementById("name--alert").hidden=false;
+        nameAlert.hidden=false;
      return;
     } else{
-        document.getElementById("name--alert").hidden=true;
+        nameAlert.hidden=true;
     }
     if (!emailRegex.test(correo)) {
-        document.getElementById("email--alert").hidden=false;
+        emailAlert.hidden=false;
         return;
     }else{
-        document.getElementById("email--alert").hidden=true;
+        emailAlert.hidden=true;
     }
     if (!telefonoRegex.test(telefono)) {
-        document.getElementById("phone--alert").hidden=false;
+        phoneAlert.hidden=false;
         return;
     }else{
-        document.getElementById("phone--alert").hidden=true;
+        phoneAlert.hidden=true;
     }
     if (!companiaRegex.test(compania)) {
-        document.getElementById("text--alert").hidden=false;
+        textAlert.hidden=false;
         return;
     }else{
-        document.getElementById("text--alert").hidden=true;
+        textAlert.hidden=true;
     }
 
     if (!comentarioRegex.test(comentario)) {
-        document.getElementById("mesage--alert").hidden=false;
+        mesageAlert.hidden=false;
         return;
     }else{
-        document.getElementById("mesage--alert").hidden=true;
+        mesageAlert.hidden=true;
     }
 
     //Almacenamiento local de los datos ingresados en el form
-    localStorage.setItem('name', nombre)
-    localStorage.setItem('email', correo)
-    localStorage.setItem('telephone', telefono)
-    localStorage.setItem('company', compania)
-    localStorage.setItem('mail', comentario)
-    document.getElementById("saved--alert").hidden=false;
-    //ocultar la
+    localStorage.setItem('name', nombre);
+    localStorage.setItem('email', correo);
+    localStorage.setItem('telephone', telefono);
+    localStorage.setItem('company', compania);
+    localStorage.setItem('mail', comentario);
+    savedAlert.hidden=false;
+
+    //ocultar la alerta de almacenamiento de datos
     setTimeout(()=>{
         const hide = document.getElementById("saved--alert");
         hide.style.display = 'none';
