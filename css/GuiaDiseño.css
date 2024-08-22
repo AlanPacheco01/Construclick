@@ -8,7 +8,7 @@
     --cement: #d9d4cc; /* Cemento */
     --pot: #735f46; /* Cazuela */
     --sand: #8C7E6C; /* Arena */
-  }
+}
 
 /* Definimos el tipo y tamaño de fuente */
 body{
@@ -16,13 +16,26 @@ body{
     font-size: 20px !important;
 }
 h1{
-    font-size: 58px !important;
+    font-size: 58px;
+    color: var(--pot);
+    line-height: 80px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+ 
 }
 h2{
-    font-size: 40px !important;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600; 
+    letter-spacing: 0.2px;
+    color: var(--pot);
 }
 h3{
-    font-size: 20px !important;
+    font-size: 20px;
+    color: var(--pot);
+    font-weight: 700; 
+    letter-spacing: 0.1px;
+    line-height: 32px;
 }
 /* Se crea un metodo para darle estilos al boton color cafe y letra blanca reutilizable */
 .buttonBrownWhite--container{
@@ -33,6 +46,32 @@ h3{
     height: 62px;
     font-weight: 700;
 }
+
+.button{
+    background-color: var(--pot);
+    color: white;
+    letter-spacing: 0.2px;
+    width: 200px;
+    height: 62px;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    border: #735f46;
+    border-inline: 2px;
+    border-radius: 50px;
+    
+}
+
+
+button:hover{
+    cursor: pointer;
+	background: #bfbab0;
+    border-bottom: 2px solid #D9D4CC;
+    border-right: 2px solid #D9D4CC;
+    border-left: 1px solid #D9D4CC;
+    border-top: 1px solid #D9D4CC;
+    color: #735f46;
+} 
 
 /* Se define el estilo de la navbar */
 /* Contenedores */

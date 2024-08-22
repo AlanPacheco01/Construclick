@@ -1,10 +1,49 @@
-//obteniendo informaciónd del boton
-const button = document.getElementById('send--form');
+//Alertas boostrap, atributo hidden por default
+let name = document.getElementById("name--alert");
+let email =  document.getElementById("email--alert");
+let phone = document.getElementById("phone--alert");
+let password = document.getElementById("password--alert");
+let password2 = document.getElementById("password2--alert");
+let place = document.getElementById("place--alert");
+let place2 = document.getElementById("place--alert2");
+let foto = document.getElementById("foto");
+let ine = document.getElementById("ine--alert");
+let referencia = document.getElementById("referencia--alert");
+let saved = document.getElementById("saved--alert");
 
 //Recepción de los datos del usuario en el formulario
-const form = document.getElementById('contact');
+const formServices = document.getElementById('RegistroPrestador');
+//obteniendo informaciónd del boton
+const button = document.getElementById('send--form');
+const buttonPlace = document.getElementById('buttons');
+
+const buttonYes = document.getElementById('cdmx--yes');
+const buttonNo = document.getElementById('cdmx--no');
+
+    placeOption.addEventListener('click', function seleccionarOpcion() {
+    //Leemos el valor del select
+    let placeOption = document.getElementById("place");
+    document.querySelector("#place").value = place;
+    if(value == "si"){
+    document.getElementById("place--alert").hidden=true;
+    }
+    if(value == "no"){
+    document.getElementById("place--alert").hidden=false;
+    }
+    if (valor = null) {
+    document.getElementById("place--alert2").hidden=false;
+    }
+    })
+
+
+    function seleccionarOpcion(){
+        document.querySelector("#place").value = place;
+    }
+
+
 //detonación del evento
-form.addEventListener('submit', () => {
+formServices.addEventListener('submit', (event) => {
+    event.preventDefault();
     //Lectura del nombre del usuario
     const nombre = document.getElementById('userName').value
     //validación del nombre del usuario mediante regex
@@ -20,41 +59,65 @@ form.addEventListener('submit', () => {
     //lectura de la contraseña del usuario
     const contraseña = document.getElementById('contraseña').value
     //Validación de de la contraseña mediante regex
-    const contraseñaRegex = /^\d{10}$/;
-    //Lectura de confirmacionde contraseña del usuario
+    const contraseñaRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[A-Z])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
+    //Lectura de confirmacion de contraseña del usuario
     const confirmaContraseña = document.getElementById('confirmaContraseña').value
+    //carga de INE
+    const ineCarga = document.getElementById('ine--alert').value;
     
-//Condicionales que le dicen al usuario que los datos son erroneos
-    if (!nombreRegex.test(nombre)) {
-        alert('El nombre no es válido.');
-        return;
-    }
-    if (!emailRegex.test(correo)) {
-        alert('El email no es válido.');
-        return;
-    }
-    if (!telefonoRegex.test(telefono)) {
-        alert('El número no es válido.');
-        return;
-    }
-    
-//Validacion de contraseña
-    if(!contraseñaRegex.test(contraseña)){
-        alert('Contrasena no valida.');
-        return;
-    } if(contraseña === confirmaContraseña) {
-        alert('Las contraseñas coinciden.');
-    } else {
-        alert('Las contraseñas no coinciden');
+    //Condicionales que le dicen al usuario que los datos son erroneos
+        if (!nombreRegex.test(nombre)) {
+            document.getElementById("name--alert").hidden=false;
+        } else{
+            document.getElementById("name--alert").hidden=true;
+        }
+        if (!emailRegex.test(correo)) {
+            document.getElementById("email--alert").hidden=false;
+        } else{
+            document.getElementById("email--alert").hidden=true;
+        }
+
+        if(!contraseñaRegex.test(contraseña)){
+            document.getElementById("password--alert").hidden=false;
+        } else{
+            document.getElementById("password--alert").hidden=true;
+        }
+        //Validacion de contraseña
+        if (contraseña === confirmaContraseña) {
+            document.getElementById("password2--alert").hidden=true;
+        } else{
+            document.getElementById("password2--alert").hidden=false;
+        }
+
+        if (!telefonoRegex.test(telefono)) {
+            document.getElementById("phone--alert").hidden=false;
+        } else{
+            document.getElementById("phone--alert").hidden=true;
+        }
+
+        if (ineCarga) {
+            document.getElementById("ine--alert").hidden=true;
+        } else {
+            document.getElementById("ine--alert").hidden=false;
+        }
+        if (referencia) {
+            document.getElementById("referencia--alert").hidden=true;
+        } else {
+            document.getElementById("referencia--alert").hidden=false;
+        }
+        
+    //Almacenamiento local de los datos ingresados en el form
+        localStorage.setItem('name', nombre)
+        localStorage.setItem('fotoPerfil', foto)
+        localStorage.setItem('email', correo)
+        localStorage.setItem('contraseña', contraseña)
+        localStorage.setItem('confirmaContraseña', confirmaContraseña)
+        localStorage.setItem('telephone', telefono)
+        localStorage.setItem('LugarServicios', botonSi)
+        localStorage.setItem('INE', ineCarga)
+        localStorage.setItem('referenciaTrabajo', referencia)
+        if (nombreRegex.test(nombre) && emailRegex.test(correo) && telefonoRegex.test(telefono) && contraseñaRegex.test(contraseña) && contraseña === confirmaContraseña && botonSi && ineCarga &&  referencia) {
+            document.getElementById("saved--alert").hidden=false;
         }
     
-
-
-//Almacenamiento local de los datos ingresados en el form
-    localStorage.setItem('name', nombre)
-    localStorage.setItem('email', correo)
-    localStorage.setItem('telephone', telefono)
-    localStorage.setItem('contraseña', contraseña)
-    localStorage.setItem('confirmaContraseña', confirmaContraseña)
-    alert('Datos Guardados Correctamente')
-})
+}) 
