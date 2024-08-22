@@ -16,30 +16,49 @@ body {
     margin-top: 20px;
 }
 
-.text-center h2 {
+.text-center h1 {
+    text-align: justify;
     color: #735F46;
-    font-size: 40px;
+    font-size: 58px;
+    font-weight: 700;
     font-weight: bold;
+    line-height: 80px; 
+
 }
 
 .text-center p {
-    color: #8C7E6C;
+    color: #735F46;
+    text-align:justify;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 25px;
+    line-height: 24px;
+    font-weight: 400;
+     letter-spacing: 0.2px;
 }
 
 /****************************************Sección del formulario **************************************/
 .main--form {
     display: flex;
     flex-direction: row;
-    max-width: 80%;
+    max-width: 1100px;
+    max-height: 740px;
     margin: 0 auto;
-    align-items: center;
-    justify-content: center;
+    color: #735F46;
+    justify-content:center;
     gap: 100px;
+   padding-top: 25px;
 }
-
+#border{
+    justify-content: center;
+    display: flex;
+    border: 2px solid #d3c5b0;
+    border-radius: 8px;
+    width: 1100px;
+    height: 740px;
+    margin-left: 220px;
+    
+}
 .form--inputs {
     max-width: 600px;
     padding-left: 10px;
@@ -48,6 +67,10 @@ body {
 
 .form--inputs input {
     max-width: 450px;
+    border-radius: 3px;
+    border: 2px solid #d3c5b0;
+    border-radius: 8px;
+  
 }
 
 .form--inputs textarea {
@@ -73,6 +96,10 @@ body {
 #userComment::placeholder {
     color: #D9D4CC;
 }
+#userComment{
+    border: 2px solid #d3c5b0;
+    border-radius: 8px;
+}
 
 #form--checkbox {
     width: 5%;
@@ -83,6 +110,14 @@ body {
 #form--statement p {
     text-align: justify;
     justify-content: center;
+    color: #735F46;
+    text-align:justify;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 24px;
+    font-weight: 400;
+     letter-spacing: 0.2px;
 }
 
 .contact--information {
@@ -93,7 +128,8 @@ body {
 
 .form--buttom {
     display: flex;
-    justify-content: center;
+    margin-left: 445px;
+    margin-bottom: 80px;
     /* Centra el botón horizontalmente dentro del contenedor */
 }
 .form--buttom button {
@@ -116,67 +152,17 @@ body {
     background-color: #F2F2F2;
     border-color: #F2F2F2;
 }
-
-/*********************************************** Sección del footer*************************************** */
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: #f2f2f2;
-    font-family: "Montserrat";
-    color: #735F46;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    position:static;
-    bottom: 0cm;
-    margin:none;
-    margin-top: 3%;
-    width: 100%; 
-    border-radius: 5px;
-      
-   
-}
-
-footer h3 {
-    color: #735F46;
+.mb-3{
     font-weight: bold;
-    font-size: 24px;
-    letter-spacing: .1px;
-    line-height: 32px;
-       
-
-}
-footer h6{
-    color: #8C7E6C;
-    font-size: 14px;
-    letter-spacing: .2px;
-    line-height: 20px;   
 }
 
-footer a {
-    text-decoration: none; 
-    list-style-type: none;  
-}
-
-.socialMedia{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: -20px;
-    margin-left: -20px;
-}
-.socialMedia img{
-    max-width: 60px;
-}
 
 /*********************************Seccion Card*************************************/
 #mycard {
     border: 2px #DCDCDC;
     color: #735F46;
     font-size: 14px;
-    text-align: center;
+    text-align:justify;
     font-family: "Montserrat";
     display: flex;
     flex-direction: column;
@@ -189,27 +175,13 @@ footer a {
     flex-direction: row;
     gap: 10px;
 }
-.card-body {
-    margin-top: 0;
+.card-body p {
+
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    
 }
 
-@media (max-width: 800px) {
-    body {
-        background-color: #ffffff
-    }
 
-    #mycard {
-        display: none;
-    }
-}
-
-    @media (max-width: 600px){ 
-
-        footer{
-            flex-wrap: wrap;
-            display: list-item;
-            padding-top: 6%;
-            padding-bottom: 6%;   
-            text-align: center;
-      }
-    }
+/* seccion de rsponsividad */
