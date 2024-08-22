@@ -1,7 +1,7 @@
 const catalogo = document.getElementById("store--desc");
 let servicios = null;
 
-const url = "servicios.json";
+const url = "/.vscode/servicios.json";
 fetch(url)
     .then(response => response.json())
     .then(response => {
