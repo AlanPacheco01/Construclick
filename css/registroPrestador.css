@@ -150,9 +150,41 @@ li {
     margin-top: 5px;
 }
 
+<<<<<<< HEAD
 .form--buttom2{
     display:flex;
     flex-direction:column;
+=======
+/*Ajuste de botones*/
+
+#buttons {
+    padding-left: 75px;
+    margin-top: 15px;
+    border-color: #ffffff;
+}
+.btn-primary {
+    
+    color: #ffffff;
+    background-color: #735F46;
+    font-family: "Montserrat";
+    width: 60px;
+    height: 35px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 45px;
+    border-color: #ffffff;
+    margin-right: 40px;
+    
+}
+
+.btn-primary.active {
+    /* Estilos para el botón activo */
+    background-color: #ccc;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+.form--buttom2 {
+    display: flex;
+>>>>>>> 09bee7d327999f96b0fff51dd817ac72ba2e70ea
     align-items: center;
     text-align: center;
     max-width: 100%;

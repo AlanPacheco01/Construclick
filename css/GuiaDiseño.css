@@ -118,9 +118,13 @@ button:hover{
 #navBarMobile{
     display: none;
 }
-
-/* Responsividad de la navbar */
 @media only screen and (max-width: 1280px) {
+   #barraDebusqueda{
+    display: none;
+   }
+}
+/* Responsividad de la navbar */
+@media only screen and (max-width: 700px) {
     #navBarWeb{
         display: none;
     }
