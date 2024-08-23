@@ -5,21 +5,30 @@
     align-items: center; */
     /* height: 100vh;  */
     color: #735F46;
-
+    font-family: "Monserrat";
+   
 }
 
 .form--container {
-    max-width: 784px;
+    max-width: 695px;
     background-color: white;
-    padding: 50px;
+    padding: 30px;
     gap: 10px;
     display: flex;
     flex-direction: column;
     margin: 0 auto; 
     margin-top: 100px;
     margin-bottom: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d3c5b0;
+    
 }
-
+.container--formularioPublicarServicio{
+    background-color: #D9D4CC;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .option{
     color: #735F46;
 }
@@ -28,6 +37,7 @@
     opacity: 0.9;
 }
 
+
 .legend{
     color:#735F46;
     font-weight: bold;
@@ -35,3 +45,19 @@
     text-align: center;
     padding-bottom: 20px;
 }
+
+/* Se agrega media query para que sea responsiva */
+
+@media (max-width: 500px) {
+    .form--container {
+      padding: 20px;
+      margin: 50px auto;
+      background-color: #D9D4CC;
+      overflow-x: hidden; 
+    }
+    
+    .btn {
+      width: 100%; 
+      
+    }   
+  }
