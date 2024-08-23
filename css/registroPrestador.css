@@ -1,235 +1,180 @@
-
-
-/* Definimos el tipo y tamaño de fuente */
-body{
+body {
+    background-color: #ffffff;
     font-family: "Montserrat";
-
-}
-h1{
-    font-size: 58px;
-    color: #735f46;
-    line-height: 80px;
-    font-weight: 700;
-    letter-spacing: 0.2px;
- 
-}
-h2{
-    font-size: 40px;
-    line-height: 50px;
-    font-weight: 600; 
-    letter-spacing: 0.2px;
-    color: #735f46;
-}
-h3{
-    font-size: 20px;
-    color: #735f46;
-    font-weight: 700; 
-    letter-spacing: 0.1px;
-    line-height: 32px;
-}
-/* Se define el estilo de los botones */
-button{
-    background-color: #735f46;
-    color: white;
-    letter-spacing: 0.2px;
-    width: 200px;
-    height: 62px;
-    font-size: 20px;
-    letter-spacing: 0.2px;
-    font-weight: 600;
-    border: #735f46;
-    border-inline: 2px;
-    border-radius: 50px;
-    
-}
-button:hover{
-    cursor: pointer;
-	background: #bfbab0;
-    border-bottom: 2px solid #D9D4CC;
-    border-right: 2px solid #D9D4CC;
-    border-left: 1px solid #D9D4CC;
-    border-top: 1px solid #D9D4CC;
-    color: #735f46;
-} 
-
-
-/* Se definen los estilos del footer */
-footer{
-    color: #735f46;
-}
-
-li {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.2px;
-    color:#8C7E6C;
-    list-style: none;
-    line-height: 20px;
-
-}
-
-.form-registroPrestador ul{
-    margin-bottom: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-    max-width: 100%;
-}
-
-.container-form li{
-    margin:0%;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-bottom: 2%;
-    max-width: 100%;
-    display: flex;
-    flex-direction:column;
-}
-
-.container-form input {
-    max-width: 100%;
-    color: #D9D4CC;
-    display: flex;
-    flex-direction:column;
+    color: #8C7E6C;
     font-size: 12px;
-  
-}
-.form-registroPrestador label{
-    margin:0%;
-    padding-left: 0%;
-    color: #BFBAB0;
-    font-size: 10px;
-    line-height: 15px;
 }
 
-.form-registroPrestador h2{ 
-    font-family: "Montserrat";
-    font-size: 40px;
-    line-height: 50px;
-    font-weight: 600; 
-    letter-spacing: 0.2px;
-    color:#735F46;
-    text-align: center;
-    padding: 10% 0% 1% 0%;
+.text-center {
     max-width: 100%;
-}
-
-.container-form{
-    font-family: "Montserrat";
-    border-color: #8C7E6C;
-    border-width: 1px;
-    border-radius: 5px;
-    border-style: solid;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 10%;
-    columns: 2;
-    padding: 2% 2% 2% 2%;
-    max-width: 100%;
-    display:inherit;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-    
-
-.d-md-block button{
-    width: 100%;
-    margin-top: 5px;
-}
-
-.form--buttom2{
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    max-width: 100%;
-    padding-top: 0%;
-
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-
-
-.container-form input::placeholder{
-    font-family: "Montserrat";
-    color: #D9D4CC;
-    font-size: 12px;
-}
-
-.container-form input::file-selector-button  {
-    background-color: #8C7E6C;
-    color: #FAFAFA;
-    font-family: "Montserrat";
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 600; 
-    letter-spacing: 0.2px;
-    border-bottom: 2px solid #D9D4CC;
-    border-right: 2px solid #D9D4CC;
-    border-left: 1px solid #D9D4CC;
-    border-top: 1px solid #D9D4CC;
-    transition: background-color 0.5s;
-    border-radius: 10px;
-    display: flex;
-    flex-direction:column;
-}
-
-
-.container-form input::file-selector-button:hover{
-    cursor: pointer;
-	background: #bfbab0;
+.text-center h1 {
     color: #735F46;
-
+    font-size: 40px;
+    font-weight: 600;
 }
 
-
-.container-form button{
-    width: 100px;
-    height: 35px;
-    border-radius: 50px;
-    display:inline;
-    flex-direction:row;
-    align-items: center;
-
-}
-
-.input-referencia label{
-    color: #BFBAB0;
+.container {
+    max-width: 1200px; /* Ajusta el ancho del contenedor */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d3c5b0;
+    margin: 0 auto;
+    
    
 }
+/* tamano de columnas*/
 
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.grid-item {
+    display: flex;
+    flex-direction: column;
+}
 
+.form-group {
+    margin-bottom: 15px;
+}
 
-@media (max-width: 750px){
+label {
+    display: block;
+    font-size: 14px;
+    color: #3b2a1a;
+    margin-bottom: 5px;
+    text-align: justify;
+}
 
-    .form-registroPrestador h2{ 
-        display: list-item;
-        font-size: 30px;
+/*placeholder*/
+
+#userName::placeholder {
+    color: #D9D4CC;
+    font-size: 12px;
+}
+
+#userEmail::placeholder {
+    color: #D9D4CC;
+    font-size: 12px;
+}
+
+#contraseña::placeholder {
+    color: #D9D4CC;
+    font-size: 12px;
+}
+
+#confirmaContraseña::placeholder {
+    color: #D9D4CC;
+    font-size: 12px;
+}
+
+#userPhone::placeholder {
+    color: #D9D4CC;
+    font-size: 12px;
+}
+
+/*Subir archivo*/
+
+.custom-file-upload{ 
+    font-family: "Montserrat";
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*Ajuste de botones*/
+
+#buttons {
+    padding-left: 75px;
+    margin-top: 15px;
+    border-color: #ffffff;
+}
+.btn-primary {
+    
+    color: #ffffff;
+    background-color: #735F46;
+    font-family: "Montserrat";
+    width: 60px;
+    height: 35px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 45px;
+    border-color: #ffffff;
+    margin-right: 40px;
+    
+}
+
+.btn-primary.active {
+    /* Estilos para el botón activo */
+    background-color: #ccc;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+.form--buttom2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.send--info{
+    color: #ffffff;
+    background-color: #735F46;
+    font-family: "Montserrat";
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 45px;
+    border-color: #ffffff;
+    margin-right: 40px;
+}
+
+@media (max-width: 576px){
+    .form-grid{
+        grid-template-columns: 1fr;
     }
-
-    .container-form{
-    padding: 10px;
-    columns: 1;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    }
-
-    .container-form input::file-selector-button {
-        display:row;
-        flex-direction:row;
-        align-items: center;
-        text-align: center;
-
-    }
-    .form--buttom2 button{
-        margin-top: 10px;
-        padding-top: 0%;
-  
+    .grid-item{
         width: 100%;
+    }
+
+}
+
+@media (max-width: 576px){
+    .container{
+        padding: 10px;
+    }
+
+    .form-grid{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .grid-item{
+        width: 100%;
+    }
+    .form--buttom2 button {
+        width: 100%;
+        padding: 15px;
         
     }
-    .d-md-block button{
+
+    .custom-file-upload label {
         width: 100%;
-        margin-bottom: 5px;
+        padding: 10px;
+        text-align: center;
     }
-    
-    
+
+
+
+
 }
