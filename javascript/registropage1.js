@@ -28,3 +28,4 @@ continueButton.addEventListener('click', (event) => {
         // document.querySelector('form').submit();
     }
 });
+
