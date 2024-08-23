@@ -113,6 +113,12 @@ label {
     margin-right: 40px;
     
 }
+
+.btn-primary.active {
+    /* Estilos para el botón activo */
+    background-color: #ccc;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
 .form--buttom2 {
     display: flex;
     align-items: center;
