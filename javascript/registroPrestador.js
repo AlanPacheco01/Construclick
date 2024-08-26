@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //Alertas boostrap, atributo hidden por default
 let name = document.getElementById("name--alert");
 let email =  document.getElementById("email--alert");
@@ -122,7 +122,7 @@ formServices.addEventListener('submit', (event) => {
         }
     
 }) 
-=======
+
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contact');
     const submitButton = document.getElementById('send--form');
