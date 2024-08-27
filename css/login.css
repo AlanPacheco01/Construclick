@@ -35,3 +35,63 @@
     text-align: center;
     padding-bottom: 20px;
 }
+
+/***********alertas de bootstrap****************/
+#welcomeUser{
+    font-family: "Montserrat";
+    align-items: center;
+    color:#735F46;
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+    position: relative;
+    top: 6px;
+}
+#welcomeUser h4{
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+}
+#welcomeUser p{
+    text-align: center;
+}
+#wrongMail--alert{
+font-family: "Montserrat";
+font-weight: 600;
+ border: none;
+background: none !important;
+height: fit-content !important;
+margin: 0 !important;
+padding: 0 !important;
+position: relative;
+top: -40px;
+text-align: center;
+color: darkred;
+}
+
+#blankPassword--alert{
+    font-family: "Montserrat";
+    font-weight: 600;
+     border: none;
+    background: none !important;
+    height: fit-content !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    top: -10px;
+    text-align: center;
+    color: darkred;
+}
+
+#wrongMail{
+    font-family: "Montserrat";
+    font-weight: 600;
+     border: none;
+     text-align: center;
+     width: 74%;
+     position: relative;
+     left: 13%;
+     bottom: 500px;
+     background-color: white;
+     color: darkred;
+}
