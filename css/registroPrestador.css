@@ -1,9 +1,6 @@
-
-
 /* Definimos el tipo y tamaño de fuente */
 body{
     font-family: "Montserrat";
-
 }
 h1{
     font-size: 58px;
@@ -42,6 +39,8 @@ button{
     border-radius: 50px;
     
 }
+
+
 button:hover{
     cursor: pointer;
 	background: #bfbab0;
@@ -52,10 +51,30 @@ button:hover{
     color: #735f46;
 } 
 
+.alert {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 !important;
+    color: red !important;
+    background-color: white !important;
+    border-style: none !important;
+    border: none !important;
+}
 
-/* Se definen los estilos del footer */
-footer{
-    color: #735f46;
+#img--alert {
+    display: flex;
+    margin-right: 7px;
+}
+
+#alert--message {
+    display: flex;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600;
 }
 
 li {
@@ -165,7 +184,7 @@ li {
     border-right: 2px solid #D9D4CC;
     border-left: 1px solid #D9D4CC;
     border-top: 1px solid #D9D4CC;
-    transition: background-color 0.5s;
+    transition:  0.5s;
     border-radius: 10px;
     display: flex;
     flex-direction:column;
@@ -192,7 +211,11 @@ li {
 
 .input-referencia label{
     color: #BFBAB0;
-   
+}
+
+
+#saved--alert{
+    background-color: blue;
 }
 
 
