@@ -1,4 +1,5 @@
 //alerta de bootstrap, atributo "hidden = true" por defecto 
+
 const welcomeUser = document.getElementById("welcomeUser");
 welcomeUser.hidden = true;
 const wrongUser = document.getElementById("wrongMail");
@@ -34,7 +35,7 @@ loginForm.addEventListener('submit', (evt) => {
         loginForm.reset();
     }
     //validación de la información contraseña
-    const passwordRegex = /^.{6,}$/; // Al menos 6 caracteres
+    const passwordRegex = /^[a-zA-Z0-9!@#$%&*_+¿? -]{6,}$/; // Al menos 6 caracteres
 if (!passwordRegex.test(password)) {
     blankPassword.hidden = false;
     loginForm.reset();
@@ -51,7 +52,7 @@ if (!passwordRegex.test(password)) {
     const getEmail = 'j@gmail.com';
     const getPassword = 'galleta';
 
-    // Validar mediante sentencias condicionales si el usuario existe en localStorage
+    // Validación de los campos de entrada 
     if (!emailRegex.test(email)) {
         wrongMailAlert.hidden = false;
         setTimeout(() => {
@@ -65,7 +66,8 @@ if (!passwordRegex.test(password)) {
         }, 4500);
     } 
     
-        // Proceder con la lógica de autenticación
+        // validación del usuario 
+
         if (email === getEmail && password === getPassword) {
             welcomeUser.hidden = false;
             wrongUser.hidden = true;
@@ -80,7 +82,7 @@ if (!passwordRegex.test(password)) {
             }, 4500);
             return;
         }
-        loginForm.reset(); // Resetear formulario una vez que se haya procesado
+        loginForm.reset(); 
     
 })
 
