@@ -1,6 +1,9 @@
+
+
 /* Definimos el tipo y tamaño de fuente */
 body{
     font-family: "Montserrat";
+
 }
 h1{
     font-size: 58px;
@@ -37,9 +40,7 @@ button{
     border: #735f46;
     border-inline: 2px;
     border-radius: 50px;
-    
 }
-
 
 button:hover{
     cursor: pointer;
@@ -51,30 +52,10 @@ button:hover{
     color: #735f46;
 } 
 
-.alert {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0 !important;
-    color: red !important;
-    background-color: white !important;
-    border-style: none !important;
-    border: none !important;
-}
 
-#img--alert {
-    display: flex;
-    margin-right: 7px;
-}
-
-#alert--message {
-    display: flex;
-    height:fit-content;
-    font-family: "Montserrat";
-    font-size: 10px;
-    font-weight: 600;
+/* Se definen los estilos del footer */
+footer{
+    color: #735f46;
 }
 
 li {
@@ -100,17 +81,18 @@ li {
     padding-right: 0%;
     padding-bottom: 2%;
     max-width: 100%;
-    display: flex;
+
     flex-direction:column;
+    display:contents;
 }
 
-.container-form input {
+.container-form input{
     max-width: 100%;
     color: #D9D4CC;
     display: flex;
     flex-direction:column;
     font-size: 12px;
-  
+    border-color: #D9D4CC;
 }
 .form-registroPrestador label{
     margin:0%;
@@ -118,6 +100,9 @@ li {
     color: #BFBAB0;
     font-size: 10px;
     line-height: 15px;
+    display: flex;
+    flex-direction:column;
+   
 }
 
 .form-registroPrestador h2{ 
@@ -165,16 +150,21 @@ li {
 }
 
 
-
 .container-form input::placeholder{
     font-family: "Montserrat";
     color: #D9D4CC;
     font-size: 12px;
 }
 
+.container-form input:hover{
+background-color: #FAFAFA;
+color: #735F46;
+border-color: #8C7E6C;
+}
+
 .container-form input::file-selector-button  {
-    background-color: #8C7E6C;
-    color: #FAFAFA;
+    background-color: #FAFAFA;
+    color: #8C7E6C;
     font-family: "Montserrat";
     font-size: 12px;
     line-height: 20px;
@@ -184,7 +174,7 @@ li {
     border-right: 2px solid #D9D4CC;
     border-left: 1px solid #D9D4CC;
     border-top: 1px solid #D9D4CC;
-    transition:  0.5s;
+    transition: background-color 0.5s;
     border-radius: 10px;
     display: flex;
     flex-direction:column;
@@ -194,31 +184,94 @@ li {
 .container-form input::file-selector-button:hover{
     cursor: pointer;
 	background: #bfbab0;
-    color: #735F46;
+    color: white;
 
 }
 
+.container-form select{
+    background-color: white;
+    color: #D9D4CC;
+    font-family: "Montserrat";
+    height: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400; 
+    letter-spacing: 0.2px;
+    border-bottom: 1px solid #D9D4CC;
+    border-right: 1px solid #D9D4CC;
+    border-left: 1px solid #D9D4CC;
+    border-top: 1px solid #D9D4CC;
+    transition: background-color 0.5s;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    max-width: 100%;
+}
+
+
+.container-form select:hover{
+
+	background: #bfbab0;
+    color: white;
+    font-family: "Montserrat";
+    -webkit-tap-highlight-color:#735F46;
+}
+.select.active{
+    background: #222222;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
 .container-form button{
+    margin-top: 8px;
     width: 100px;
     height: 35px;
     border-radius: 50px;
-    display:inline;
+    display:initial;
     flex-direction:row;
     align-items: center;
-
+    text-align: center;
+    font-size: 14px;
 }
 
 .input-referencia label{
     color: #BFBAB0;
+   
 }
 
+*:focus{
+    outline:none;
+}
 
 #saved--alert{
     background-color: blue;
 }
 
+.alert {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 !important;
+    color: red !important;
+    background-color: white !important;
+    border-style: none !important;
+    border: none !important;
+}
 
+#img--alert {
+    display: flex;
+    margin-right: 7px;
+}
+
+#alert--message {
+    display: flex;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600;
+}
 
 @media (max-width: 750px){
 
@@ -236,8 +289,8 @@ li {
     }
 
     .container-form input::file-selector-button {
-        display:row;
-        flex-direction:row;
+        display:inline-block;
+        flex-direction:column;
         align-items: center;
         text-align: center;
 
@@ -245,7 +298,6 @@ li {
     .form--buttom2 button{
         margin-top: 10px;
         padding-top: 0%;
-  
         width: 100%;
         
     }
