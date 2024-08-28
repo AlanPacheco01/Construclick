@@ -2,13 +2,12 @@
 
 const welcomeUser = document.getElementById("welcomeUser");
 welcomeUser.hidden = true;
-const wrongUser = document.getElementById("wrongMail");
-wrongUser.hidden = true;
-const wrongMailAlert = document.getElementById("wrongMail--alert");
-wrongMailAlert.hidden = true;
-const blankPassword =document.getElementById("blankPassword--alert");
-blankPassword.hidden=true;
-
+const wrongMail = document.getElementById("wrongMail--alert");
+wrongMail.hidden = true;
+const wrongPassword = document.getElementById("wrongPassword--alert");
+wrongPassword.hidden = true;
+const unexistingUser =document.getElementById("unexistingUser--alert");
+unexistingUser.hidden=true;
 
 //información del formulario 
 const loginForm = document.getElementById("form--publication");
@@ -24,27 +23,27 @@ loginForm.addEventListener('submit', (evt) => {
     //validación de la información
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailRegex.test(email)) {
-        wrongMailAlert.hidden = false;
+        wrongMail.hidden = false;
         loginForm.reset();
         setTimeout(()=>{
-            wrongMailAlert.hidden=true;
+            wrongMail.hidden=true;
         },4500)
         return;
     }else{
-        wrongUser.hidden = true;
+        unexistingUser.hidden = true;
         loginForm.reset();
     }
     //validación de la información contraseña
     const passwordRegex = /^[a-zA-Z0-9!@#$%&*_+¿? -]{6,}$/; // Al menos 6 caracteres
 if (!passwordRegex.test(password)) {
-    blankPassword.hidden = false;
+    wrongPassword.hidden = false;
     loginForm.reset();
     setTimeout(() => {
-        blankPassword.hidden = true;
+        wrongPassword.hidden = true;
     }, 4500);
     return;
 }else{
-        wrongUser.hidden = true;
+        unexistingUser.hidden = true;
         loginForm.reset();
     }
 
@@ -54,15 +53,15 @@ if (!passwordRegex.test(password)) {
 
     // Validación de los campos de entrada 
     if (!emailRegex.test(email)) {
-        wrongMailAlert.hidden = false;
+        wrongMail.hidden = false;
         setTimeout(() => {
-            wrongMailAlert.hidden = true;
+            wrongMail.hidden = true;
         }, 4500);
     } else if (!passwordRegex.test(password)) {
         // Validación de la contraseña
-        blankPassword.hidden = false;
+        wrongPassword.hidden = false;
         setTimeout(() => {
-            blankPassword.hidden = true;
+            wrongPassword.hidden = true;
         }, 4500);
     } 
     
@@ -70,15 +69,15 @@ if (!passwordRegex.test(password)) {
 
         if (email === getEmail && password === getPassword) {
             welcomeUser.hidden = false;
-            wrongUser.hidden = true;
+            unexistingUser.hidden = true;
             loginForm.hidden = true;
             setTimeout(() => {
                 window.location.href = "../index.html";
             }, 3000);
         } else {
-            wrongUser.hidden = false;
+            unexistingUser.hidden = false;
             setTimeout(() => {
-                wrongUser.hidden = true;
+                unexistingUser.hidden = true;
             }, 4500);
             return;
         }
