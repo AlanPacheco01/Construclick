@@ -109,7 +109,7 @@
 
     <!-- Aqui va a estar el cuerpo principal -->
     <main>
-        <section>
+        <section class="panelSuperior">
             <!-- Carrusel de imagenes -->
             <div id="carouselExampleCaptions" class="carousel slide">
                 <!-- Funcionamiento -->
@@ -140,13 +140,13 @@
                     </div>
                 </div>
                 <!-- Funcionamiento botones -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev buttonLateral" type="button"
+                    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
+                <button class="carousel-control-next buttonLateral" type="button"
+                    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -155,19 +155,56 @@
                 <!-- Titulo -->
                 <h3>Oficio</h3>
                 <!-- Calificacion -->
-                <img src="../assets/ContratarServicio/Estrella.svg" alt="Estrella" class="estrella">
-                <img src="../assets/ContratarServicio/Estrella.svg" alt="Estrella" class="estrella">
-                <img src="../assets/ContratarServicio/Estrella.svg" alt="Estrella" class="estrella">
-                <img src="../assets/ContratarServicio/Estrella.svg" alt="Estrella" class="estrella">
-                <img src="../assets/ContratarServicio/Estrella Vacia.svg" alt="Estrella" class="estrella">
-                <!-- Numero de reseñas -->
-                <p>10 Reviews</p>
+                <div class="reseñas">
+                    <img src="../assets/ContratarServicio/Estrella.svg" alt="Estrella" class="estrella">
+                    <img src="../assets/ContratarServicio/Estrella.svg" alt="Estrella" class="estrella">
+                    <img src="../assets/ContratarServicio/Estrella.svg" alt="Estrella" class="estrella">
+                    <img src="../assets/ContratarServicio/Estrella.svg" alt="Estrella" class="estrella">
+                    <img src="../assets/ContratarServicio/Estrella Vacia.svg" alt="Estrella" class="estrella">
+                    <!-- Numero de reseñas -->
+                    <p>10 Reviews</p>
+                </div>
                 <!-- Descripcion -->
-                 <h3>Descripcion</h3>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe numquam sequi, tenetur similique laboriosam optio quis, neque ipsam rem, aliquam tempore maxime totam! Nisi, sunt sed et laboriosam temporibus ad.</p>
-                 <button class= "button"> Contactar </button>
+                <h3>Descripción:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe numquam sequi, tenetur similique
+                    laboriosam optio quis, neque ipsam rem, aliquam tempore maxime totam! Nisi, sunt sed et laboriosam
+                    temporibus ad.</p>
+                <div style="display: flex; justify-content: center;">
+                    <button class="button"> Contactar </button>
+                </div>
             </div>
-
+        </section>
+        <br>
+        <section>
+            <div class="preguntasRespuestas">
+                <h4 style="width: 100%;">Preguntas y respuestas</h4>
+                <input type="text" placeholder="Escribe tu pregunta" class="preguntas">
+                <button class="button">Publicar</button>
+            </div>
+            <div class="preguntasRespuestas">
+                <h4 style="width: 100%;">Preguntas anteriores</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque nulla iure eos, voluptate quae
+                    omnis. Iure distinctio sint reprehenderit ipsum itaque velit temporibus ratione! Veniam, quaerat
+                    consequuntur. Autem, fugiat facilis.</p>
+                <p>R: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </section>
+        <section class="panelInferior">
+            <h4>Opiniones del servicio</h4> <br>
+            <div class="opiniones">
+                <img src="../assets/ContratarServicio/Usuario.svg" alt="foto usuario" width="65px">
+                <div class="usuario">
+                    <p style="height: 10px;">Andrea molina</p>
+                    <img src="../assets/ContratarServicio/Estrella.svg" alt="Estrella" class="estrellaReseña">
+                    <img src="../assets/ContratarServicio/Estrella.svg" alt="Estrella" class="estrellaReseña">
+                    <img src="../assets/ContratarServicio/Estrella.svg" alt="Estrella" class="estrellaReseña">
+                    <img src="../assets/ContratarServicio/Estrella.svg" alt="Estrella" class="estrellaReseña">
+                    <img src="../assets/ContratarServicio/Estrella Vacia.svg" alt="Estrella" class="estrellaReseña">
+                </div>
+            </div>
+            <p>Se robaba el material pero hacia un buen trabajo</p>
+            <img src="../assets/ContratarServicio/ProductoMuestra.svg" alt="Foto" width="150px">
         </section>
     </main>
 
