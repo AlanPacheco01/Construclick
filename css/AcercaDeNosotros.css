@@ -7,7 +7,6 @@ body {
 }
 
 .aboutUs {
-    background-color: #D9D4CC;
     width: 100%;
     font-family: "Montserrat", sans-serif;
     overflow: hidden;
@@ -209,7 +208,8 @@ body {
     font-weight: bold;
     align-items: center;
     margin: 0 auto;
-    background-color: #D9D4CC;
+    padding-top: 35px;
+
 
 }
 
@@ -252,6 +252,7 @@ body {
     width: 273px;
     margin-top: -50px;
     margin-bottom: 50px;
+    
 } 
 
 .misionVision {
@@ -342,7 +343,7 @@ body {
     width: 100%;
     display: flex;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     justify-content: center;
 }
 
@@ -353,18 +354,19 @@ body {
 
 
 .section--About .card{
-    background-color: var(--smoke);
+    
     height: 240px;
     width: 470px;
+    border-color: #ffffff;
     border-radius: 20px;
     margin-left: 20px;
 }
 
 .section--About .card img{
-    width: 210px;
+    width: 240px;
     height: 240px;
     margin-left: -12px;
-    border-radius: 20px;
+    border-radius: 9999px;
 }
 .section--About .card .logo{
     width: 30px;
@@ -457,7 +459,7 @@ body {
     max-width: 100% !important;
     background-color: #735F46;
     box-sizing: border-box;
-margin-bottom: 30px;
+margin-bottom: 0px;
 margin-top: 30px;
 }
 
