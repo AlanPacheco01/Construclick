@@ -204,9 +204,10 @@ border-color: #8C7E6C;
     transition: background-color 0.5s;
     border-radius: 5px;
     text-align: center;
-    display: inline-block;
+    display:inline-block;
     max-width: 100%;
 }
+
 
 
 .container-form select:hover{
