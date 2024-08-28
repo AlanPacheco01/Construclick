@@ -69,7 +69,7 @@ text-align: center;
 color: darkred;
 }
 
-#blankPassword--alert{
+#wrongPassword--alert{
     font-family: "Montserrat";
     font-weight: 600;
      border: none;
@@ -83,7 +83,7 @@ color: darkred;
     color: darkred;
 }
 
-#wrongMail{
+#unexistingUser--alert{
     font-family: "Montserrat";
     font-weight: 600;
      border: none;
