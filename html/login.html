@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/GuiaDiseño.css">
     <link rel="stylesheet" href="../css/login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Terminos y condiciones</title>
+    <title>Contacto</title>
     <link rel="shortcut icon" href="../assets/GuiaDiseno/LogotipoConstruclick.svg" type="image/x-icon">
 </head>
 
@@ -36,30 +36,12 @@
                 <a href="./publicarServicio.html" class="buttonNavBar item">Anunciate</a>
                 <a href="./AcercaDeNosotros.html" class="buttonNavBar item">Conocenos</a>
             </div>
-<<<<<<< HEAD
-            <a href="./publicarServicio.html">Anúnciate</a> <!-- Enlace del menú -->
-            <a href="./AcercaDeNosotros.html">Conócenos</a> <!-- Enlace del menú -->
-            <div class="user--options">
-                <a href="./login.html" class="account">
-                    <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="Mi cuenta"> Mi cuenta
-                    <!-- Icono de usuario y texto "Mi cuenta" -->
-                </a>
-                <a href="#" class="cart">
-                    <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Carrito de compras">
-                    <!-- Icono del carrito de compras -->
-                </a>
-                <!-- Barra de búsqueda -->
-                <div class="search--bar">
-                    <input class="navBar--input" type="text" placeholder="Buscar"> <!-- Campo de entrada de búsqueda -->
-                </div>
-=======
 
             <!-- Botones iniciar sesion y registrate -->
             <div class="links--container" id="usuarios">
                 <a href=".login.html" class="buttonNavBar item">Iniciar Sesion</a>
                 /
                 <a href=".registroPagina1.html" class="buttonNavBar item">Registrate</a>
->>>>>>> e41af387c8311d49115d9db1bdb53a1aa93f8831
             </div>
 
             <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=25>
@@ -122,164 +104,48 @@
             </div>
         </nav>
     </header>
-<<<<<<< HEAD
+   <!-- termina NavBar -->
 
-    <!-- Aquí empieza diseño para celular -->
-    <div class="navBar--mobile">
-        <div class="navBar--right">
-            <img class="navBar--image" src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logo Construclick">
-            <h2 class="navBar--header">Construclick</h2>
-        </div>
-        <div class="navBar--left">
-            <a href=""><img class="navBar--icon" src="../assets/GuiaDiseno/IconoLupa.svg" alt="Barra de busqueda"></a>
-            <a href=""><img class="navBar--icon" src="../assets/GuiaDiseno/IconoCarritoCompra.svg"
-                    alt="Carrito de compras"></a>
-            <a href=""><img class="navBar--icon" src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Menu de hamburguesa"></a>
-        </div>
-    </div>
-    <!-- termina NavBar -->
+ <!-- Alerta de inicio de sesión -->
+ <div class="alert alert-success" role="alert" id="welcomeUser">
+    <h4 class="alert-heading">Bienvenido</h4>
+    <p>Estas a unos pasos de construir un mejor futuro, confía en nosotros para concretar tus sueños. ¡Hablemos hoy de cómo podemos ayudarte!</p>
+</div>
 
-    <!-- Alerta de inicio de sesión -->
-    <div class="alert alert-success" role="alert" id="welcomeUser">
-        <h4 class="alert-heading">Bienvenido</h4>
-        <p>Estas a unos pasos de construir un mejor futuro, confía en nosotros para concretar tus sueños. ¡Hablemos hoy de cómo podemos ayudarte!</p>
-    </div>
-
-    <!-- formulario -->
-    <form class="form--container" id="form--publication" style="color:#735F46;">
-
-        <legend style="color: #735F46; font-weight: bold; text-align: center;"> Inicio de sesión</legend><br>
-=======
-     <!-- termina NavBar -->
- 
-  <form class="form--container" id="form--publication" style="color:#735F46;">
+<!-- formulario -->
+<form class="form--container" id="form--publication" style="color:#735F46;">
     <legend style="color: #735F46; font-weight: bold; text-align: center;"> Inicio de sesión</legend><br>
     <div class="mb-3" style="margin-top: -30px; color: #735F46;">
       <label for="exampleFormControlInput1" class="form-label" >Correo electronico</label>
-      <input type="text" class="form-control" enctype= "multipart/form-data" id="productName" name="productName" required placeholder="inserte su email">
-    </div><br>
->>>>>>> e41af387c8311d49115d9db1bdb53a1aa93f8831
+      <input type="text" class="form-control" enctype= "multipart/form-data" id="emailUser" name="productName" required placeholder="inserte su email">
+    </div>
+    <br>
+    <!-- Alerta de correo erroneo -->
+ <div class="alert alert-danger" role="alert" id="wrongMail--alert">
+    Cuidado, este correo no es válido
+    </div>
         <div class="mb-3" style="margin-top: -30px; color: #735F46;">
           <label for="exampleFormControlInput1" class="form-label" >Contraseña</label>
-          <input type="text" class="form-control" enctype= "multipart/form-data" id="productName" name="productName" required placeholder="inserte su Contraseña">
+          <input type="password" class="form-control" enctype= "multipart/form-data" id="passwordUser" name="productName" required placeholder="inserte su Contraseña">
         </div>
-<<<<<<< HEAD
-        <br>
+<!-- Alerta de contraseña  -->
+<div class="alert alert-danger" role="alert" id="wrongPassword--alert">
+    Cuidado, la contraseña no es válida
+</div>
 
-        <!-- Alerta de correo erroneo -->
-        <div class="alert alert-danger" role="alert" id="wrongMail--alert">
-        Cuidado, este correo no es válido
-        </div>
-        <br>
+<div class="my-5 justify-content-center" style="margin: 0 auto;">
+    <button type="submit" class="btn btn-secondary btn-lg" id="form--continue" style="background-color: #735F46; margin: 0 auto; width: 200px;">Inicia Sesion ></button>
+</div>
+<div class="restore"><a href="./contraseña.html"><u>Olvidaste tu contraseña?</u></a> </div>
+<div class="reg"><a href="./registro.html"><b>Crea una cuenta nueva</b> </a></div>
+</form>
 
-        <div class="mb-3" style="margin-top: -30px; color: #735F46;">
-            <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" enctype="multipart/form-data" id="passwordUser" name="productName"
-                required placeholder="inserte su Contraseña">
-        </div>
+ <!-- Alerta de usuario incorrecto o inexistente -->
+ <div id="unexistingUser--alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Atención</strong>, el usuario no está registrado.
+</div>
 
-        <!-- Alerta de contraseña  -->
-        <div class="alert alert-danger" role="alert" id="blankPassword--alert">
-            Cuidado, la contraseña no es válida
-        </div>
-
-=======
->>>>>>> e41af387c8311d49115d9db1bdb53a1aa93f8831
-        <div class="my-5 justify-content-center" style="margin: 0 auto;">
-            <button type="submit" class="btn btn-secondary btn-lg" id="form--continue" style="background-color: #735F46; margin: 0 auto; width: 200px;">Inicia Sesion ></button>
-        </div>
-        <div class="restore"><a href="./contraseña.html"><u>Olvidaste tu contraseña?</u></a> </div>
-        <div class="reg"><a href="./registro.html"><b>Crea una cuenta nueva</b> </a></div>
-  </form>
- 
-
-<<<<<<< HEAD
-    <!-- Alerta de usuario incorrecto o inexistente -->
-    <div id="wrongMail" class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Atención</strong>, el usuario no está registrado.
-    </div>
-
-
-    <!-- Comienza footer -->
-    <footer>
-        <ul class="footer--contacto">
-            <a href="contacto.html">
-                <h3>Contacto</h3>
-            </a>
-            <a href="">
-                <h6>service@construclick.com</h6>
-            </a><br>
-            <div class="socialMedia">
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="facebook">
-                </a><br>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="instagram">
-                </a><br>
-                <a href="https://x.com/X" target="_blank">
-                    <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="x">
-                </a>
-            </div>
-        </ul>
-
-        <ul class="footer--catalogo">
-            <a href="">
-                <h3>Catálogo</h3>
-            </a>
-
-            <a href="">
-                <h6>Contrata</h6>
-            </a>
-
-            <a href="">
-                <h6>Anúnciate</h6>
-            </a>
-        </ul>
-
-        <ul class="footer--MiCuenta">
-
-            <a href="">
-
-                <h3>Mi cuenta</h3>
-            </a>
-
-
-            <a href="registro.html">
-                <!-- h6 para los demas links -->
-                <h6>Regístrate</h6>
-            </a>
-
-
-            <a href="login.html">
-                <h6>Inicia sesión</h6>
-            </a>
-
-        </ul>
-        <!-- readme con la nomemclatura, lineas en donde se usan -->
-        <ul class="footer--conocenos">
-
-            <a href="">
-                <h3>Conócenos</h3>
-            </a>
-
-            <a href="./Terminos Y Condiciones.html">
-                <h6>Términos y condiciones</h6>
-            </a>
-
-            <a href="">
-                <h6>Aviso de privacidad</h6>
-            </a>
-
-    </footer>
-
-
-    <script src="../javascript/login.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-=======
-
-  <footer>
+<footer>
     <div>
         <h2>Contacto</h2>
         <a href="mailto:service@construclick.com">service@construclick.com</a>
@@ -303,7 +169,7 @@
         <a href="./AvisoPrivacidad.html">Aviso de privacidad</a>
     </div>
 </footer>
-<script src="../javascript/login.js"></script>
+<script src="../javascript/TerminosCondiciones.js"></script>
 <!-- Se importan los scripts de boostrap -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -311,7 +177,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
->>>>>>> e41af387c8311d49115d9db1bdb53a1aa93f8831
+    <script src="../javascript/login.js"></script>
 </body>
-
 </html>
