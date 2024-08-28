@@ -5,19 +5,62 @@
 }
 section{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .estrella{
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
 }
 
 .items--container{
     height: 510px;
     width: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: justify;
 }
 .button{
     border-radius: 5px;
+    width: 270px;
+}
+.reseñas{
+    display: flex;
+    justify-content: space-evenly;
+}
+.buttonLateral{
+    height: 460px;
+}
+.preguntas{
+    width: 700px;
+    height: 61px;
+}
+.preguntasRespuestas{
+    width: 75%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+}
+.panelSuperior{
+    justify-content: space-evenly;
+    width: 60%;
+    margin-left: 20%;
+
+}
+.panelInferior{
+    display: block;
+    text-align: center;
+}
+
+.estrellaReseña{
+    height: 20px;
+    width: 20px;
+}
+.opiniones{
+    display: flex;
+    width: 77%;
+    justify-content: center;
 }
