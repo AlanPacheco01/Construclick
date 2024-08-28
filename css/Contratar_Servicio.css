@@ -1,0 +1,23 @@
+@import url(./GuiaDiseño.css);
+
+#carouselExampleCaptions{
+    width: 510px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.estrella{
+    height: 20px;
+    width: 20px;
+}
+
+.items--container{
+    height: 510px;
+    width: 400px;
+}
+.button{
+    border-radius: 5px;
+}
