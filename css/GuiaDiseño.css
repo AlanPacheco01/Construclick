@@ -211,7 +211,7 @@ footer{
     }
 }
 /* Subtitulos */
-footer h2{
+footer h2 a{
     font-size: 24px;
     width: 100%;
     text-align: center;
