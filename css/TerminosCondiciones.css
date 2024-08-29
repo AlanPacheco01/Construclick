@@ -11,8 +11,10 @@ body {
     justify-content: center;
     justify-items: center;
     gap: 100px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 125px;
+    margin-bottom: 125px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     color: #735F46;
     max-height: 100%;
 
