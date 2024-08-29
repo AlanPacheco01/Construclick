@@ -1,206 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-419">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/stylesFooter.css">
-    <link rel="stylesheet" href="../css/navBar.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/GuiaDiseño.css">
     <link rel="stylesheet" href="../css/login.css">
-    <title>Inicio de sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Login</title>
+    <link rel="shortcut icon" href="../assets/GuiaDiseno/LogotipoConstruclick.svg" type="image/x-icon">
 </head>
 
-<body class="body">
-    <header class="navBar">
-
-        <!-- Enlace de logo -->
-
-        <!-- Navegación principal del sitio -->
-        <nav class="menu">
-
-            <a href="../index.html" class="logo">Construclick</a>
-            <!-- Menú desplegable -->
-            <div class="dropdown">
-                <a href="#">Contrata <span class="arrow--down"></span></a>
-                <!-- Enlace con un ícono de flecha hacia abajo -->
-                <div class="dropdown--content">
-                    <!-- Opciones del menú desplegable -->
-                    <a href="#">Albañilería</a>
-                    <a href="#">Plomería</a>
-                    <a href="#">Carpintería</a>
-                    <a href="#">Herrería</a>
-                    <a href="#">Vidrería</a>
-                    <a href="#">Jardinería</a>
-                    <a href="#">Otros</a>
+<body>
+    <header>
+        <!-- Aqui va a estar la navbar version web-->
+        <nav class="navBar--container" id="navBarWeb">
+            <h2>Construclick</h2>
+            <!-- Boton con menu desplegable y los otros botones-->
+            <div class="links--container">
+                <div class="dropdown">
+                    <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Contrata
+                    </button>
+                    <ul type="none" class="dropdown-menu">
+                        <li><a class="item" href="#">Albañileria</a></li>
+                        <li><a class="item" href="#">Plomeria</a></li>
+                        <li><a class="item" href="#">Carpinteria</a></li>
+                        <li><a class="item" href="#">Herreria</a></li>
+                        <li><a class="item" href="#">Vidrieria</a></li>
+                        <li><a class="item" href="#">Jardineria</a></li>
+                        <li><a class="item" href="#">Otros</a></li>
+                    </ul>
                 </div>
+                <a href="./publicarServicio.html" class="buttonNavBar item">Anunciate</a>
+                <a href="./AcercaDeNosotros.html" class="buttonNavBar item">Conocenos</a>
             </div>
-            <a href="publicarServicio.html">Anúnciate</a> <!-- Enlace del menú -->
-            <a href="AcercaDeNosotros.html">Conócenos</a> <!-- Enlace del menú -->
-            <div class="user--options">
-                <a href="login.html" class="account">
-                    <img src="../assets/navbarIcon/iconUser.png" alt="Mi cuenta"> Mi cuenta
-                    <!-- Icono de usuario y texto "Mi cuenta" -->
-                </a>
-                <a href="#" class="cart">
-                    <img src="../assets/navbarIcon/iconCarrito.png" alt="Carrito de compras">
-                    <!-- Icono del carrito de compras -->
-                </a>
-                <!-- Barra de búsqueda -->
-                <div class="search--bar">
-                    <input class="navBar--input" type="text" placeholder="Buscar"> <!-- Campo de entrada de búsqueda -->
-                </div>
+
+            <!-- Botones iniciar sesion y registrate -->
+            <div class="links--container" id="usuarios">
+                <a href=".login.html" class="buttonNavBar item">Iniciar Sesion</a>
+                /
+                <a href=".registroPagina1.html" class="buttonNavBar item">Registrate</a>
             </div>
+
+            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=25>
+
+            <!-- Barra de busqueda -->
+            <form action="" method="post" class="searchNavBar">
+                <button type="submit" class="searchNavBar"><img src="../assets/GuiaDiseno/IconoLupa.svg" alt="Icono de una lupa"></button>
+                <input type="search" name="" id="barraDebusqueda" placeholder="Search" class="searchNavBar" style="width: 300px;">
+            </form>
         </nav>
 
-        <!-- Opciones del usuario, incluyendo cuenta y carrito -->
-
-    </header>
-
-    <!-- Aquí empieza diseño para celular -->
-    <div class="navBar--mobile">
-        <div class="navBar--right">
-            <img class="navBar--image" src="../assets/navbarIcon/logoConstruclick.png" alt="Logo Construclick">
-            <h2 class="navBar--header">Construclick</h2>
-        </div>
-        <div class="navBar--left">
-            <a href=""><img class="navBar--icon" src="../assets/navbarIcon/search.png" alt="Barra de busqueda"></a>
-            <a href=""><img class="navBar--icon" src="../assets/navbarIcon/iconCarritom.png"
-                    alt="Carrito de compras"></a>
-            <a href=""><img class="navBar--icon" src="../assets/navbarIcon/menu.png" alt="Menu de hamburguesa"></a>
-        </div>
-    </div>
-    <!-- termina NavBar -->
-
-    <!-- Alerta de inicio de sesión -->
-    <div class="alert alert-success" role="alert" id="welcomeUser">
-        <h4 class="alert-heading">Well done!</h4>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
-            so that you can see how spacing within an alert works with this kind of content.</p>
-        <hr>
-        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-    </div>
-
-    <!-- formulario -->
-    <form class="form--container" id="form--publication" style="color:#735F46;">
-
-        <legend style="color: #735F46; font-weight: bold; text-align: center;"> Inicio de sesión</legend><br>
-        <div class="mb-3" style="margin-top: -30px; color: #735F46;">
-            <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
-            <input type="text" class="form-control" enctype="multipart/form-data" id="emailUser" name="productName"
-                placeholder="inserte su email">
-        </div>
-        <br>
-
-        <!-- Alerta de correo erroneo -->
-        <div class="alert alert-danger" role="alert" id="wrongMail--alert">
-            This is a warning alert—check it out!
-        </div>
-        <br>
-
-        <div class="mb-3" style="margin-top: -30px; color: #735F46;">
-            <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" enctype="multipart/form-data" id="passwordUser" name="productName"
-                required placeholder="inserte su Contraseña">
-        </div>
-
-        <!-- Alerta de contraseña  -->
-        <div class="alert alert-danger" role="alert" id="blankPassword--alert">
-            This is a warning alert—check it out!
-        </div>
-
-        <div class="my-5 justify-content-center" style="margin: 0 auto;">
-            <button type="submit" class="btn btn-secondary btn-lg" id="form--continue"
-                style="background-color: #735F46; margin: 0 auto; width: 200px;">Inicia Sesion ></button>
-        </div>
-        <div class="restore"><a href="./contraseña.html"><u>Olvidaste tu contraseña?</u></a> </div>
-        <div class="reg"><a href="./registro.html"><b>Crea una cuenta nueva</b> </a></div>
-    </form>
-
-    <!-- Alerta de usuario incorrecto o inexistente -->
-    <div id="wrongMail" class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-    </div>
-
-
-    <!-- Comienza footer -->
-    <footer>
-        <ul class="footer--contacto">
-            <a href="contacto.html">
-                <h3>Contacto</h3>
-            </a>
-            <a href="">
-                <h6>service@construclick.com</h6>
-            </a><br>
-            <div class="socialMedia">
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="../assets/footerIcon/facebook.png" alt="facebook">
-                </a><br>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="../assets/footerIcon/instagram.png" alt="instagram">
-                </a><br>
-                <a href="https://x.com/X" target="_blank">
-                    <img src="../assets/footerIcon/twitter.png" alt="x">
-                </a>
+        <!-- Aqui va a estar la navbar version movil -->
+        <nav class="navBar--container navbar" id="navBarMobile">
+            <img src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="70">
+            <h2>Construclick</h2>
+            <!-- Funcionalidad de la lupa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lupa"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btnlupa">
+                <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="30">
+            </button>
+            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=30>
+            <!-- Menu de hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menuHamburguesa">
+                <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="35">
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul type="none">
+                    <li>
+                        <div class="dropdown">
+                            <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#categorias" aria-expanded="false" id="btnCategorias">
+                                Contrata
+                            </button>
+                            <ul type="none" class="collapse navbar-collapse" id="categorias">
+                                <li><a class="item" href="">Albañileria</a></li>
+                                <li><a class="item" href="">Plomeria</a></li>
+                                <li><a class="item" href="">Carpinteria</a></li>
+                                <li><a class="item" href="">Herreria</a></li>
+                                <li><a class="item" href="">Vidrieria</a></li>
+                                <li><a class="item" href="">Jardineria</a></li>
+                                <li><a class="item" href="">Otros</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./publicarServicio.html" class="buttonNavBar item">Anunciate</a>
+                    </li>
+                    <li>
+                        <a href="./AcercaDeNosotros.html" class="buttonNavBar item">Conocenos</a>
+                    </li>
+                </ul>
             </div>
-        </ul>
+            <div class="collapse navbar-collapse" id="lupa">
+                <form action="" method="post" class="searchNavBar">
+                    <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 90%;">
+                    <button type="submit" class="searchNavBar" style="width: 9%;"><img src="../assets/GuiaDiseno/IconoLupa.svg"
+                            alt="Icono de una lupa"></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+   <!-- termina NavBar -->
 
-        <ul class="footer--catalogo">
-            <a href="">
-                <h3>Catálogo</h3>
-            </a>
+ <!-- Alerta de inicio de sesión -->
+ <div class="alert alert-success" role="alert" id="welcomeUser">
+    <h4 class="alert-heading">Bienvenido</h4>
+    <p>Estas a unos pasos de construir un mejor futuro, confía en nosotros para concretar tus sueños. ¡Hablemos hoy de cómo podemos ayudarte!</p>
+</div>
 
-            <a href="">
-                <h6>Contrata</h6>
-            </a>
+<!-- formulario -->
+<form class="form--container" id="form--publication" style="color:#735F46;">
+    <legend style="color: #735F46; font-weight: bold; text-align: center;"> Inicio de sesión</legend><br>
+    <div class="mb-3" style="margin-top: -30px; color: #735F46;">
+      <label for="exampleFormControlInput1" class="form-label" >Correo electronico</label>
+      <input type="text" class="form-control" enctype= "multipart/form-data" id="emailUser" name="productName" required placeholder="inserte su email">
+    </div>
+    <br>
+    <!-- Alerta de correo erroneo -->
+ <div class="alert alert-danger" role="alert" id="wrongMail--alert">
+    Cuidado, este correo no es válido
+    </div>
+        <div class="mb-3" style="margin-top: -30px; color: #735F46;">
+          <label for="exampleFormControlInput1" class="form-label" >Contraseña</label>
+          <input type="password" class="form-control" enctype= "multipart/form-data" id="passwordUser" name="productName" required placeholder="inserte su Contraseña">
+        </div>
+<!-- Alerta de contraseña  -->
+<div class="alert alert-danger" role="alert" id="wrongPassword--alert">
+    Cuidado, la contraseña no es válida
+</div>
 
-            <a href="">
-                <h6>Anúnciate</h6>
-            </a>
-        </ul>
+<div class="my-5 justify-content-center" style="margin: 0 auto;">
+    <button type="submit" class="btn btn-secondary btn-lg" id="form--continue" style="background-color: #735F46; margin: 0 auto; width: 200px;">Inicia Sesion ></button>
+</div>
+<div class="restore"><a href="./contraseña.html"><u>Olvidaste tu contraseña?</u></a> </div>
+<div class="reg"><a href="./registro.html"><b>Crea una cuenta nueva</b> </a></div>
+</form>
 
-        <ul class="footer--MiCuenta">
+ <!-- Alerta de usuario incorrecto o inexistente -->
+ <div id="unexistingUser--alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Atención</strong>, el usuario no está registrado.
+</div>
 
-            <a href="">
-
-                <h3>Mi cuenta</h3>
-            </a>
-
-
-            <a href="registro.html">
-                <!-- h6 para los demas links -->
-                <h6>Regístrate</h6>
-            </a>
-
-
-            <a href="login.html">
-                <h6>Inicia sesión</h6>
-            </a>
-
-        </ul>
-        <!-- readme con la nomemclatura, lineas en donde se usan -->
-        <ul class="footer--conocenos">
-
-            <a href="">
-                <h3>Conócenos</h3>
-            </a>
-
-            <a href="./Terminos Y Condiciones.html">
-                <h6>Términos y condiciones</h6>
-            </a>
-
-            <a href="">
-                <h6>Aviso de privacidad</h6>
-            </a>
-
-    </footer>
-
-
+<footer>
+    <div>
+        <h2>Contacto</h2>
+        <a href="mailto:service@construclick.com">service@construclick.com</a>
+        <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25">
+        <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25">
+        <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25">
+    </div>
+    <div>
+        <h2>Catalogo</h2>
+        <a href="./catalogo.html">Contrata</a>
+        <a href="./publicarServicio.html">Anunciate</a>
+    </div>
+    <div>
+        <h2>Mi cuenta</h2>
+        <a href="./registroPagina1.html">Registrate</a>
+        <a href="./login.html">Inicia sesión</a>
+    </div>
+    <div>
+        <h2>Conócenos</h2>
+        <a href="./TerminosCondiciones.html">Terminos y condiciones</a>
+        <a href="./AvisoPrivacidad.html">Aviso de privacidad</a>
+    </div>
+</footer>
+<script src="../javascript/TerminosCondiciones.js"></script>
+<!-- Se importan los scripts de boostrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
     <script src="../javascript/login.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 </body>
-
 </html>
