@@ -1,0 +1,83 @@
+[                       
+    {
+        "nombreProducto":"Martillo Trupper 5 in",
+        "precioProducto":"50",
+        "imagenProducto":"imagen",
+        "tamanoProducto":"1",
+        "pesoProducto":"5",
+        "descripcionProducto":"Martillo ergonómico para trabajos de mamposteria"
+    },
+    {
+        "nombreProducto":"Pico  trupper 4 in",
+        "precioProducto":"250",
+        "imagenProducto":"imagen",
+        "tamanoProducto":"200",
+        "pesoProducto":"4",
+        "descripcionProducto":"Mazo tipo pico con palo de madera para romper concreto o excavar "
+    },
+    {
+        "nombreProducto":"Cuchara trupper 3 in",
+        "precioProducto":"220",
+        "imagenProducto":"imagen",
+        "tamanoProducto":"30",
+        "pesoProducto":"1",
+        "descripcionProducto":" Cuchara de metal para acabados finos o pega de mamposteria."
+    },
+    {
+        "nombreProducto":"Nivel de mano trupper 2 in",
+        "precioProducto":"180",
+        "imagenProducto":"imagen",
+        "tamanoProducto":"100",
+        "pesoProducto":"1",
+        "descripcionProducto":"Nivel de mano para checar desplantes o direccion lineal"
+    },
+    {
+        "nombreProducto":"Zincel Trupper 5 in",
+        "precioProducto":"90",
+        "imagenProducto":"imagen",
+        "tamanoProducto":"30",
+        "pesoProducto":"1",
+        "descripcionProducto":"Zincel de fierro colado para remover o excarvar a detalle "
+    },
+    {
+        "nombreProducto":"Flexometro",
+        "precioProducto":"200",
+        "imagenProducto":"imagen",
+        "tamanoProducto":"27",
+        "pesoProducto":"400",
+        "descripcionProducto":"Flexometro Gripper contra impacto 8m 25mm, Trupper"
+    },
+    {
+        "nombreProducto":"Escalera de aluminio",
+        "precioProducto":"1389",
+        "imagenProducto":"imagen",
+        "tamanoProducto":"2",
+        "pesoProducto":"10",
+        "descripcionProducto":"Escalera de tijera, material aluminio con tapa ProTop y charola"
+    },
+    {
+        "nombreProducto":"Plomada metalica",
+        "precioProducto":"150",
+        "imagenProducto":"imagen",
+        "tamanoProducto":"1",
+        "pesoProducto":"150",
+        "descripcionProducto":"Ligera y sencillo de emplear"
+    },
+    {
+        "nombreProducto":"Cortadora de azulejo",
+        "precioProducto":"890",
+        "imagenProducto":"imagen",
+        "tamanoProducto":"1",
+        "pesoProducto":"890",
+        "descripcionProducto":"Cortes rapidos y precisos"
+    },
+    {
+        "nombreProducto":"Marro",
+        "precioProducto":"170",
+        "imagenProducto":"imagen",
+        "tamanoProducto":"1",
+        "pesoProducto":"170",
+        "descripcionProducto":"Trabajos rapidos y seguros"
+    }
+
+]
