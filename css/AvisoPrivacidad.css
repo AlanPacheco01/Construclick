@@ -25,6 +25,7 @@ body {
         justify-content: center;
         justify-items: center;
         gap: 100px;
+        padding: 0%;
     }
 
     #text-container p {
