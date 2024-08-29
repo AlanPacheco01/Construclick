@@ -148,6 +148,7 @@ body {
 @media (max-width: 863px) {
     .aboutUs {
         background-color: white; 
+        padding: 0%;
     }
 
     .aboutUs--container {
