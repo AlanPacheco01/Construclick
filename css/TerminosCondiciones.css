@@ -11,10 +11,7 @@ body {
     justify-content: center;
     justify-items: center;
     gap: 100px;
-    margin-top: 125px;
-    margin-bottom: 125px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 200px;
     color: #735F46;
     max-height: 100%;
 
@@ -28,6 +25,7 @@ body {
         justify-content: center;
         justify-items: center;
         gap: 100px;
+        padding: 0%;
     }
 
     #text-container p {
