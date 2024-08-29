@@ -110,15 +110,18 @@ button:hover{
    
 }
 /* Texto de los botones */
-nav h2{
-    /* Construclick */
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 45px;
-    letter-spacing: 0.1px;
-    padding: 1%;
-    }
+
+.BrandName a{
+     /* Construclick */
+    text-decoration: none ;
+    color: #8C7E6C;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 38px;
+     line-height: 45px;
+     letter-spacing: 0.1px;
+     padding: 1%;
+}
 
 .item{
     display: block;
