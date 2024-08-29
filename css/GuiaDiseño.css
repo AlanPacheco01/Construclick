@@ -219,6 +219,7 @@ footer h2 a{
     color: var(--sand);
     letter-spacing: 0.1px;
 }
+
 /* Contenedor de los links */
 footer div{
     justify-content: space-evenly;
