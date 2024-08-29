@@ -11,8 +11,11 @@ body {
     justify-content: center;
     justify-items: center;
     gap: 100px;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-bottom: 100px;
+    color: #735F46;
+    max-height: 100%;
+
 }
 
 @media(max-width: 600px) {
