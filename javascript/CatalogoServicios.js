@@ -54,7 +54,6 @@ const mostrarServicios = (servicios) => {
         const botonOjo = document.createElement("button");
         botonOjo.innerHTML = `👁️‍🗨️`;
         botonOjo.id = `boton--ojo`;
-
         const estrella = document.createElement("label");
         estrella.innerHTML = `★★★★★`;
         estrella.id=`store-estrella`
@@ -66,9 +65,10 @@ const mostrarServicios = (servicios) => {
         divInfo.appendChild(estrella);
         divInfo.appendChild(descripcionServicio);
         divInfo.appendChild(boton);
+        /*
         divInfo.appendChild(botonCorazon);
         divInfo.appendChild(botonOjo);
-
+*/
         // Añadir imagen e información al div del servicio
         divServicio.appendChild(divImagen);
         divServicio.appendChild(divInfo);

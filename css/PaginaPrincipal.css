@@ -10,10 +10,17 @@ main{ /* Diseñp de la imagen y los textos */
     margin: 0;
     padding: 0;
     height: 870px;
+    text-decoration: none;
+    color: white;
 }
 section{ /* Color y posicion de los textos */
     color: white;
     text-align: center;
+    text-decoration: none;
+}
+section a{
+text-decoration: none;
+color: white;
 }
 section h1{
     font-weight: 700;

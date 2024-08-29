@@ -1,79 +1,317 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <!-- Enlaza el archivo CSS externo que contiene los estilos -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contratar servicio</title>
+    <link rel="stylesheet" href="../css/registroPrestador.css">
+    <link rel="stylesheet" href="../css/GuiaDiseño.css"> <!-- Se carga la guia de diseños -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Se importa Boostrap 5.3v -->
+    <title>Construclick</title>
+    <link rel="shortcut icon" href="../assets/LogotipoConstruclick.svg" type="image/x-icon">
 </head>
 <body>
-    <!-- Título fuera del contenedor, se coloca en la parte superior de la página -->
-    <h1>Contratar servicios</h1>
-    <!-- Contenedor principal que agrupa el formulario y le da estilo -->
-    <div class="container">
-        <!-- Formulario con id "register3" -->
-        <form id="register3">
-            <!-- Contenedor que organiza los campos del formulario en una cuadrícula -->
-            <div class="form-grid">
-                <!-- Columna Izquierda: Primer conjunto de campos -->
-                <div class="grid-item form-group">
-                    <!-- Etiqueta para el campo de nombre -->
-                    <label for="userName">Nombre</label>
-                    <!-- Campo de entrada de texto para el nombre -->
-                    <input type="text" id="userName" placeholder="Ingrese su(s) nombre(s)">
+    <header>
+        <!-- Aqui va a estar la navbar version web-->
+        <nav class="navBar--container" id="navBarWeb">
+            <h2>Construclick</h2>
+            <!-- Boton con menu desplegable y los otros botones-->
+            <div class="links--container">
+                <div class="dropdown">
+                    <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Contrata
+                    </button>
+                    <ul type="none" class="dropdown-menu">
+                        <li><a class="item" href="#">Albañileria</a></li>
+                        <li><a class="item" href="#">Plomeria</a></li>
+                        <li><a class="item" href="#">Carpinteria</a></li>
+                        <li><a class="item" href="#">Herreria</a></li>
+                        <li><a class="item" href="#">Vidrieria</a></li>
+                        <li><a class="item" href="#">Jardineria</a></li>
+                        <li><a class="item" href="#">Otros</a></li>
+                    </ul>
                 </div>
-                <div class="grid-item form-group">
-                    <!-- Etiqueta para el campo de correo electrónico -->
-                    <label for="userEmail">Correo Electrónico</label>
-                    <!-- Campo de entrada de texto para el correo electrónico -->
-                    <input type="email" id="userEmail" placeholder="Ingrese su correo electrónico">
-                </div>
-                <div class="grid-item form-group">
-                    <!-- Etiqueta para el campo de contraseña -->
-                    <label for="userPassword">Contraseña</label>
-                    <!-- Campo de entrada de texto para la contraseña -->
-                    <input type="password" id="userPassword" placeholder="Ingrese su contraseña">
-                </div>
-                <div class="grid-item form-group">
-                    <!-- Etiqueta para el campo de confirmación de contraseña -->
-                    <label for="userPassword2">Confirmación de contraseña</label>
-                    <!-- Campo de entrada de texto para confirmar la contraseña -->
-                    <input type="password" id="userPassword2" placeholder="Confirme su contraseña">
-                </div>
-                <div class="grid-item form-group">
-                    <!-- Etiqueta para el campo de subir imagen de perfil -->
-                    <label for="userImage">Sube tu foto de perfil (opcional)</label>
-                    <!-- Campo para seleccionar un archivo de imagen -->
-                    <input type="file" id="userImage">
-                </div>
-                <!-- Columna Derecha: Segundo conjunto de campos -->
-                <div class="grid-item form-group">
-                    <!-- Etiqueta para el campo de número de teléfono -->
-                    <label for="userPhone">Número de Teléfono</label>
-                    <!-- Campo de entrada de texto para el número de teléfono -->
-                    <input type="text" id="userPhone" placeholder="Ingrese su número de celular">
-                </div>
-                <div class="grid-item form-group">
-                    <!-- Etiqueta para el campo de ubicación -->
-                    <label for="tipo-locacion">¿Necesitas servicios en CDMX o zona metro?</label>
-                    <!-- Campo de entrada con lista desplegable para ubicación -->
-                    <input list="location" id="tipo-locacion" placeholder="CDMX o zona metro">
-                    <!-- Lista de opciones para la ubicación -->
-                    <datalist id="location">
-                        <option value="CDMX">
-                        <option value="zona metro">
-                    </datalist>
-                </div>
+                <a href="./html/publicarServicio.html" class="buttonNavBar item">Anunciate</a>
+                <a href="./html/AcercaDeNosotros.html" class="buttonNavBar item">Conocenos</a>
             </div>
-            <!-- Contenedor del botón de envío -->
-            <div class="button-container">
-                <!-- Botón para enviar el formulario -->
-                <button type="submit" id="send--form">¡Listo!</button>
+
+            <!-- Botones iniciar sesion y registrate -->
+            <div class="links--container" id="usuarios">
+                <a href="./html/login.html" class="buttonNavBar item">Iniciar Sesion</a>
+                /
+                <a href="./html/registroPagina1.html" class="buttonNavBar item">Registrate</a>
             </div>
-        </form>
+
+            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=25>
+
+            <!-- Barra de busqueda -->
+            <form action="" method="post" class="searchNavBar">
+                <button type="submit" class="searchNavBar"><img src="../assets/GuiaDiseno/IconoLupa.svg" alt="Icono de una lupa"></button>
+                <input type="search" placeholder="Search" class="searchNavBar" style="width: 300px;">
+            </form>
+        </nav>
+
+        <!-- Aqui va a estar la navbar version movil -->
+        <nav class="navBar--container navbar" id="navBarMobile">
+            <img src="../assets/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="81">
+            <h2>Construclick</h2>
+            <!-- Funcionalidad de la lupa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lupa"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btnlupa">
+                <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="40">
+            </button>
+            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=40>
+            <!-- Menu de hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menuHamburguesa">
+                <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="60">
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul type="none">
+                    <li>
+                        <div class="dropdown">
+                            <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#categorias" aria-expanded="false" id="btnCategorias">
+                                Contrata
+                            </button>
+                            <ul type="none" class="collapse navbar-collapse" id="categorias">
+                                <li><a class="item" href="">Albañileria</a></li>
+                                <li><a class="item" href="">Plomeria</a></li>
+                                <li><a class="item" href="">Carpinteria</a></li>
+                                <li><a class="item" href="">Herreria</a></li>
+                                <li><a class="item" href="">Vidrieria</a></li>
+                                <li><a class="item" href="">Jardineria</a></li>
+                                <li><a class="item" href="">Otros</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./html/publicarServicio.html" class="buttonNavBar item">Anunciate</a>
+                    </li>
+                    <li>
+                        <a href="./html/AcercaDeNosotros.html" class="buttonNavBar item">Conocenos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="lupa">
+                <form action="" method="post" class="searchNavBar">
+                    <input type="search" placeholder="Search" class="searchNavBar" style="width: 90%;">
+                    <button type="submit" class="searchNavBar" style="width: 9%;"><img src="../assets/Pagina_Principal/IconoLupa.svg" alt="Icono de una lupa"></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+<!-- termina NavBar -->     
+    
+<!-- Seccion formulario-->
+
+<section class="form-registroPrestador" id="form-registroPrestador">
+     <!-- Sección del header -->
+  <header>
+    <h2>Contratar servicio</h2>
+  </header>
+        <form class="container-form" id="RegistroPrestador">
+         
+            <ul class="form-list">
+                <li class="input-nombre">Nombre                   
+                    <label> Ej. Juan Pérez López
+                        <input type="text" class="form-control"
+                            autocomplete="name"
+                            name="Nombre"
+                            placeholder="Escribe tu nombre completo" id="userName">
+                    </label>
+                    <div class="alert alert-danger" id="name--alert" hidden role="alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
+                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                        </svg>
+                        <div id="alert--message" class="d-flex align-items-center">
+                            Agrega un nombre valido
+                        </div>
+                    </div>  
+                </li>
+
+                <li class="input-foto">Sube tu foto de perfil. (Opcional)
+                    <label for="formFile" class="form-label"> formato .jpg .png .jpeg max. 100KB
+                    <input type="file" id="fotoperfil" accept="image/png, image/jpeg"/> </label>
+                </li>
+
+                <li class="input-correo" id="userEmail">Correo
+                    <label>Ej. juan_p123@correo.com
+                    <input type="email" class="form-control" id="userEmail" autocomplete="email"
+                            placeholder="Escribe tu correo electrónico">
+                    </label>
+                    <div class="alert alert-danger" hidden id="email--alert" role="alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
+                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                        </svg>
+                        <div id="alert--message" class="d-flex align-items-center">
+                            Agrega un correo valido
+                        </div>
+                    </div> 
+                </li>
+
+                <li class="input-contraseña">Contraseña                    
+                    <label>min. 8 caracteres, un dígito, un símbolo y una mayúscula
+                        <input type="password" class="form-control" id="contraseña" autocomplete="new-password"
+                        placeholder="Ingrese su contraseña">
+                    </label>
+                    <div class="alert alert-danger" hidden id="password--alert" role="alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
+                            <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+                            <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                        </svg>
+                        <div id="alert--message" class="d-flex align-items-center">
+                            Contraseña invalida
+                        </div>
+                    </div>     
+                </li>
+
+                <li class="input-confirmarContraseña">Confirmar contraseña                        
+                        <input type="password" class="form-control" id="confirmaContraseña" autocomplete="new-password"
+                        placeholder="Ingresa nuevamente tu contraseña">
+                </li>
+                <div class="alert alert-danger" hidden id="password2--alert" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
+                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                    </svg>
+                    <div id="alert--message" class="d-flex align-items-center">
+                        La contraseña no coincide
+                    </div>
+                </div>       
+            </ul>
+
+            <ul>
+                <li class="input-tel" id="userPhone">Teléfono                  
+                    <label>Número a 10 dígitos
+                    <input type="text" class="form-control" id="userPhone" placeholder="55 XX XX XX XX">
+                    </label>
+                    <div class="alert alert-danger" hidden id="phone--alert" role="alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
+                            <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+                            <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                        </svg>
+                        <div id="alert--message" class="d-flex align-items-center">
+                            Agrega un número de 10 dígitos
+                        </div>
+                    </div> 
+                </li>
+
+            <li>
+                ¿Buscas servicios en CDMX o Estado de
+                    México?
+                    <div class="alert alert-danger" hidden id="place--alert" role="alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
+                            <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+                            <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                        </svg>
+                        <div id="alert--message" class="d-flex align-items-center">
+                            Lo sentimos! Por el momento solo estamos enfocados en CDMX y Estado de Mexico 
+                        </div>
+                    </div> 
+                       
+
+                    <label for="formFile" class="form--buttom">Al seleccionar 'Si' te comprometes a ofrecer tu trabajo en estas zonas</label>
+                    <select name="placeOption" id="placeOption" onChange="seleccionarOpcion()">
+                        <option value="">---</option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                </li>
+
+                <li class="input-INE">Subir foto de perfil                 
+                    </div>           
+                    <label for="formFile" class="form-label">formato .jpg .png .jpeg max. 100KB
+                        <input type="file">
+                    </label>
+                    <div class="alert alert-danger" hidden id="ine--alert" role="alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
+                            <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+                            <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                        </svg>
+                        <div id="alert--message" class="d-flex align-items-center">
+                            Selecciona un archivo con tu INE
+                        </div>
+                </li>
+                <!-- <li class="input-referencia">Subir referencia de trabajo   
+                    <label for="formFile" class="form-label">
+                        Carta recomendación/patronal,
+                        cursos, evidencia de trabajos anteriores, etc.
+                        <input type="file">
+                    </label>         
+                </li> -->
+            </ul>
+            <ul>
+                <li class="form--buttom2">
+                        <div class="alert alert-success" hidden id="saved--alert" role="alert">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" id="img--alert" viewBox="0 0 16 16">
+                                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                            </svg>
+                            <div id="alert--message" class="d-flex align-items-center">
+                                Información guardada! 
+                            </div>
+                        </div> 
+                        <button class="send--info" type="submit" id="send--form">¡Listo!</button>
+                </li>
+            </ul>
+            </form>
+       
+    </section>
+<!-- Aqui va a estar el footer -->
+<footer>
+    <div>
+        <h2><a href="./contacto.html">Contacto</a></h2>
+        <a href="mailto:service@construclick.com">service@construclick.com</a>
+        <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25">
+        <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25">
+        <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25">
     </div>
-    <!-- Enlaza el archivo JavaScript externo que contiene la lógica de interacción -->
-    <script src="../javascript/registroP3.js"></script>
+    <div>
+        <h2><a href="./catalogo.html">Catálogo</a></h2>
+        <a href="./catalogo.html">Contrata</a>
+        <a href="./publicarServicio.html">Anúnciate</a>
+    </div>
+    <div>
+        <h2><a href="./login.html">Mi cuenta</a></h2>
+        <a href="./registroPagina1.html">Regístrate</a>
+        <a href="./login.html">Inicia sesión</a>
+    </div>
+    <div>
+        <h2><a href="./AcercaDeNosotros.html">Conócenos</a></h2>
+        <a href="./TerminosCondiciones.html">Términos y condiciones</a>
+        <a href="./AvisoPrivacidad.html">Aviso de privacidad</a>
+    </div>
+</footer>
+
+    <script src="../javascript/registroPrestador.js"></script>
+    <!--Bootstrap para diseno formulario-->   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--Bootstrap para ocultar las alertas-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <!--Bootstrap para navbar y footer-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

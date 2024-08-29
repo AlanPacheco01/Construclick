@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/GuiaDiseño.css">
+    <link rel="stylesheet" href="../css/GuiaDiseño.css">
     <link rel="stylesheet" href="../css/catalogo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Terminos y condiciones</title>
@@ -15,7 +15,8 @@
     <header>
         <!-- Aqui va a estar la navbar version web-->
         <nav class="navBar--container" id="navBarWeb">
-            <h2>Construclick</h2>
+            <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
+          
             <!-- Boton con menu desplegable y los otros botones-->
             <div class="links--container">
                 <div class="dropdown">
@@ -33,40 +34,45 @@
                         <li><a class="item" href="#">Otros</a></li>
                     </ul>
                 </div>
-                <a href="./publicarServicio.html" class="buttonNavBar item">Anunciate</a>
-                <a href="./AcercaDeNosotros.html" class="buttonNavBar item">Conocenos</a>
+                <div>
+                <a href="../html/publicarServicio.html" class="buttonNavBar">Anúnciate</a>
             </div>
-
+                <div>
+                <a href="./html/AcercaDeNosotros.html" class="buttonNavBar">Conócenos</a>
+            </div>
+        </div>
             <!-- Botones iniciar sesion y registrate -->
-            <div class="links--container" id="usuarios">
-                <a href=".login.html" class="buttonNavBar item">Iniciar Sesion</a>
+            <div id="usuarios">
+                <a href="./html/login.html" class="buttonNavBar">Iniciar Sesión</a>
                 /
-                <a href=".registroPagina1.html" class="buttonNavBar item">Registrate</a>
-            </div>
-
+                <a href="./html/registroPagina1.html" class="buttonNavBar">Regístrate</a>
+            
+    
             <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=25>
-
+        
             <!-- Barra de busqueda -->
             <form action="" method="post" class="searchNavBar">
                 <button type="submit" class="searchNavBar"><img src="../assets/GuiaDiseno/IconoLupa.svg" alt="Icono de una lupa"></button>
-                <input type="search" name="" id="barraDebusqueda" placeholder="Search" class="searchNavBar" style="width: 300px;">
+                <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 300px;">
             </form>
-        </nav>
-
+            </div>
+        </div>
+    </nav>
+    
         <!-- Aqui va a estar la navbar version movil -->
         <nav class="navBar--container navbar" id="navBarMobile">
-            <img src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="70">
-            <h2>Construclick</h2>
+            <img src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="80">
+            <h2 class="BrandName"><a href="./index.html">Construclick</a></h2>
             <!-- Funcionalidad de la lupa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lupa"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btnlupa">
-                <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="30">
+                <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="35">
             </button>
-            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=30>
+            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width="35">
             <!-- Menu de hamburguesa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menuHamburguesa">
-                <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="35">
+                <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="45" class="menuHamburguesa">
             </button>
             <div class="collapse navbar-collapse" id="menu">
                 <ul type="none">
@@ -88,79 +94,88 @@
                         </div>
                     </li>
                     <li>
-                        <a href="./publicarServicio.html" class="buttonNavBar item">Anunciate</a>
+                        <a href="./html/publicarServicio.html" class="buttonNavBar item">Anunciate</a>
                     </li>
                     <li>
-                        <a href="./AcercaDeNosotros.html" class="buttonNavBar item">Conocenos</a>
+                        <a href="./html/AcercaDeNosotros.html" class="buttonNavBar item">Conocenos</a>
                     </li>
                 </ul>
             </div>
             <div class="collapse navbar-collapse" id="lupa">
                 <form action="" method="post" class="searchNavBar">
                     <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 90%;">
-                    <button type="submit" class="searchNavBar" style="width: 9%;"><img src="../assets/GuiaDiseno/IconoLupa.svg"
+                    <button type="submit" class="searchNavBar" style="width: 9%;"><img src="./assets/Pagina_Principal/IconoLupa.svg"
                             alt="Icono de una lupa"></button>
                 </form>
             </div>
         </nav>
     </header>
+    
          <!-- termina NavBar -->  
-    <main class="main--container"> <!-- Clase main para semantica -->
-        <section class="first--container"> <!-- Seccion de servicios -->
-            <div class="header--container">
-                <figure>
-                    <a href="./CatalogoServicios.html">
-                    <img class="figure--image" src="../assets/catalogo/first.svg" alt="banner material y Herramientas">
-                </a>
-                </figure>
-            </div>  
-            <div class="images--container">
-                <img class="image--container" src="../assets/catalogo/card-item.png" alt="no agara las  imagenes xd">
-                <img class="image--container" src="../assets/catalogo/filter.png" alt="aqui deberia estar otra imagen"><!-- solo un punto  -->
-                <img class="image--container" src="../assets/catalogo//media bg-cover.png" alt="">
-            </div>
-        </section>
-        
-        <section class="second--container"> <!-- Seccion de materiales y herramientas -->
-            <div class="header--container">
-              <figure >
-                   <a href="./catalagoHerramientas.html">
-                    <img class="figure--image" src="../assets/catalogo/Baner-HerramientasMaterial.svg" alt="banner material y Herramientas">
-                </a>
-              </figure>
-            </div>
-            <div class="images--container">
-                <img class="img--container" src="../assets/catalogo/Carpinteria.svg" alt="Imagen sobre catalogo de Carpinteria">
-                <img class="img--container" src="../assets/catalogo//Plomeria.svg" alt="Imagen sobre catalogo de Plomeria">    <!-- imagenes de abajo -->
-                <img class="img--container" src="../assets/catalogo//Construccion.svg" alt="Imagen sobre catalogo de Construccion">
-                <img class="img--container" src="../assets/catalogo/Genral.svg" alt="Imagen sobre catalogo de generalidades">
-            </div> 
-        </section>
-</main>
-<footer>
-    <div>
-        <h2>Contacto</h2>
-        <a href="mailto:service@construclick.com">service@construclick.com</a>
-        <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25">
-        <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25">
-        <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25">
-    </div>
-    <div>
-        <h2>Catalogo</h2>
-        <a href="./catalogo.html">Contrata</a>
-        <a href="./publicarServicio.html">Anunciate</a>
-    </div>
-    <div>
-        <h2>Mi cuenta</h2>
-        <a href="./registroPagina1.html">Registrate</a>
-        <a href="./login.html">Inicia sesión</a>
-    </div>
-    <div>
-        <h2>Conócenos</h2>
-        <a href="./TerminosCondiciones.html">Terminos y condiciones</a>
-        <a href="./AvisoPrivacidad.html">Aviso de privacidad</a>
-    </div>
-</footer>
+         <main class="main--container"> <!-- Clase main para semantica -->
+            <section class="first--container"> <!-- Seccion de servicios -->
+                <div class="header--container">
+                    <figure>
+                        <a href="./CatalogoServicios.html">
+                        <img class="figure--image" src="../assets/catalogo/first.svg" alt="banner material y Herramientas">
+                        <img class="figure--image2" src="../assets/catalogo/servicios.png" alt="banner material y Herramientas">
+                    </a>
+                    </figure>
+                </div>  
+                <div class="images--container">
+                    <img class="image--container" src="../assets/catalogo/card-item.png" alt="no agara las  imagenes xd">
+                    <img class="image--container" src="../assets/catalogo/filter.png" alt="aqui deberia estar otra imagen"><!-- solo un punto  -->
+                    <img class="image--container" src="../assets/catalogo//media bg-cover.png" alt="">
+                </div>
+            </section>
+            
+            <section class="second--container"> <!-- Seccion de materiales y herramientas -->
+                <div class="header--container">
+                  <figure >
+                       <a href="./catalagoHerramientas.html">
+                        <img class="figure--image" src="../assets/catalogo/Baner-HerramientasMaterial.svg" alt="banner material y Herramientas">
+                        <img class="figure--image2" src="../assets/catalogo/materiales.png" alt="banner material y Herramientas">
+                    </a>
+                  </figure>
+                </div>
+                <div class="images--container">
+                    <img class="img--container" src="../assets/catalogo/Carpinteria.svg" alt="Imagen sobre catalogo de Carpinteria">
+                    <img class="img--container" src="../assets/catalogo//Plomeria.svg" alt="Imagen sobre catalogo de Plomeria">    <!-- imagenes de abajo -->
+                    <img class="img--container" src="../assets/catalogo//Construccion.svg" alt="Imagen sobre catalogo de Construccion">
+                    <img class="img--container" src="../assets/catalogo/Genral.svg" alt="Imagen sobre catalogo de generalidades">
+                </div> 
+            </section>
+    </main>
+    
+    <!-- Aqui va a estar el footer -->
+    <footer>
+        <div>
+            <h2><a href="./contacto.html"></a>Contacto</a></h2>
+            <a href="mailto:service@construclick.com">service@construclick.com</a>
+            <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25">
+            <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25">
+            <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25">
+        </div>
+        <div>
+            <h2><a href="./catalogo.html">Catálogo</a></h2>
+            <a href="./catalogo.html">Contrata</a>
+            <a href="./publicarServicio.html">Anúnciate</a>
+        </div>
+        <div>
+            <h2><a href="./login.html">Mi cuenta</a></h2>
+            <a href="./registroPagina1.html">Regístrate</a>
+            <a href="./login.html">Inicia sesión</a>
+        </div>
+        <div>
+            <h2><a href="./AcercaDeNosotros.html">Conócenos</a></h2>
+            <a href="./TerminosCondiciones.html">Términos y condiciones</a>
+            <a href="./AvisoPrivacidad.html">Aviso de privacidad</a>
+        </div>
+    </footer>
+
+
+
+
 
 <!-- Se importan los scripts de boostrap -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

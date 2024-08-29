@@ -4,13 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/Contratar_Servicio.css"> <!-- Se cargan los diseños de la pagina principal -->
+    <link rel="stylesheet" href="../css/Contratar_Servicio.css">  <!-- Se cargan los diseños de la pagina principal -->
+    <link rel="stylesheet" href="../css/GuiaDiseño.css">
     <!-- Se importa Boostrap 5.3v -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
-    <title>Construclick</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Contratar Servicio</title>
     <link rel="shortcut icon" href="../assets/GuiaDiseno/LogotipoConstruclick.svg" type="image/x-icon">
 </head>
 
@@ -36,16 +34,17 @@
                         <li><a class="item" href="../html/CatalogoServicios.html">Otros</a></li>
                     </ul>
                 </div>
-                <a href="../html/publicarServicio.html" class="buttonNavBar item">Anunciate</a>
-                <a href="../html/AcercaDeNosotros.html" class="buttonNavBar item">Conocenos</a>
+                <a href="../html/publicarServicio.html" class="buttonNavBar">Anunciate</a>
+                <a href="../html/AcercaDeNosotros.html" class="buttonNavBar">Conocenos</a>
             </div>
             <!-- Botones iniciar sesion y registrate -->
-            <div class="links--container" id="usuarios">
-                <a href="../html/login.html" class="buttonNavBar item">Iniciar Sesion</a>
+            <div id="usuarios">
+                <a href="../html/login.html" class="buttonNavBar">Iniciar Sesion</a>
                 /
-                <a href="../html/registroPagina1.html" class="buttonNavBar item">Registrate</a>
+                <a href="../html/registroPagina1.html" class="buttonNavBar">Registrate</a>
             </div>
-            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=25>
+            <!-- Carrito de compra -->
+            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=20>
             <!-- Barra de busqueda -->
             <form action="" method="post" class="searchNavBar">
                 <button type="submit" class="searchNavBar"><img src="../assets/GuiaDiseno/IconoLupa.svg"
@@ -54,21 +53,20 @@
                     style="width: 300px;">
             </form>
         </nav>
-
         <!-- Aqui va a estar la navbar version movil -->
         <nav class="navBar--container navbar" id="navBarMobile">
-            <img src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="81">
+            <img src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="35">
             <h2>Construclick</h2>
             <!-- Funcionalidad de la lupa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lupa"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btnlupa">
-                <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="40">
+                <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="24">
             </button>
-            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=40>
+            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=24>
             <!-- Menu de hamburguesa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menuHamburguesa">
-                <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="60">
+                <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="24">
             </button>
             <div class="collapse navbar-collapse" id="menu">
                 <ul type="none">
@@ -242,5 +240,4 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

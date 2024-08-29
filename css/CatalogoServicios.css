@@ -2,42 +2,90 @@ body{
     font-family: "Montserrat";
     color: #735F46;
 }
+
+h4{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.2px;
+color: #8C7E6C;
+}
+
+p{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.2px;
+color: #858585;
+}
+
+#store-estrella{
+    width: 20px;
+    color: darkgoldenrod;
+    font-size: 20px;
+}
+
+.div--container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+#store--desc:hover{
+    transform: scale(1.05);
+}
+
 #store--desc {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 9px; 
+  display: flex;
+  justify-content: space-evenly;
+  width: 100% !important;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  border: #858585;
+  overflow: hidden;
+  gap: 20px !important;
+  border-style: solid;
 }
 
 .servicio {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     font-size: 10px;
-    align-items:center;
-    margin-left: 40px;
+    max-width: 670px;
+    height: 300px;
 }
 
 .servicio p{
-    text-align: justify;
+    text-align: left;
     justify-content:space-around;
 }
 .servicio h4{
     font-size: 15px;
 }
+ 
+.servicio-imagen img {
+    max-width: 300px;
+    height: 300px;
+}
+
 .servicio-imagen {
-    flex: 1;
-    position: relative;
-    bottom: 50px;
+    max-width: 300px;
+    height: 300px;
     
 }
 
-.servicio-imagen img {
-    width: 200px;
-    border-radius: 10px;
-}
-
 .servicio-info {
-    flex: 2;
-    padding: 16px;
     display: flex;
+    height: 311px !important;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -47,8 +95,8 @@ body{
     border-color: #735F46;
     font-family: "Montserrat";
     font-size: 10px;
-    width: 80px;
-    height: 40px;
+    width: 70px;
+    height: 30px;
     border-radius: 10px;
     color:#f2f2f2;
     justify-content: center;
@@ -56,6 +104,11 @@ body{
     text-align: center;
 
 }
+
+#boton--contactar:hover{
+    opacity: 0.7;
+}
+
 #boton--corazon{
     border-radius: 100%;
     width: 40px;
@@ -86,7 +139,4 @@ body{
     left: 137px;
 
 }
-#store-estrella{
-    color: darkgoldenrod;
-    font-size: 20px;
-}
+
