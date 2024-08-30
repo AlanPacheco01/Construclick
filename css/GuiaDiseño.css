@@ -77,12 +77,16 @@ button:hover{
 /* Contenedores */
 .navBar--container{ 
     display: flex;
-    flex-wrap: wrap;
     color: var(--sand);
     justify-content: space-around;
     align-items: center;
     height: 120px;
     box-shadow: 0px 0px 5px 0px #bfbab0;
+    position:fixed;
+    max-width: 100%;
+    width: 100%;
+    background-color: white;
+    z-index:1;
 }
 
 .links--container{ 
@@ -106,15 +110,18 @@ button:hover{
    
 }
 /* Texto de los botones */
-nav h2{
-    /* Construclick */
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 45px;
-    letter-spacing: 0.1px;
-    padding: 1%;
-    }
+
+.BrandName a{
+     /* Construclick */
+    text-decoration: none ;
+    color: #8C7E6C;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 38px;
+     line-height: 45px;
+     letter-spacing: 0.1px;
+     padding: 1%;
+}
 
 .item{
     display: block;
@@ -204,7 +211,7 @@ footer{
     }
 }
 /* Subtitulos */
-footer h2{
+footer h2 a{
     font-size: 24px;
     width: 100%;
     text-align: center;
