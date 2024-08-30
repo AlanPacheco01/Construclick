@@ -17,7 +17,7 @@ body {
 
 }
 
-@media(max-width: 600px) {
+@media(max-width: 500px) {
     #main-container {
         display: flex;
         flex-direction: column;
@@ -88,3 +88,21 @@ body {
 #text-container h3 {
     text-align: center;
 }
+@media(max-width: 800px) {
+    #main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        gap: 100px;
+        padding: 0%;
+    }
+
+    #text-container p {
+        text-align: justify;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+}
+
