@@ -1,13 +1,14 @@
+
 //Alertas boostrap, atributo hidden por default
-let nameAlert = document.getElementById("name--alert");
+let nameAlert = document.getElementById("main--name--alert");
 nameAlert.hidden=true;
-let emailAlert = document.getElementById("email--alert");
+let emailAlert = document.getElementById("main--email--alert");
 emailAlert.hidden=true;
-let phoneAlert = document.getElementById("phone--alert");
+let phoneAlert = document.getElementById("main--phone--alert");
 phoneAlert.hidden=true
-let textAlert = document.getElementById("text--alert");
+let textAlert = document.getElementById("main--text--alert");
 textAlert.hidden=true;
-let mesageAlert = document.getElementById("mesage--alert");
+let mesageAlert = document.getElementById("main--mesage--alert");
 mesageAlert.hidden=true;
 let savedAlert = document.getElementById("saved--alert");
 savedAlert.hidden=true;
@@ -58,24 +59,36 @@ form.addEventListener('submit', (evt) => {
 //Condicionales que le dicen al usuario que los datos son erroneos
     if (!nombreRegex.test(nombre)) {
         nameAlert.hidden=false;
+        setTimeout(()=>{
+            nameAlert.hidden=true;
+        },3000)
      return;
     } else{
         nameAlert.hidden=true;
     }
     if (!emailRegex.test(correo)) {
         emailAlert.hidden=false;
+        setTimeout(()=>{
+            emailAlert.hidden=true;
+        },2500)
         return;
     }else{
         emailAlert.hidden=true;
     }
     if (!telefonoRegex.test(telefono)) {
         phoneAlert.hidden=false;
+        setTimeout(()=>{
+            phoneAlert.hidden=true;
+        },2500)
         return;
     }else{
         phoneAlert.hidden=true;
     }
     if (!companiaRegex.test(compania)) {
         textAlert.hidden=false;
+        setTimeout(()=>{
+            textAlert.hidden=true;
+        },2500)
         return;
     }else{
         textAlert.hidden=true;
@@ -83,6 +96,9 @@ form.addEventListener('submit', (evt) => {
 
     if (!comentarioRegex.test(comentario)) {
         mesageAlert.hidden=false;
+        setTimeout(()=>{
+            mesageAlert.hidden=true;
+        },2500)
         return;
     }else{
         mesageAlert.hidden=true;

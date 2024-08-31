@@ -3,45 +3,42 @@ body{
     color: #735F46;
 }
 
-h4{
+.servicio h4{
 font-family: 'Montserrat';
 font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
+font-weight: bold;
+font-size: 18px;
 letter-spacing: 0.2px;
 color: #8C7E6C;
+text-align: center;
+
 }
 
-p{
+.servicio p{
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 20px;
 letter-spacing: 0.2px;
-color: #858585;
+color: #735F46;;
+text-align: center;
+}
+
+.servicio:hover {
+    transform: scale(1.05); 
 }
 
 #store-estrella{
     width: 20px;
     color: darkgoldenrod;
     font-size: 20px;
+   margin: 0;
+   display: none;
 }
 
-.div--container{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    max-width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px
-}
 
-#store--desc:hover{
-    transform: scale(1.05);
-}
+
 
 #store--desc {
   display: flex;
@@ -49,32 +46,29 @@ color: #858585;
   width: 100% !important;
   margin: 0 auto;
   flex-wrap: wrap;
-  border: #858585;
-  overflow: hidden;
-  gap: 20px !important;
-  border-style: solid;
 }
 
 .servicio {
     display: flex;
-    flex-direction: row;
     align-items: center;
     font-size: 10px;
     max-width: 670px;
     height: 300px;
+    border-style: solid;
+    border-color: #858585;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-width: 1px;
 }
 
-.servicio p{
-    text-align: left;
-    justify-content:space-around;
-}
-.servicio h4{
-    font-size: 15px;
-}
  
 .servicio-imagen img {
     max-width: 300px;
     height: 300px;
+    border-style: solid;
+    border-color: #858585;
+    border-width: 1px;
 }
 
 .servicio-imagen {
@@ -85,23 +79,26 @@ color: #858585;
 
 .servicio-info {
     display: flex;
-    height: 311px !important;
+    height: 300px !important;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #boton--contactar{
     background-color: #735F46;
-    border-color: #735F46;
     font-family: "Montserrat";
-    font-size: 10px;
-    width: 70px;
-    height: 30px;
-    border-radius: 10px;
+    font-size: 13px;
+    width: 150px;
+    height: 40px;
     color:#f2f2f2;
     justify-content: center;
     align-items: center;
     text-align: center;
+    box-shadow: none;
+    border: none;
+    margin: 0 auto;
+    border-radius: 5px;
 
 }
 
@@ -139,4 +136,16 @@ color: #858585;
     left: 137px;
 
 }
+
+@media screen and (max-width: 600px){
+    .servicio {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  padding: 10px;
+   }
+}
+
+
+
 

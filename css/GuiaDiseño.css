@@ -157,7 +157,7 @@ button:hover{
    }
 }
 /* Responsividad de la navbar */
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 700px) {
     #navBarWeb{
         display: none;
     }
@@ -202,6 +202,7 @@ footer{
     margin-top: 0px;
     flex-wrap: wrap;
     box-shadow: 0px 0px 5px 0px #bfbab0;
+    z-index:1;
 }
 
 @media only screen and (max-width: 700px) {
@@ -236,4 +237,43 @@ footer a{
     margin-top: 10px;
     width: 100%;
     text-align: center;
+}
+
+/*sección de estilos de alertas*/
+
+.alert--container{
+    display: flex;
+    flex-direction: row;
+}
+
+#saved--alert{
+    font-family: "Montserrat";
+    align-items: center;
+    color:#735F46;
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+    text-align: center;
+}
+#name--alert, #email--alert, #phone--alert, #text--alert, #mesage--alert{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 11px;
+     border: none;
+    background: none !important;
+    height: fit-content !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    color: darkred;
+    position: relative;
+    bottom: 15px;
+    left: 8px;
+}
+
+#img--alert{
+    color: darkred;
+    position: relative;
+    bottom: 15px;
+    font-size: 8px;
 }

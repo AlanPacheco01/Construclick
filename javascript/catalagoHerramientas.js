@@ -1,7 +1,18 @@
 
+let productos = null;
 
-
-    fetch('/.vscode/catalagoHerramientas.json')
+//direccion de ruta json
+const url = `catalagoHerramientas.json`;
+//funcion fetch para pedir que muestre los archivos en tipo json 
+    fetch(url)
+        .then(response => response.json())
+        .then(response => {
+            productos = response;
+            // Invocar una función con parámetros para mostrar los productos (creados con creteelement )
+          //  mostrarProductos(productos);
+        })
+        
+    fetch('catalagoHerramientas.json')
     .then(response => response.json())
     .then(data => {
         const container = document.getElementById('store');
@@ -23,3 +34,4 @@
         });
     })
     .catch(error => console.error('Error al cargar el JSON:', error));
+
