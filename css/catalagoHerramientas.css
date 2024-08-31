@@ -3,6 +3,221 @@ body {
     max-width: 100%;
     background-color: #ffffff;
 }
+<<<<<<< HEAD
+
+.main--container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+=======
+.main--container{
+    width: 100%;
+    border: 20px;
+    padding-top: 50px;
+}
+>>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
+.dropdown2{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown--content2 {
+    display: none;
+    position: absolute;
+    background-color: #D9D4CC;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown2 h2{
+    font-size: 16px;
+    font-weight:500;
+    color: #252B42;
+    padding: 20px 0px 0px 20px;
+}
+.dropdown2 h5{
+    font-size: 16px;
+    font-weight: bold;
+    color: #252B42;
+    padding: 20px 0px 0px 10px;
+}
+
+
+.dropdown--content2 a {
+    color: #737373;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 12px;
+}
+
+.dropdown--content2 a:hover {
+    background-color: #8C7E6C;
+    color: white;
+}
+
+
+.menu2 .dropdown2:hover .dropdown--content2 {
+    display: block;
+}
+.arrow--down2 {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    font-size: 14px;
+}
+<<<<<<< HEAD
+
+#store {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    background-color: #ffffff;
+    max-width: 1440px; 
+=======
+.main--container{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: #ffffff; 
+    box-sizing: border-box;
+}
+#store {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas, cada casilla ocupa 1fr (una fracción del espacio disponible) */
+    gap: 25px; /* Espacio entre las casillas */
+    font-size: 24;
+    font-weight: bold;   
+    max-width: 100%;
+    padding: 50px 30px 50px 50px; 
+    margin-top: 60px; 
+    box-sizing: border-box;    
+
+>>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
+}
+
+.item {
+    background-color: #FCFBFA;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+<<<<<<< HEAD
+    width:  320px ;
+    height: 490px;
+    
+
+=======
+    width: 317px;
+    height: 488px;
+    overflow: hidden;
+    overflow: auto;   
+>>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
+}
+
+.item img {
+    max-width: 239.5px;
+    height: 302px;
+    margin-bottom: 15px;
+}
+
+.item h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    color: #252B42;
+    max-width: 239.5px;
+    text-align: center;
+<<<<<<< HEAD
+=======
+    align-content: center;
+    align-items: center;    
+>>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
+}
+
+.item h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #737373;
+    padding-bottom: 5px;
+    max-width: 239.5px;
+    margin: 0 auto;
+}
+.item p{
+    color: #BDBDBD;
+    font-size: 16px;
+}
+
+.item:hover {
+    transform: scale(1.05); 
+}
+
+  
+
+<<<<<<< HEAD
+=======
+ }  /*
+ @media screen and (max-width:700px){
+ .container #store .item  {
+     width: 90%;
+     margin: 5px;
+>>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
+
+
+<<<<<<< HEAD
+@media screen and (max-width: 600px){
+          #store {
+        display: flex;
+        text-align: center;
+        align-items: center;
+=======
+}  */
+@media screen and (max-width: 600px){
+    #store {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        grid-template-columns: none;
+        justify-items: center;
+        justify-content: center;
+        
+        margin: 0%;
+
+>>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
+         }
+}
+    /*
+@media screen and (max-width:500px) {
+    #sidebar {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        max-width: 400px;
+        height: 30px;
+        display: flex;
+    }
+}
+*/
+
+
+
+/*body {
+    font-family: "Montserrat", sans-serif;
+    max-width: 100%;
+    background-color: #ffffff;
+}
 
 .main--container{
     display: flex;
@@ -145,3 +360,4 @@ body {
         display: flex;
     }
 }
+*/

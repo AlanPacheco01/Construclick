@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Acerca de nosotros</title>
     <link rel="stylesheet" href="../css/GuiaDiseño.css">
     <link rel="stylesheet" href="../css/AcercaDeNosotros.css">
     
+=======
+    <link rel="stylesheet" href="../css/GuiaDiseño.css"> <!-- Se carga la guia de diseños -->
+    <link rel="stylesheet" href="../css/AcercaDeNosotros.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+>>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Acerca de nosotros</title>
+    <link rel="shortcut icon" href="../assets/LogotipoConstruclick.svg" type="image/x-icon">
 </head>
 
-<body>
 
+<body>
   <header>
+<<<<<<< HEAD
            <!-- Aqui va a estar la navbar version web-->
         <nav class="navBar--container" id="navBarWeb">
           <h2 class="BrandName"><a href="./index.html">Construclick</a></h2>
@@ -112,11 +119,105 @@
               </form>
           </div>
       </nav>
+=======
+    <!-- Aqui va a estar la navbar version web-->
+    <nav class="navBar--container" id="navBarWeb">
+        <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
+      
+        <!-- Boton con menu desplegable y los otros botones-->
+        <div class="links--container">
+            <div class="dropdown">
+                <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Contrata
+                </button>
+                <ul type="none" class="dropdown-menu">
+                    <li><a class="item" href="./catalogo.html">Albañilería</a></li>
+                    <li><a class="item" href="./catalogo.html">Plomería</a></li>
+                    <li><a class="item" href="./catalogo.html">Carpintería</a></li>
+                    <li><a class="item" href="./catalogo.html">Herrería</a></li>
+                    <li><a class="item" href="./catalogo.html">Vidriería</a></li>
+                    <li><a class="item" href="./catalogo.html">Jardinería</a></li>
+                    <li><a class="item" href="./catalogo.html">Otros</a></li>
+                </ul>
+            </div>
+            <div>
+            <a href="./html/publicarServicio.html" class="buttonNavBar">Anúnciate</a>
+        </div>
+            <div>
+            <a href="./html/AcercaDeNosotros.html" class="buttonNavBar">Conócenos</a>
+        </div>
+    </div>
+        <!-- Botones iniciar sesion y registrate -->
+        <div id="usuarios">
+            <a href="./html/login.html" class="buttonNavBar">Iniciar Sesión</a>
+            /
+            <a href="./html/registroPagina1.html" class="buttonNavBar">Regístrate</a>
+        
+>>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
 
+        <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=25>
+    
+        <!-- Barra de busqueda -->
+        <form action="" method="post" class="searchNavBar">
+            <button type="submit" class="searchNavBar"><img src="../assets/GuiaDiseno/IconoLupa.svg" alt="Icono de una lupa"></button>
+            <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 300px;">
+        </form>
+        </div>
+    </div>
+</nav>
+
+    <!-- Aqui va a estar la navbar version movil -->
+    <nav class="navBar--container navbar" id="navBarMobile">
+        <img src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="80">
+        <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
+        <!-- Funcionalidad de la lupa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lupa"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btnlupa">
+            <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="35">
+        </button>
+        <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width="35">
+        <!-- Menu de hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menuHamburguesa">
+            <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="45" class="menuHamburguesa">
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul type="none">
+                <li>
+                    <div class="dropdown">
+                        <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#categorias" aria-expanded="false" id="btnCategorias">
+                            Contrata
+                        </button>
+                        <ul type="none" class="dropdown-menu">
+                            <li><a class="item" href="./catalogo.html">Albañilería</a></li>
+                            <li><a class="item" href="./catalogo.html">Plomería</a></li>
+                            <li><a class="item" href="./catalogo.html">Carpintería</a></li>
+                            <li><a class="item" href="./catalogo.html">Herrería</a></li>
+                            <li><a class="item" href="./catalogo.html">Vidriería</a></li>
+                            <li><a class="item" href="./catalogo.html">Jardinería</a></li>
+                            <li><a class="item" href="./catalogo.html">Otros</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="./html/publicarServicio.html" class="buttonNavBar item">Anúnciate</a>
+                </li>
+                <li>
+                    <a href="./html/AcercaDeNosotros.html" class="buttonNavBar item">Conócenos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="lupa">
+            <form action="" method="post" class="searchNavBar">
+                <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 90%;">
+                <button type="submit" class="searchNavBar" style="width: 9%;"><img src="../assets/Pagina_Principal/IconoLupa.svg"
+                        alt="Icono de una lupa"></button>
+            </form>
+        </div>
+    </nav>
 </header>
-
-
-
 
 <!-- Empieza primera parte de Acerca de nosotros -->
     <section class="aboutUs">
@@ -425,24 +526,28 @@
     <!-- Aqui va a estar el footer -->
     <footer>
       <div>
+<<<<<<< HEAD
           <h2><a href="./contacto.html"></a>Contacto</a></h2>
+=======
+          <h2><a href="./html/contacto.html">Contacto</a></h2>
+>>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
           <a href="mailto:service@construclick.com">service@construclick.com</a>
           <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25">
           <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25">
           <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25">
       </div>
       <div>
-          <h2><a href="./catalogo.html">Catálogo</a></h2>
+          <h2><a href="./html/catalogo.html">Catálogo</a></h2>
           <a href="./catalogo.html">Contrata</a>
           <a href="./publicarServicio.html">Anúnciate</a>
       </div>
       <div>
-          <h2><a href="./login.html">Mi cuenta</a></h2>
+          <h2><a href="./html/login.html">Mi cuenta</a></h2>
           <a href="./registroPagina1.html">Regístrate</a>
           <a href="./login.html">Inicia sesión</a>
       </div>
       <div>
-          <h2><a href="./AcercaDeNosotros.html">Conócenos</a></h2>
+          <h2><a href="./html/AcercaDeNosotros.html">Conócenos</a></h2>
           <a href="./TerminosCondiciones.html">Términos y condiciones</a>
           <a href="./AvisoPrivacidad.html">Aviso de privacidad</a>
       </div>

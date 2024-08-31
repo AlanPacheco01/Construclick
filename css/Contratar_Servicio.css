@@ -1,5 +1,6 @@
 /* Importamos la fuente Monserrat de google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+<<<<<<< HEAD
 
 /* Definimos la paleta de colores */
 :root {
@@ -120,72 +121,201 @@ nav h2{
 
 
 
+=======
+>>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
 
-#carouselExampleCaptions{
+/* Definimos la paleta de colores */
+:root {
+    --shell: #f2f2f2; /* Cascaron */
+    --smoke: #bfbab0; /* Humo */
+    --cement: #d9d4cc; /* Cemento */
+    --pot: #735f46; /* Cazuela */
+    --sand: #8C7E6C; /* Arena */
+}
+
+body{
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.navBar--container{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 91px;
+}
+#navBarMobile{
+    display: none;
+}
+
+nav h2{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: var(--pot);
+}
+
+.links--container{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+
+.buttonNavBar{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--pot);
+    background-color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.item{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--sand);
+    text-align: center;
+    text-decoration: none;
+    height: 24px;
+}
+
+.searchNavBar{
+    border: none;
+    height: 50px;
+    background-color: var(--shell) ;
+}
+
+@media only screen and (max-width: 1026px) {
+    #barraDebusqueda{
+     display: none;
+    }
+ }
+
+
+ @media only screen and (max-width: 740px) {
+    #navBarWeb{
+        display: none;
+    }
+    #navBarMobile{
+        display: flex;
+    }
+    #menuHamburguesa{
+        height: 40px;
+        border: none;
+    }
+    #menu{
+        text-align: center;
+        background-color: white;
+    }
+    #btnCategorias{
+        font-size: 25px;
+    }
+    .item{
+        margin-top: 15px;
+        font-size: 25px;
+    }
+    #btnlupa{
+        height: 40px;
+        border: none;
+    }
+}
+
+
+
+
+
+.panelSuperior{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.imagenes{
     width: 510px;
+    height: 450px;
 }
-section{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.estrella{
-    height: 30px;
-    width: 30px;
-}
-
 .items--container{
-    height: 510px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: justify;
+    width: 410px;
+    margin-left: 10px;
 }
-.button{
-    border-radius: 5px;
-    width: 270px;
+#titulo{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
 }
 .reseñas{
     display: flex;
-    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 220px;
+    justify-content: space-between;
 }
-.buttonLateral{
-    height: 460px;
+.button{
+    background-color: var(--pot);
+    color: white;
+    letter-spacing: 0.2px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    border: #735f46;
+    border-inline: 2px;
+}
+
+.preguntasRespuestas{
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .preguntas{
-    width: 700px;
-    height: 61px;
-}
-.preguntasRespuestas{
     width: 75%;
+    height: 50px;
     margin-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 60px;
 }
-.panelSuperior{
-    justify-content: space-evenly;
-    width: 60%;
-    margin-left: 20%;
 
-}
 .panelInferior{
-    display: block;
-    text-align: center;
+    margin-left: 20%;
+    margin-right: 15%;
 }
 
-.estrellaReseña{
-    height: 20px;
-    width: 20px;
+.panelInferior p{
+    font-weight: 500;
 }
+
 .opiniones{
     display: flex;
-    width: 77%;
+}
+.container--opinion{
+    display: grid;
     justify-content: center;
 }
 
+<<<<<<< HEAD
+=======
+
+@media only screen and (max-width: 500px) {
+    .imagenes{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 15px;
+    }
+    .panelCentral{
+        text-align: center;
+    }
+    .preguntasRespuestas{
+        margin-top: 10px;
+    }
+    
+}
+
+
+
+>>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
 footer{
     display: flex;
     justify-content: space-evenly;
