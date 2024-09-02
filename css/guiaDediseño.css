@@ -1,0 +1,191 @@
+/* Importamos la fuente Monserrat de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Definimos la paleta de colores */
+:root {
+    --shell: #f2f2f2; /* Cascaron */
+    --smoke: #bfbab0; /* Humo */
+    --cement: #d9d4cc; /* Cemento */
+    --pot: #735f46; /* Cazuela */
+    --sand: #8C7E6C; /* Arena */
+}
+
+body{
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.navBar--container{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 91px;
+}
+#navBarMobile{
+    display: none;
+}
+
+nav h2{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: var(--pot);
+}
+
+.links--container{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+
+.buttonNavBar{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--pot);
+    background-color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.item{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--sand);
+    text-align: center;
+    text-decoration: none;
+    height: 24px;
+}
+
+.searchNavBar{
+    border: none;
+    height: 50px;
+    background-color: var(--shell) ;
+}
+
+@media only screen and (max-width: 1026px) {
+    #barraDebusqueda{
+     display: none;
+    }
+ }
+
+
+ @media only screen and (max-width: 740px) {
+    #navBarWeb{
+        display: none;
+    }
+    #navBarMobile{
+        display: flex;
+    }
+    #menuHamburguesa{
+        height: 40px;
+        border: none;
+    }
+    #menu{
+        text-align: center;
+        background-color: white;
+    }
+    #btnCategorias{
+        font-size: 25px;
+    }
+    .item{
+        margin-top: 15px;
+        font-size: 25px;
+    }
+    #btnlupa{
+        height: 40px;
+        border: none;
+    }
+}
+
+/* footer */
+
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    height: 176px;
+}
+
+footer div{
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    width: 294px;
+    margin-top: 15px;
+}
+
+footer div h2{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 10px;
+    letter-spacing: 0.1px;
+    color: var(--pot);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--sand);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+/* estilos del footter en hipervinculos de facebok */
+#enlaces2 a{
+
+    display: inline-block;
+    min-height: 14px;
+    width: 54px;
+    text-align: center;  
+}
+/*sección de estilos de alertas*/
+
+.alert--container{
+    display: flex;
+    flex-direction: row;
+}
+
+#saved--alert{
+    font-family: "Montserrat";
+    align-items: center;
+    color:#735F46;
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+    text-align: center;
+}
+#name--alert, #email--alert, #phone--alert, #text--alert, #mesage--alert{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 11px;
+     border: none;
+    background: none !important;
+    height: fit-content !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    color: darkred;
+    position: relative;
+    bottom: 15px;
+    left: 8px;
+}
+
+#img--alert{
+    color: darkred;
+    position: relative;
+    bottom: 15px;
+    font-size: 8px;
+}
