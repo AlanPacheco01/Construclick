@@ -1,36 +1,30 @@
 body {
     font-family: "Montserrat", sans-serif;
     max-width: 100%;
+    max-height: 100%;
     background-color: #ffffff;
 }
-<<<<<<< HEAD
 
-.main--container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 
-=======
-.main--container{
-    width: 100%;
-    border: 20px;
-    padding-top: 50px;
-}
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
 .dropdown2{
     position: relative;
+    margin-left: 20px;
     display: inline-block;
 }
 
 .dropdown--content2 {
     display: none;
+    /* Oculta el contenido desplegable por defecto */
     position: absolute;
+    /* Posiciona el contenido desplegable de forma absoluta */
     background-color: #D9D4CC;
+    /* Color de fondo del contenido desplegable */
     min-width: 160px;
+    /* Ancho mínimo del contenido desplegable */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* Sombra del contenido desplegable */
     z-index: 1;
+    /* Asegura que el contenido desplegable esté por encima de otros elementos */
 }
 .dropdown2 h2{
     font-size: 16px;
@@ -45,54 +39,69 @@ body {
     padding: 20px 0px 0px 10px;
 }
 
-
+/* Estilo de los enlaces dentro del contenido desplegable */
 .dropdown--content2 a {
     color: #737373;
+    /* Color del texto de los enlaces en el desplegable */
+    /* Relleno alrededor del texto de los enlaces */
     text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
     display: block;
+    /* Hace que los enlaces ocupen toda la anchura del contenedor */
     font-size: 14px;
+    /* Ajusta el tamaño de la letra */
     font-weight: bold;
     text-align: center;
+    /* Alinea el texto a la izquierda */
+    /* Asegura que no haya margen extra */
     transition: background-color 0.3s ease, color 0.3s ease;
+    /* Efecto de transición suave */
     padding: 12px;
 }
 
+/* Parte del efecto de transición suave del contenido desplegable*/
 .dropdown--content2 a:hover {
     background-color: #8C7E6C;
+    /* Color de fondo al pasar el cursor */
     color: white;
+    /* Color del texto al pasar el cursor */
 }
 
-
+/* Muestra el contenido desplegable al pasar el ratón sobre el contenedor desplegable */
 .menu2 .dropdown2:hover .dropdown--content2 {
     display: block;
+    /* Muestra el contenido desplegable */
 }
 .arrow--down2 {
     display: inline-block;
+    /* Muestra la flecha como un bloque en línea */
+    /* margin-left: 5px; */
+    /* Espacio a la izquierda de la flecha */
     width: 0;
+    /* Ancho de la flecha */
     height: 0;
+    /* Altura de la flecha */
     border-left: 5px solid transparent;
+    /* Borde izquierdo transparente para crear la forma de la flecha */
     border-right: 5px solid transparent;
+    /* Borde derecho transparente para crear la forma de la flecha */
     border-top: 5px solid #333;
+    /* Borde superior para el color de la flecha */
     font-size: 14px;
 }
-<<<<<<< HEAD
-
-#store {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
-    background-color: #ffffff;
-    max-width: 1440px; 
-=======
 .main--container{
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    background-color: #ffffff; 
-    box-sizing: border-box;
+width: 100%;
+max-width: 1500px; /* Limita el ancho máximo del contenedor para centrarlo */
+border: 20px;
+padding: 10px 0;
+display: flex;
+align-items: center;
+justify-content: center; 
+background-color: #ffffff; 
+margin: 0 auto; /* Centra el contenedor en la página */
+box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
 }
+
 #store {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas, cada casilla ocupa 1fr (una fracción del espacio disponible) */
@@ -101,10 +110,10 @@ body {
     font-weight: bold;   
     max-width: 100%;
     padding: 50px 30px 50px 50px; 
-    margin-top: 60px; 
-    box-sizing: border-box;    
+    
+    flex-wrap: wrap;   
+    align-items: center;
 
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
 }
 
 .item {
@@ -113,17 +122,10 @@ body {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-<<<<<<< HEAD
-    width:  320px ;
-    height: 490px;
-    
-
-=======
     width: 317px;
     height: 488px;
     overflow: hidden;
     overflow: auto;   
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
 }
 
 .item img {
@@ -140,11 +142,8 @@ body {
     color: #252B42;
     max-width: 239.5px;
     text-align: center;
-<<<<<<< HEAD
-=======
     align-content: center;
     align-items: center;    
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
 }
 
 .item h3 {
@@ -161,203 +160,16 @@ body {
 }
 
 .item:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
 }
-
-  
-
-<<<<<<< HEAD
-=======
- }  /*
- @media screen and (max-width:700px){
- .container #store .item  {
-     width: 90%;
-     margin: 5px;
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
-
-
-<<<<<<< HEAD
-@media screen and (max-width: 600px){
-          #store {
-        display: flex;
-        text-align: center;
-        align-items: center;
-=======
-}  */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1400px){
     #store {
-        width: 80%;
+        
+        display: flex;
         text-align: center;
         align-items: center;
         grid-template-columns: none;
         justify-items: center;
-        justify-content: center;
-        
-        margin: 0%;
-
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
-         }
+        justify-content: center;        
+        margin: 0%;}
 }
-    /*
-@media screen and (max-width:500px) {
-    #sidebar {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        max-width: 400px;
-        height: 30px;
-        display: flex;
-    }
-}
-*/
-
-
-
-/*body {
-    font-family: "Montserrat", sans-serif;
-    max-width: 100%;
-    background-color: #ffffff;
-}
-
-.main--container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.dropdown2{
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown--content2 {
-    display: none;
-    position: absolute;
-    background-color: #D9D4CC;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-.dropdown2 h2{
-    font-size: 16px;
-    font-weight:500;
-    color: #252B42;
-    padding: 20px 0px 0px 20px;
-}
-.dropdown2 h5{
-    font-size: 16px;
-    font-weight: bold;
-    color: #252B42;
-    padding: 20px 0px 0px 10px;
-}
-
-
-.dropdown--content2 a {
-    color: #737373;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    padding: 12px;
-}
-
-.dropdown--content2 a:hover {
-    background-color: #8C7E6C;
-    color: white;
-}
-
-
-.menu2 .dropdown2:hover .dropdown--content2 {
-    display: block;
-}
-.arrow--down2 {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #333;
-    font-size: 14px;
-}
-
-#store {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
-    background-color: #ffffff;
-    max-width: 1440px; 
-}
-
-.item {
-    background-color: #FCFBFA;
-    border: 1px solid #ddd;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    width:  320px ;
-    height: 490px;
-    
-
-}
-
-.item img {
-    max-width: 239.5px;
-    height: 302px;
-    margin-bottom: 15px;
-}
-
-.item h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0 auto;
-    margin-bottom: 5px;
-    color: #252B42;
-    max-width: 239.5px;
-    text-align: center;
-}
-
-.item h3 {
-    font-size: 16px;
-    font-weight: bold;
-    color: #737373;
-    padding-bottom: 5px;
-    max-width: 239.5px;
-    margin: 0 auto;
-}
-.item p{
-    color: #BDBDBD;
-    font-size: 16px;
-}
-
-.item:hover {
-    transform: scale(1.05); 
-}
-
-  
-
-
-
-@media screen and (max-width: 600px){
-          #store {
-        display: flex;
-        text-align: center;
-        align-items: center;
-         }
-}
-    
-@media screen and (max-width:500px) {
-    #sidebar {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        max-width: 400px;
-        height: 30px;
-        display: flex;
-    }
-}
-*/
