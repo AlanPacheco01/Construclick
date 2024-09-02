@@ -7,7 +7,8 @@ body {
 }
 
 .aboutUs {
-    padding: 200px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     width: 100%;
     font-family: "Montserrat", sans-serif;
     overflow: hidden;
@@ -36,6 +37,7 @@ body {
     font-size: 58px;
     font-weight: bold;
     max-width: 618px;
+    margin-top: 15px;
 }
 .aboutUs--buildFuture{
     font-weight: normal;
@@ -87,6 +89,9 @@ body {
     line-height: 1.5;
     max-width: 70%;
     margin: 20px auto;
+    text-align: justify;
+    text-justify:inter-word;
+    word-wrap: break-word;
 }
 
 .aboutUs--cards {
@@ -145,7 +150,7 @@ body {
     color: #735F46;
 } 
 
-@media (max-width: 863px) {
+@media (max-width: 860px) {
     .aboutUs {
         background-color: white; 
         padding: 0%;
@@ -201,7 +206,7 @@ body {
 
 }
 
-/*Seccion de Acerca de nostros*/
+/*Seccion de Acerca de nosotros*/
 
 .aboutUs--container2 {
     display: flex;
@@ -210,9 +215,7 @@ body {
     font-weight: bold;
     align-items: center;
     margin: 0 auto;
-    padding-top: 35px;
-
-
+    padding-top: 20px;
 }
 
 /*Seccion de valores*/
@@ -226,11 +229,13 @@ body {
 
 #ourValues {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
     justify-content: center;
     align-items: center;
     font-size: 48px;
+    font-weight: bold;
     color: #735F46;
+    padding-bottom: 20px;
 } 
 
 #card--values{
@@ -243,7 +248,7 @@ body {
     align-items: center;
     height: 356px;
     width: 273px;
-    margin: 41px;
+    margin: 0 auto;
     color: #735F46;
 }
 
@@ -252,7 +257,6 @@ body {
     flex-wrap: wrap;
     height: 231px;
     width: 253px;
-    margin-top: -50px;
     margin-bottom: 50px;
     
 } 
@@ -267,11 +271,12 @@ body {
 }
 
 #vm {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     font-size: 48px;
+    font-weight: bold;
     color: #735F46;
 }
 
@@ -279,12 +284,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
+    text-align: justify;
     align-items:center;
     font-weight: 400;
     font-size: 20px;
     width: 540px;
-    margin: 60px;
+    margin: 40px;
     color: #735F46;
 }
 
@@ -298,9 +303,26 @@ body {
         justify-content: space-between;
         padding: 10px;
     }
+
+    #ourValues {
+        font-size: 40px;
+    }
+
+    #mv--container {
+        width: 280px;
+        margin: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
 
-@media ( max-width: 480px){
+@media ( max-width <= 480px) {
+
+    #ourValues {
+        font-size: 35px;
+    }
 
     .aboutUs--container2 .aboutUs {
         width: 100%;
@@ -312,6 +334,7 @@ body {
     }
 
     #vm {
+        font-size: 35px !important;
         display: flex;
         width: 100%;
         justify-content: center;
@@ -325,6 +348,11 @@ body {
         align-items: center;
         justify-content: space-around;
     }
+    #image {
+            width: 231px;
+            height: 231px; 
+    }
+
 
 }
 
@@ -338,20 +366,27 @@ body {
 
 .section--About h2{
     color: #735F46;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 .container--colaboradores{
     width: 100%;
     display: flex;
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin-top: 0 auto;
+    margin-bottom: 60px;
     justify-content: center;
+    align-items: center;
 }
 
 .section--About{
+    display: flex;
+    align-items: center;
     justify-content: center;
-    max-width: 1700px;
+    max-width: 100%;
+    margin-bottom: 20px;
 }
 
 
@@ -361,14 +396,16 @@ body {
     width: 470px;
     border-color: #ffffff;
     border-radius: 20px;
-    margin-left: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .section--About .card img{
-    width: 240px;
-    height: 240px;
+    width: 220px;
+    height: 220px;
     margin-left: -12px;
-    border-radius: 9999px;
+    border-radius: 9999px; 
 }
 .section--About .card .logo{
     width: 30px;
@@ -400,52 +437,56 @@ body {
     .section--About .sideCard,
     .section--About .sideCardMiddle,
     .section--About .centerCard,
-    .section--About.centerCardEnd {
+    .section--About .centerCardEnd {
       margin-top: initial;
       margin-bottom: 10px;
     }
   
-    .section--About .centerCardEnd {
-      margin-left: 20px;
+    .container--colaboradores {
+        max-width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
     .section--About{
         justify-content: center;
     }
-  }
-  
+}
 
-@media (width < 415px ) { /* Diseño responsivo para celular */
+
+@media (width <= 480px ) { /* Diseño responsivo para celular */
     .section--About{
-        margin: 20px;
+        margin-bottom: 50px; 
         background-color: var(--cement);
     }
     .section--About h2{
         color: var(--pot);
+        font-size: 40px !important; 
     }
 
     #ricardo, #monica, #claudia, #miguel, #alan, #Abraham, #pablo, #damian, #gabriel, #sebastian{
         background-color: white;
         height: 450px;
-        width: 316px;
+        width: 316px; 
         display: block;
         text-align: center;
         border-radius: initial;
-        margin-top: 20px;
-        margin-left: initial;
+        margin-bottom: 30px;
     }
 
     #ricardo img, #monica img, #claudia img, #miguel img, #alan img, #Abraham img, #pablo img, #damian img, #gabriel img, #sebastian img {
-        width: 316px;
-        height: 231px;
+        width: 220px; 
+        height: 220px; 
         border-radius: initial;
     }
     
     #ricardo .logo, #monica .logo, #claudia .logo, #miguel .logo, #alan .logo, #Abraham .logo, #pablo .logo, #damian .logo, #gabriel .logo, #sebastian .logo{
         width: 24px;
-        height: 24px;
+        height: 24px; 
     }
 
-    #ricardo h3, #monica h4, #claudia h3, #miguel h3, #alan h3, #Abraham h3, #pablo h3, #damian h3, #gabriel h3, #sebastian h3{
+    #ricardo h4, #monica h4, #claudia h4, #miguel h4, #alan h4, #Abraham h4, #pablo h4, #damian h4, #gabriel h4, #sebastian h4{
         font-size: 16px;
     }
     #ricardo p, #monica p, #claudia p, #miguel p, #alan p, #Abraham p, #pablo p, #damian p, #gabriel p, #sebastian p{
@@ -453,16 +494,57 @@ body {
 }
 }
 
+@media (width <= 320px ) {
+    .section--About{
+        margin-bottom: 25px; 
+        background-color: var(--cement); 
+    }
+    .section--About h2{
+        color: var(--pot);
+        font-size: 30px !important;
+    }
+
+    #ricardo, #monica, #claudia, #miguel, #alan, #Abraham, #pablo, #damian, #gabriel, #sebastian{
+        background-color: white;
+        height: 360px;
+        width: 240px; 
+        display: block;
+        text-align: center;
+        border-radius: initial;
+        margin-bottom: 10px;
+    }
+
+    #ricardo img, #monica img, #claudia img, #miguel img, #alan img, #Abraham img, #pablo img, #damian img, #gabriel img, #sebastian img {
+        width: 124px; 
+        height: 124px; 
+        border-radius: initial;
+    }
+    
+    #ricardo .logo, #monica .logo, #claudia .logo, #miguel .logo, #alan .logo, #Abraham .logo, #pablo .logo, #damian .logo, #gabriel .logo, #sebastian .logo{
+        width: 15px;
+        height: 15px; 
+    }
+
+    #ricardo h4, #monica h4, #claudia h4, #miguel h4, #alan h4, #Abraham h4, #pablo h4, #damian h4, #gabriel h4, #sebastian h4{
+        font-size: 14px;
+    }
+    #ricardo p, #monica p, #claudia p, #miguel p, #alan p, #Abraham p, #pablo p, #damian p, #gabriel p, #sebastian p{
+        font-size: 10px;
+        margin-bottom: 5px;
+}
+/* Falta poner los limetes aqui  */
+}
+
+
 .container {
     display: flex;
     justify-content: flex-end;
-    
     align-items: center;
     max-width: 100% !important;
     background-color: #735F46;
     box-sizing: border-box;
-margin-bottom: 0px;
-margin-top: 30px;
+    margin-bottom: 0px;
+    margin-top: 30px;
 }
 
 
