@@ -3,30 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Acerca de nosotros</title>
-    <link rel="stylesheet" href="../css/GuiaDiseño.css">
-    <link rel="stylesheet" href="../css/AcercaDeNosotros.css">
-    
-=======
-    <link rel="stylesheet" href="../css/GuiaDiseño.css"> <!-- Se carga la guia de diseños -->
+    <link rel="stylesheet" href="../css/guiaDediseño.css"> <!-- Se cargan los diseños de la pagina principal -->
     <link rel="stylesheet" href="../css/AcercaDeNosotros.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Acerca de nosotros</title>
-    <link rel="shortcut icon" href="../assets/LogotipoConstruclick.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/GuiaDiseno/LogotipoConstruclick.svg" type="image/x-icon">
 </head>
 
 
 <body>
   <header>
-<<<<<<< HEAD
-           <!-- Aqui va a estar la navbar version web-->
-        <nav class="navBar--container" id="navBarWeb">
-          <h2 class="BrandName"><a href="./index.html">Construclick</a></h2>
-        
+      <!-- Aqui va a estar la navbar version web-->
+      <nav class="navBar--container" id="navBarWeb">
+          <h2>Construclick</h2>
           <!-- Boton con menu desplegable y los otros botones-->
           <div class="links--container">
               <div class="dropdown">
@@ -35,54 +26,48 @@
                       Contrata
                   </button>
                   <ul type="none" class="dropdown-menu">
-                      <li><a class="item" href="./html/CatalogoServicios.html">Albañilería</a></li>
-                      <li><a class="item" href="./html/CatalogoServicios.html">Plomería</a></li>
-                      <li><a class="item" href="./html/CatalogoServicios.html">Carpintería</a></li>
-                      <li><a class="item" href="./html/CatalogoServicios.html">Herrería</a></li>
-                      <li><a class="item" href="./html/CatalogoServicios.html">Vidriería</a></li>
-                      <li><a class="item" href="./html/CatalogoServicios.html">Jardinería</a></li>
-                      <li><a class="item" href="./html/CatalogoServicios.html">Otros</a></li>
+                      <li><a class="item" href="../html/CatalogoServicios.html">Albañileria</a></li>
+                      <li><a class="item" href="../html/CatalogoServicios.html">Plomeria</a></li>
+                      <li><a class="item" href="../html/CatalogoServicios.html">Carpinteria</a></li>
+                      <li><a class="item" href="../html/CatalogoServicios.html">Herreria</a></li>
+                      <li><a class="item" href="../html/CatalogoServicios.html">Vidrieria</a></li>
+                      <li><a class="item" href="../html/CatalogoServicios.html">Jardineria</a></li>
+                      <li><a class="item" href="../html/CatalogoServicios.html">Otros</a></li>
                   </ul>
               </div>
-              <div>
-              <a href="./html/publicarServicio.html" class="buttonNavBar">Anúnciate</a>
+              <a href="../html/publicarServicio.html" class="buttonNavBar">Anunciate</a>
+              <a href="../html/AcercaDeNosotros.html" class="buttonNavBar">Conocenos</a>
           </div>
-              <div>
-              <a href="./html/AcercaDeNosotros.html" class="buttonNavBar">Conócenos</a>
-          </div>
-      </div>
           <!-- Botones iniciar sesion y registrate -->
           <div id="usuarios">
-              <a href="./html/login.html" class="buttonNavBar">Iniciar Sesión</a>
+              <a href="../html/login.html" class="buttonNavBar">Iniciar Sesion</a>
               /
-              <a href="./html/registroPagina1.html" class="buttonNavBar">Regístrate</a>
-          
-
-          <img src="./assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=25>
-      
+              <a href="../html/registroPagina1.html" class="buttonNavBar">Registrate</a>
+          </div>
+          <!-- Carrito de compra -->
+          <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=20>
           <!-- Barra de busqueda -->
           <form action="" method="post" class="searchNavBar">
-              <button type="submit" class="searchNavBar"><img src="./assets/GuiaDiseno/IconoLupa.svg" alt="Icono de una lupa"></button>
-              <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 300px;">
+              <button type="submit" class="searchNavBar"><img src="../assets/GuiaDiseno/IconoLupa.svg"
+                      alt="Icono de una lupa"></button>
+              <input type="search" name="" id="barraDebusqueda" placeholder="Search" class="searchNavBar"
+                  style="width: 300px;">
           </form>
-          </div>
-      </div>
-  </nav>
-
+      </nav>
       <!-- Aqui va a estar la navbar version movil -->
       <nav class="navBar--container navbar" id="navBarMobile">
-          <img src="./assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="80">
-          <h2 class="BrandName">Construclick</h2>
+          <img src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="35">
+          <h2>Construclick</h2>
           <!-- Funcionalidad de la lupa -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lupa"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btnlupa">
-              <img src="./assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="35">
+              <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="24">
           </button>
-          <img src="./assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width="35">
+          <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=24>
           <!-- Menu de hamburguesa -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menuHamburguesa">
-              <img src="./assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="45" class="menuHamburguesa">
+              <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="24">
           </button>
           <div class="collapse navbar-collapse" id="menu">
               <ul type="none">
@@ -93,131 +78,33 @@
                               Contrata
                           </button>
                           <ul type="none" class="collapse navbar-collapse" id="categorias">
-                              <li><a class="item" href="./html/CatalogoServicios.html">Albañilería</a></li>
-                              <li><a class="item" href="./html/CatalogoServicios.html">Plomería</a></li>
-                              <li><a class="item" href="./html/CatalogoServicios.html">Carpintería</a></li>
-                              <li><a class="item" href="./html/CatalogoServicios.html">Herrería</a></li>
-                              <li><a class="item" href="./html/CatalogoServicios.html">Vidriería</a></li>
-                              <li><a class="item" href="./html/CatalogoServicios.html">Jardinería</a></li>
-                              <li><a class="item" href="./html/CatalogoServicios.html">Otros</a></li>
+                              <li><a class="item" href="../html/CatalogoServicios.html">Albañileria</a></li>
+                              <li><a class="item" href="../html/CatalogoServicios.html">Plomeria</a></li>
+                              <li><a class="item" href="../html/CatalogoServicios.html">Carpinteria</a></li>
+                              <li><a class="item" href="../html/CatalogoServicios.html">Herreria</a></li>
+                              <li><a class="item" href="../html/CatalogoServicios.html">Vidrieria</a></li>
+                              <li><a class="item" href="../html/CatalogoServicios.html">Jardineria</a></li>
+                              <li><a class="item" href="../html/CatalogoServicios.html">Otros</a></li>
                           </ul>
                       </div>
                   </li>
                   <li>
-                      <a href="./html/publicarServicio.html" class="buttonNavBar item">Anúnciate</a>
+                      <a href="../html/publicarServicio.html" class="buttonNavBar item">Anunciate</a>
                   </li>
                   <li>
-                      <a href="./html/AcercaDeNosotros.html" class="buttonNavBar item">Conócenos</a>
+                      <a href="../html/AcercaDeNosotros.html" class="buttonNavBar item">Conocenos</a>
                   </li>
               </ul>
           </div>
           <div class="collapse navbar-collapse" id="lupa">
               <form action="" method="post" class="searchNavBar">
                   <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 90%;">
-                  <button type="submit" class="searchNavBar" style="width: 9%;"><img src="./assets/Pagina_Principal/IconoLupa.svg"
-                          alt="Icono de una lupa"></button>
+                  <button type="submit" class="searchNavBar" style="width: 9%;"><img
+                          src="../assets/GuiaDiseno/IconoLupa.svg" alt="Icono de una lupa"></button>
               </form>
           </div>
       </nav>
-=======
-    <!-- Aqui va a estar la navbar version web-->
-    <nav class="navBar--container" id="navBarWeb">
-        <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
-      
-        <!-- Boton con menu desplegable y los otros botones-->
-        <div class="links--container">
-            <div class="dropdown">
-                <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Contrata
-                </button>
-                <ul type="none" class="dropdown-menu">
-                    <li><a class="item" href="./catalogo.html">Albañilería</a></li>
-                    <li><a class="item" href="./catalogo.html">Plomería</a></li>
-                    <li><a class="item" href="./catalogo.html">Carpintería</a></li>
-                    <li><a class="item" href="./catalogo.html">Herrería</a></li>
-                    <li><a class="item" href="./catalogo.html">Vidriería</a></li>
-                    <li><a class="item" href="./catalogo.html">Jardinería</a></li>
-                    <li><a class="item" href="./catalogo.html">Otros</a></li>
-                </ul>
-            </div>
-            <div>
-            <a href="./html/publicarServicio.html" class="buttonNavBar">Anúnciate</a>
-        </div>
-            <div>
-            <a href="./html/AcercaDeNosotros.html" class="buttonNavBar">Conócenos</a>
-        </div>
-    </div>
-        <!-- Botones iniciar sesion y registrate -->
-        <div id="usuarios">
-            <a href="./html/login.html" class="buttonNavBar">Iniciar Sesión</a>
-            /
-            <a href="./html/registroPagina1.html" class="buttonNavBar">Regístrate</a>
-        
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
-
-        <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=25>
-    
-        <!-- Barra de busqueda -->
-        <form action="" method="post" class="searchNavBar">
-            <button type="submit" class="searchNavBar"><img src="../assets/GuiaDiseno/IconoLupa.svg" alt="Icono de una lupa"></button>
-            <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 300px;">
-        </form>
-        </div>
-    </div>
-</nav>
-
-    <!-- Aqui va a estar la navbar version movil -->
-    <nav class="navBar--container navbar" id="navBarMobile">
-        <img src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="80">
-        <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
-        <!-- Funcionalidad de la lupa -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lupa"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btnlupa">
-            <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="35">
-        </button>
-        <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width="35">
-        <!-- Menu de hamburguesa -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menuHamburguesa">
-            <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="45" class="menuHamburguesa">
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-            <ul type="none">
-                <li>
-                    <div class="dropdown">
-                        <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#categorias" aria-expanded="false" id="btnCategorias">
-                            Contrata
-                        </button>
-                        <ul type="none" class="dropdown-menu">
-                            <li><a class="item" href="./catalogo.html">Albañilería</a></li>
-                            <li><a class="item" href="./catalogo.html">Plomería</a></li>
-                            <li><a class="item" href="./catalogo.html">Carpintería</a></li>
-                            <li><a class="item" href="./catalogo.html">Herrería</a></li>
-                            <li><a class="item" href="./catalogo.html">Vidriería</a></li>
-                            <li><a class="item" href="./catalogo.html">Jardinería</a></li>
-                            <li><a class="item" href="./catalogo.html">Otros</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="./html/publicarServicio.html" class="buttonNavBar item">Anúnciate</a>
-                </li>
-                <li>
-                    <a href="./html/AcercaDeNosotros.html" class="buttonNavBar item">Conócenos</a>
-                </li>
-            </ul>
-        </div>
-        <div class="collapse navbar-collapse" id="lupa">
-            <form action="" method="post" class="searchNavBar">
-                <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 90%;">
-                <button type="submit" class="searchNavBar" style="width: 9%;"><img src="../assets/Pagina_Principal/IconoLupa.svg"
-                        alt="Icono de una lupa"></button>
-            </form>
-        </div>
-    </nav>
-</header>
+  </header>
 
 <!-- Empieza primera parte de Acerca de nosotros -->
     <section class="aboutUs">
@@ -333,12 +220,12 @@
     <!--Empieza seccion de colaboradores-->
     <div class="container--colaboradores">
     <section class="row section--About" id="Collaborators">
-        <h2 class="text-center fw-bold" id="colaboradores-title" style="margin-bottom: 50px; font-size: 50px; letter-spacing: 1px;">Colaboradores</h2>
+        <h2 class="text-center fw-bold" id="colaboradores-title" style="margin-top: 20px; margin-bottom: 20px; font-size: 50px; letter-spacing: 1px;">Colaboradores</h2>
         <!-- Ricardo Jovani -->
         <div class="card flex-row sideCard" id="ricardo">
           <img src="../assets/Jovani.jpg" class="card-img-left" alt="Colaborador Jovani">
           <div class="card-body">
-            <h3 class="card-title color2">Ricardo Jovani Fonseca Castillo</h3>
+            <h4 class="card-title color2">Ricardo Jovani Fonseca Castillo</h4>
             <p class="card-text"> Apasionado del desarrollo web, enfocado en la solución e implementación de recursos accesibles para el público en general.
             </p>
             <div class="logo--container">
@@ -352,7 +239,7 @@
           </div>
         </div>
         <!-- Monica Jasso -->
-        <div class="card  flex-row" id="monica">
+        <div class="card  flex-row centerCard" id="monica">
           <img src="../assets/Monica.jpg" class="card-img-left" alt="Colaboradora Moni">
           <div class="card-body">
             <h4 class="card-title color2">Monica Gabriela Jasso Rosales</h4>
@@ -372,7 +259,7 @@
         <div class="card flex-row sideCard" id="claudia">
           <img src="../assets/Claudia.jpg" class="card-img-left" alt="Colaboradora Claudia">
           <div class="card-body">
-            <h3 class="card-title color2">Claudia Miriam Medina Duran </h3>
+            <h4 class="card-title color2">Claudia Miriam Medina Duran </h4>
             <p class="card-text"> Me apasiona trabajar en equipos multidisciplinarios, siempre en constante aprendizaje.
             </p>
             <div class="logo--container">
@@ -389,7 +276,7 @@
         <div class="card  flex-row sideCardMiddle" id="miguel">
           <img src="../assets/Miguel.jpg" class="card-img-left" alt="Colaborador Miguel">
           <div class="card-body">
-            <h3 class="card-title color2">Miguel Angel Castillo</h3>
+            <h4 class="card-title color2">Miguel Angel Castillo</h4>
             <p class="card-text"> Desarrollo soluciones tecnológicas innovadoras y efectivas, adaptándome a los cambios constantes del sector para ofrecer resultados óptimos y accesibles.
             </p>
             <div class="logo--container">
@@ -406,7 +293,7 @@
          <div class="card  flex-row centerCard" id="alan">
           <img src="../assets/Alan.jpg" class="card-img-left" alt="Colaborador Alan">
           <div class="card-body">
-            <h3 class="card-title color2">Alan Alberto Pacheco Ramírez</h3>
+            <h4 class="card-title color2">Alan Alberto Pacheco Ramírez</h4>
             <p class="card-text"> Hago posible la implementación de soluciones eficientes, asequibles y novedosas para una industria en constante desarrollo.</p>
             <div class="logo--container">
               <a href="https://www.linkedin.com/in/aapr250495/" target="_blank">
@@ -422,7 +309,7 @@
         <div class="card  flex-row sideCardMiddle" id="Abraham">
           <img src="../assets/Abraham.jpg" class="card-img-left" alt="Colaborador Abraham">
           <div class="card-body">
-            <h3 class="card-title color2">Pedro Abraham Hidalgo Aguilar</h3>
+            <h4 class="card-title color2">Pedro Abraham Hidalgo Aguilar</h4>
             <p class="card-text"> Autodidacta y proactivo, siempre en busca de nuevas oportunidades para mejorar y crecer.
             </p>
             <div class="logo--container">
@@ -439,8 +326,8 @@
         <div class="card  flex-row sideCardMiddle" id="pablo">
           <img src="../assets/Pablo.jpg" class="card-img-left" alt="Colaborador Pablo">
           <div class="card-body">
-            <h3 class="card-title color2">Juan Pablo Ortega</h3>
-            <p class="card-text"> Estudiante de Generation MX en Desarrollo Java interesado en el Back End y la Inteligencia Artificial Formación elemental para el trabajo en la rama informática.
+            <h4 class="card-title color2">Juan Pablo Ortega</h4>
+            <p class="card-text"> Desarrollador Java interesado en el Back End y la Inteligencia Artificial. Formación elemental para el trabajo en la rama informática.
             </p>
             <div class="logo--container">
               <a href="https://www.linkedin.com/in/pabloo-ramirezz/" target="_blank">
@@ -456,7 +343,7 @@
         <div class="card  flex-row centerCard" id="damian">
           <img src="../assets/Damian.jpg" class="card-img-left" alt="Colaborador Damián">
           <div class="card-body">
-            <h3 class="card-title color2">Damián Campos</h3>
+            <h4 class="card-title color2">Damián Campos</h4>
             <p class="card-text"> Desarrollador web, amante de la tecnología y apasionado a la IT.
             </p>
             <div class="logo--container">
@@ -473,8 +360,8 @@
         <div class="card  flex-row sideCardMiddle" id="gabriel">
           <img src="../assets/Gabriel.jpg" class="card-img-left" alt="Colaborador Gabriel">
           <div class="card-body">
-            <h3 class="card-title color2">Erik Gabriel Méndez</h3>
-            <p class="card-text"> Innovador, concreto en sus objetivos, apasionado de los pequeños detalles de la vida. Tec. en telecomunicaciones y entusiasta en la Arquitectura de software.
+            <h4 class="card-title color2">Erik Gabriel Méndez</h4>
+            <p class="card-text"> Innovador, concreto en sus objetivos, apasionado de los pequeños detalles de la vida. Técnico en telecomunicaciones y entusiasta en la arquitectura de software.
             </p>
             <div class="logo--container">
               <a href="https://www.linkedin.com/in/erik-m%C3%A9ndez07?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
@@ -490,7 +377,7 @@
         <div class="card  flex-row centerCardEnd" id="sebastian">
           <img src="../assets/Sebastian.jpg" class="card-img-left" alt="Colaborador Sebastian">
           <div class="card-body">
-            <h3 class="card-title color2">Pedro Sebastián Frías Martínez</h3>
+            <h4 class="card-title color2">Pedro Sebastián Frías Martínez</h4>
             <p class="card-text"> Apasionado de la programación y las finanzas, emprendedor con formación en Ingeniería. Siempre abierto al aprendizaje constante.
             </p>
             <div class="logo--container">
@@ -524,34 +411,39 @@
 
 
     <!-- Aqui va a estar el footer -->
-    <footer>
-      <div>
-<<<<<<< HEAD
-          <h2><a href="./contacto.html"></a>Contacto</a></h2>
-=======
-          <h2><a href="./html/contacto.html">Contacto</a></h2>
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
+<footer>
+      <div class="enlaces">
+          <a href="../html/contacto.html"><h2>Contacto</h2></a>
           <a href="mailto:service@construclick.com">service@construclick.com</a>
-          <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25">
-          <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25">
-          <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25">
+      <div  class="" id="enlaces2">
+         
+         <div id="enlaces" style="display: flex; justify-content: center;"> 
+         <a href=" https://www.facebook.com/?locale=es_LA">
+          <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25"></a>
+           <a href="https://www.instagram.com/">
+              <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25" ></a>
+              <a href="https://x.com/?mx=2">
+                  <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25" ></a>
+          </div>
+      
       </div>
-      <div>
-          <h2><a href="./html/catalogo.html">Catálogo</a></h2>
-          <a href="./catalogo.html">Contrata</a>
-          <a href="./publicarServicio.html">Anúnciate</a>
-      </div>
-      <div>
-          <h2><a href="./html/login.html">Mi cuenta</a></h2>
-          <a href="./registroPagina1.html">Regístrate</a>
-          <a href="./login.html">Inicia sesión</a>
-      </div>
-      <div>
-          <h2><a href="./html/AcercaDeNosotros.html">Conócenos</a></h2>
-          <a href="./TerminosCondiciones.html">Términos y condiciones</a>
-          <a href="./AvisoPrivacidad.html">Aviso de privacidad</a>
-      </div>
-  </footer>
+  </div>
+  <div>
+      <h2>Catalogo</h2>
+      <a href="../html/catalogo.html">Contrata</a>
+      <a href="../html/publicarServicio.html">Anunciate</a>
+  </div>
+  <div>
+      <h2>Mi cuenta</h2>
+      <a href="../html/registroPagina1.html">Registrate</a>
+      <a href="../html/login.html">Inicia sesión</a>
+  </div>
+  <div>
+      <h2>Conócenos</h2>
+      <a href="../html/TerminosCondiciones.html">Terminos y condiciones</a>
+      <a href="../html/AvisoPrivacidad.html">Aviso de privacidad</a>
+  </div>
+</footer>
   <!-- Se importan los scripts de boostrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -559,6 +451,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"></script>
+  <script src="../javascript/AcercaDeNosotros.js"></script>
 </body>
 </html>
 
