@@ -183,7 +183,7 @@ button:hover{
         height: 40px;
         border: none;
     }
-    .BrandName{
+    .BrandName a{
         font-size: 24px;
     }
     
