@@ -26,12 +26,14 @@ body {
         justify-items: center;
         gap: 100px;
         padding: 0%;
+        max-width: 480px;
     }
 
     #text-container p {
-        text-align: justify;
+        text-align: center;
         margin-top: 30px;
         font-size: 18px;
+        max-width: 480px;
     }
 }
 
@@ -70,7 +72,7 @@ body {
 }
 
 #text-container {
-    width: 30%;
+    width: 90%;
     padding-bottom: 10px;
 }
 
@@ -105,4 +107,3 @@ body {
         font-size: 18px;
     }
 }
-

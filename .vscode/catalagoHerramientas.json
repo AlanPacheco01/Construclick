@@ -1,0 +1,53 @@
+
+[                     
+    {
+        "nombre":"Martillo Trupper 5 in",
+        "precio":"150",
+        "imagen":"https://click.fixferreterias.com/media/product/0a1/martillo-16-oz-u-a-recta-mango-fibra-de-vidrio-truper-be4.jpg",
+        "descripcion":"Martillo ergonómico para trabajos de mamposteria"
+      
+    },
+    {
+        "nombre":"Pico  trupper 4 in",
+        "precio":"250",
+        "imagen":"https://click.fixferreterias.com/media/product/43a/talacho-pico-2-5-lb-mango-fibra-de-vidrio-36-truper-bc7.jpg",
+        "descripcion":"Mazo tipo pico con palo de madera para romper concreto o excavar "
+    },
+    {
+        "nombre":"Cuchara trupper 3 in",
+        "precio":"220",
+        "imagen":"https://click.fixferreterias.com/media/product/3eb/cuchara-para-alba-il-7-forjada-tipo-filadelfia-truper-71b.jpg",
+        "descripcion":" Cuchara de metal para acabados finos o pega de mamposteria."
+    },
+    {
+        "nombre":"Nivel de mano trupper 2 in",
+        "precio":"180",
+        "imagen":"https://ferreteriacalzada.mx/wp-content/uploads/2020/12/H255371.jpg",
+        "descripcion":"Nivel de mano para checar desplantes o direccion lineal"
+    },
+    
+   {
+    "nombre":"Zincel Trupper 5 in",
+    "precio":"90",
+  "imagen":"https://www.truper.com/media/import/imagenes/C-1X10+E1.jpg",
+   "descripcion":"Zincel de fierro colado para remover o excarvar a detalle "
+  },
+{        "nombre":"Flexometro Truper",
+    "precio":"200",
+  "imagen":"https://www.truper.com/media/import/imagenes/FCN-8M+E1.jpg",
+    "descripcion":"Flexometro Gripper contra impacto 8m 25mm,  es una cinta métrica retráctil y portátil, conocida por su durabilidad y precisión. Está diseñado para medir distancias de forma fácil y rápida"
+},
+{
+    "nombre":"Escalera de aluminio Truper",
+    "precio":"1389",
+    "imagen":"https://click.fixferreterias.com/media/product/e7b/escalera-de-tijera-tipo-ii-3-pelda-os-truper-5e3.jpg",
+    "descripcion":"Escalera de tijera, material aluminio con tapa ProTop y charola"
+},
+{
+    "nombre":"Plomada metalica Truper",
+    "precio":"150",
+    "imagen":"https://www.ledfuzzion.com/cdn/shop/products/17069P_1200x1200.png?v=1646522050",
+    "descripcion":"Ligera y sencillo de emplear"
+}
+]
+

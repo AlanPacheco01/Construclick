@@ -70,7 +70,7 @@ form.addEventListener('submit', (evt) => {
         emailAlert.hidden=false;
         setTimeout(()=>{
             emailAlert.hidden=true;
-        },2500)
+        },3000)
         return;
     }else{
         emailAlert.hidden=true;
@@ -79,7 +79,7 @@ form.addEventListener('submit', (evt) => {
         phoneAlert.hidden=false;
         setTimeout(()=>{
             phoneAlert.hidden=true;
-        },2500)
+        },3000)
         return;
     }else{
         phoneAlert.hidden=true;
@@ -88,7 +88,7 @@ form.addEventListener('submit', (evt) => {
         textAlert.hidden=false;
         setTimeout(()=>{
             textAlert.hidden=true;
-        },2500)
+        },3000)
         return;
     }else{
         textAlert.hidden=true;
@@ -98,7 +98,7 @@ form.addEventListener('submit', (evt) => {
         mesageAlert.hidden=false;
         setTimeout(()=>{
             mesageAlert.hidden=true;
-        },2500)
+        },3000)
         return;
     }else{
         mesageAlert.hidden=true;
@@ -119,5 +119,3 @@ form.addEventListener('submit', (evt) => {
     },3500)    
     form.reset();
 })
-
-

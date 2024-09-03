@@ -151,7 +151,7 @@ button:hover{
 #navBarMobile{
     display: none;
 }
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1026px) {
    #barraDebusqueda{
     display: none;
    }
@@ -180,11 +180,11 @@ button:hover{
         font-size: 25px;
     }
     #btnlupa{
-        height: 40px;
+        height: 35px;
         border: none;
     }
-    .BrandName{
-        font-size: 24px;
+    .BrandName a{
+        font-size: 30px;
     }
     
     
