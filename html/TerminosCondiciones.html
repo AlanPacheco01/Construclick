@@ -1,115 +1,112 @@
 <!DOCTYPE html>
 <html lang="es-419">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/GuiaDiseño.css">
     <link rel="stylesheet" href="../css/TerminosCondiciones.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Términos y condiciones</title>
+    <link rel="stylesheet" href="../css/guiaDediseño.css"> <!-- Se cargan los diseños de la pagina principal -->
+    <!-- Se importa Boostrap 5.3v -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Aviso de Privacidad</title>
     <link rel="shortcut icon" href="../assets/GuiaDiseno/LogotipoConstruclick.svg" type="image/x-icon">
+</head>
 </head>
 
 <body>
     <header>
         <!-- Aqui va a estar la navbar version web-->
         <nav class="navBar--container" id="navBarWeb">
-            <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
-        
-          <!-- Boton con menu desplegable y los otros botones-->
-          <div class="links--container">
-              <div class="dropdown">
-                  <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Contrata
-                  </button>
-                  <ul type="none" class="dropdown-menu">
-                    <li><a class="item" href="./catalogo.html">Albañilería</a></li>
-                    <li><a class="item" href="./catalogo.html">Plomería</a></li>
-                    <li><a class="item" href="./catalogo.html">Carpintería</a></li>
-                    <li><a class="item" href="./catalogo.html">Herrería</a></li>
-                    <li><a class="item" href="./catalogo.html">Vidriería</a></li>
-                    <li><a class="item" href="./catalogo.html">Jardinería</a></li>
-                    <li><a class="item" href="./catalogo.html">Otros</a></li>
+            <h2>Construclick</h2>
+            <!-- Boton con menu desplegable y los otros botones-->
+            <div class="links--container">
+                <div class="dropdown">
+                    <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Contrata
+                    </button>
+                    <ul type="none" class="dropdown-menu">
+                        <li><a class="item" href="../html/CatalogoServicios.html">Albañileria</a></li>
+                        <li><a class="item" href="../html/CatalogoServicios.html">Plomeria</a></li>
+                        <li><a class="item" href="../html/CatalogoServicios.html">Carpinteria</a></li>
+                        <li><a class="item" href="../html/CatalogoServicios.html">Herreria</a></li>
+                        <li><a class="item" href="../html/CatalogoServicios.html">Vidrieria</a></li>
+                        <li><a class="item" href="../html/CatalogoServicios.html">Jardineria</a></li>
+                        <li><a class="item" href="../html/CatalogoServicios.html">Otros</a></li>
+                    </ul>
+                </div>
+                <a href="../html/publicarServicio.html" class="buttonNavBar">Anunciate</a>
+                <a href="../html/AcercaDeNosotros.html" class="buttonNavBar">Conocenos</a>
+            </div>
+            <!-- Botones iniciar sesion y registrate -->
+            <div id="usuarios">
+                <a href="../html/login.html" class="buttonNavBar">Iniciar Sesion</a>
+                /
+                <a href="../html/registroPagina1.html" class="buttonNavBar">Registrate</a>
+            </div>
+            <!-- Carrito de compra -->
+            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=20>
+            <!-- Barra de busqueda -->
+            <form action="" method="post" class="searchNavBar">
+                <button type="submit" class="searchNavBar"><img src="../assets/GuiaDiseno/IconoLupa.svg"
+                        alt="Icono de una lupa"></button>
+                <input type="search" name="" id="barraDebusqueda" placeholder="Search" class="searchNavBar"
+                    style="width: 300px;">
+            </form>
+        </nav>
+        <!-- Aqui va a estar la navbar version movil -->
+        <nav class="navBar--container navbar" id="navBarMobile">
+            <img src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="35">
+            <h2>Construclick</h2>
+            <!-- Funcionalidad de la lupa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lupa"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btnlupa">
+                <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="24">
+            </button>
+            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=24>
+            <!-- Menu de hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menuHamburguesa">
+                <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="24">
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul type="none">
+                    <li>
+                        <div class="dropdown">
+                            <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#categorias" aria-expanded="false" id="btnCategorias">
+                                Contrata
+                            </button>
+                            <ul type="none" class="collapse navbar-collapse" id="categorias">
+                                <li><a class="item" href="../html/CatalogoServicios.html">Albañileria</a></li>
+                                <li><a class="item" href="../html/CatalogoServicios.html">Plomeria</a></li>
+                                <li><a class="item" href="../html/CatalogoServicios.html">Carpinteria</a></li>
+                                <li><a class="item" href="../html/CatalogoServicios.html">Herreria</a></li>
+                                <li><a class="item" href="../html/CatalogoServicios.html">Vidrieria</a></li>
+                                <li><a class="item" href="../html/CatalogoServicios.html">Jardineria</a></li>
+                                <li><a class="item" href="../html/CatalogoServicios.html">Otros</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../html/publicarServicio.html" class="buttonNavBar item">Anunciate</a>
+                    </li>
+                    <li>
+                        <a href="../html/AcercaDeNosotros.html" class="buttonNavBar item">Conocenos</a>
+                    </li>
                 </ul>
-              </div>
-              <div>
-              <a href="./publicarServicio.html" class="buttonNavBar">Anúnciate</a>
-          </div>
-              <div>
-              <a href="./AcercaDeNosotros.html" class="buttonNavBar">Conócenos</a>
-          </div>
-      </div>
-          <!-- Botones iniciar sesion y registrate -->
-          <div id="usuarios">
-              <a href="./login.html" class="buttonNavBar">Iniciar Sesión</a>
-              /
-              <a href="./registroPagina1.html" class="buttonNavBar">Regístrate</a>
-          
-
-          <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=25>
-      
-          <!-- Barra de busqueda -->
-          <form action="" method="post" class="searchNavBar">
-              <button type="submit" class="searchNavBar"><img src="../assets/GuiaDiseno/IconoLupa.svg" alt="Icono de una lupa"></button>
-              <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 300px;">
-          </form>
-          </div>
-      </div>
-  </nav>
-
-      <!-- Aqui va a estar la navbar version movil -->
-      <nav class="navBar--container navbar" id="navBarMobile">
-          <img src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="80">
-          <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
-          <!-- Funcionalidad de la lupa -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lupa"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btnlupa">
-              <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="35">
-          </button>
-          <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width="35">
-          <!-- Menu de hamburguesa -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menuHamburguesa">
-              <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="45" class="menuHamburguesa">
-          </button>
-          <div class="collapse navbar-collapse" id="menu">
-              <ul type="none">
-                  <li>
-                      <div class="dropdown">
-                          <button class="buttonNavBar dropdown-toggle" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#categorias" aria-expanded="false" id="btnCategorias">
-                              Contrata
-                          </button>
-                          <ul type="none" class="dropdown-menu">
-                            <li><a class="item" href="./catalogo.html">Albañilería</a></li>
-                            <li><a class="item" href="./catalogo.html">Plomería</a></li>
-                            <li><a class="item" href="./catalogo.html">Carpintería</a></li>
-                            <li><a class="item" href="./catalogo.html">Herrería</a></li>
-                            <li><a class="item" href="./catalogo.html">Vidriería</a></li>
-                            <li><a class="item" href="./catalogo.html">Jardinería</a></li>
-                            <li><a class="item" href="./catalogo.html">Otros</a></li>
-                        </ul>
-                      </div>
-                  </li>
-                  <li>
-                      <a href="./publicarServicio.html" class="buttonNavBar item">Anúnciate</a>
-                  </li>
-                  <li>
-                      <a href="./AcercaDeNosotros.html" class="buttonNavBar item">Conócenos</a>
-                  </li>
-              </ul>
-          </div>
-          <div class="collapse navbar-collapse" id="lupa">
-              <form action="" method="post" class="searchNavBar">
-                  <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 90%;">
-                  <button type="submit" class="searchNavBar" style="width: 9%;"><img src="../assets/Pagina_Principal/IconoLupa.svg"
-                          alt="Icono de una lupa"></button>
-              </form>
-          </div>
-      </nav>
-
-</header>
+            </div>
+            <div class="collapse navbar-collapse" id="lupa">
+                <form action="" method="post" class="searchNavBar">
+                    <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 90%;">
+                    <button type="submit" class="searchNavBar" style="width: 9%;"><img
+                            src="../assets/GuiaDiseno/IconoLupa.svg" alt="Icono de una lupa"></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!-- aqui termina Navbar-->
 
 <!-- termina -->
     <div id="main-container">
@@ -130,72 +127,70 @@
             <div id="propiedadIntelectual">
                 <h3>Propiedad Intelectual</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore architecto ullam quae at?
-                    Perspiciatis dicta impedit velit sunt in, placeat, a expedita nobis tempora voluptates doloribus
-                    facere repellat. Maiores, quod! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem
-                    sint dolores molestiae quaerat voluptates! Nisi officia nam nostrum alias soluta non porro tempore
-                    possimus. Alias molestiae iusto voluptate delectus repellendus.
+                    En Construclick, nos enorgullecemos de ser líderes en la industria de la construcción en línea. Nuestra plataforma ofrece una amplia variedad de productos y servicios para satisfacer las necesidades de nuestros clientes. Sin embargo, sabemos que nuestra verdadera fortaleza radica en nuestra capacidad para innovar y crear soluciones únicas para el sector.
                 </p>
 
             </div>
             <div id="registroContrasenas">
                 <h3>Registo y contraseñas</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore excepturi facere ea ex
-                    aspernatur quasi iste totam cumque, repellendus exercitationem cupiditate consectetur soluta eos
-                    eligendi officia maxime id tenetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Repellat modi dignissimos quisquam voluptate, quia, totam aliquid libero nisi at quos quaerat fugiat
-                    reiciendis temporibus necessitatibus. Ex facere repellat ab sint.
-                </p>
+                    En Construclick, nos comprometemos a proteger la seguridad y la privacidad de nuestros usuarios. 
+</p>
             </div>
             <div id="servApart">
                 <h3>Servicios y Apartados</h3>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, neque reiciendis suscipit
-                    deserunt quas sunt ipsa laborum dolorem reprehenderit fugit nihil aperiam qui aut earum laudantium
-                    asperiores odio libero quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-                    cupiditate adipisci. Fugiat, accusamus eius. Culpa vero eligendi ut suscipit, amet ea voluptas
-                    expedita sunt, non corporis inventore! Incidunt, nostrum asperiores!
+                    En Construclick, ofrecemos una variedad de servicios y recursos para ayudarte a encontrar lo que necesitas para tu proyecto de construcción.
+
+
                 </p>
 
             </div>
 
         </div>
     </div>
-    <!-- footer -->
-    <footer>
-        <div>
-            <h2><a href="./contacto.html">Contacto</a></h2>
-            <a href="mailto:service@construclick.com">service@construclick.com</a>
-            <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25">
-            <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25">
-            <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25">
+        <!-- Aqui va a estar el footer -->
+        <footer>
+            <div class="enlaces">
+                <a href="../html/contacto.html"><h2>Contacto</h2></a>
+                <a href="mailto:service@construclick.com">service@construclick.com</a>
+            <div  class="" id="enlaces2">
+               
+               <div id="enlaces" style="display: flex; justify-content: center;"> 
+               <a href=" https://www.facebook.com/?locale=es_LA">
+                <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25"></a>
+                 <a href="https://www.instagram.com/">
+                    <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25" ></a>
+                    <a href="https://x.com/?mx=2">
+                        <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25" ></a>
+                </div>
+            
+            </div>
         </div>
         <div>
-            <h2><a href="./catalogo.html">Catálogo</a></h2>
-            <a href="./catalogo.html">Contrata</a>
-            <a href="./publicarServicio.html">Anúnciate</a>
+            <h2>Catalogo</h2>
+            <a href="../html/catalogo.html">Contrata</a>
+            <a href="../html/publicarServicio.html">Anunciate</a>
         </div>
         <div>
-            <h2><a href="./login.html">Mi cuenta</a></h2>
-            <a href="./registroPagina1.html">Regístrate</a>
-            <a href="./login.html">Inicia sesión</a>
+            <h2>Mi cuenta</h2>
+            <a href="../html/registroPagina1.html">Registrate</a>
+            <a href="../html/login.html">Inicia sesión</a>
         </div>
         <div>
-            <h2><a href="./AcercaDeNosotros.html">Conócenos</a></h2>
-            <a href="./TerminosCondiciones.html">Términos y condiciones</a>
-            <a href="./AvisoPrivacidad.html">Aviso de privacidad</a>
+            <h2>Conócenos</h2>
+            <a href="../html/TerminosCondiciones.html">Terminos y condiciones</a>
+            <a href="../html/AvisoPrivacidad.html">Aviso de privacidad</a>
         </div>
     </footer>
-
-    <script src="../javascript/TerminosCondiciones.js"></script>
-    <!-- Se importan los scripts de boostrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-</body>
+        <!-- Se importan los scripts de boostrap -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+            <script src="../javascript/TerminosCondiciones.js"></script>
+    </body>
 
 </html>
