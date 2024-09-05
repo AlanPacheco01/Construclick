@@ -1,5 +1,5 @@
 .body {
-    background-color: #D9D4CC;
+    background-color: white;
     box-sizing: border-box;
     /* display: flex;
     align-items: center; */
@@ -9,6 +9,7 @@
 }
 
 .form--container {
+
     max-width: 784px;
     background-color: white;
     padding: 50px;
@@ -16,8 +17,15 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto; 
-    margin-top: 100px;
-    margin-bottom: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d3c5b0;
+}
+
+.container--formularioPublicarServicio{
+    background-color: white;
+    padding-top: 200px;
+    padding-bottom: 88px;
 }
 
 .option{
