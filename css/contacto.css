@@ -12,19 +12,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 10px;
+    padding-top: 0px;
+    color: #8C7E6C;
 }
 
 .text-center h1 {
-    text-align: justify;
-    color: #735F46;
-    font-size: 58px;
-    font-weight: 700;
-    font-weight: bold;
-    line-height: 80px; 
-
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600; 
+    letter-spacing: 0.2px;
+    color: #735f46;
+    padding-top: 140px;
+    padding-bottom: 0%;
 }
+
 
 .text-center p {
     color: #735F46;
@@ -41,7 +43,7 @@ body {
 .main--form {
     display: flex;
     flex-direction: row;
-    max-width: 1100px;
+    max-width: 100%;
     max-height: 740px;
     margin: 0 auto;
     color: #735F46;
@@ -53,6 +55,7 @@ body {
     border: 2px solid #d3c5b0;
     border-radius: 8px;
     padding: 3px, 3px, 3px, 5px;
+    width: 1000px;
 }
 #border{
     justify-content: center;
@@ -63,9 +66,10 @@ body {
     margin-bottom: 5%;
 }
 .form--inputs {
-    max-width: 600px;
+    max-width:fit-content;
     padding-left: 10px;
     background-attachment: #E6E6E6;
+    width: 100%;
 }
 
 .form--inputs input {
@@ -80,6 +84,7 @@ body {
 .form--inputs textarea {
     max-width: 450px;
     margin-left: 10px;
+    width: 100%;
 }
 
 #userName::placeholder{
@@ -159,7 +164,7 @@ body {
     border-color: #F2F2F2;
 }
 .mb-3 p{
-    font-weight: bold;
+    font-weight: 400px;
     margin-bottom: 0;
     margin-left: 10px;
 }
@@ -174,6 +179,7 @@ body {
     font-family: "Montserrat";
     display: flex;
     flex-direction: column;
+    padding-left: 0;
 }
 #mycard img{
     max-width: 40px;
@@ -187,6 +193,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.2px;
+    width: 100%;
 }
 
 
