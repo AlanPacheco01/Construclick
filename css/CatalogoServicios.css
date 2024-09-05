@@ -3,7 +3,7 @@ body{
     color: #735F46;
 }
 
-<<<<<<< HEAD
+
 h4{
 font-family: 'Montserrat';
 font-style: normal;
@@ -15,43 +15,20 @@ color: #8C7E6C;
 }
 
 p{
-=======
-.servicio h4{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-letter-spacing: 0.2px;
-color: #8C7E6C;
-text-align: center;
-
-}
-
-.servicio p{
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 20px;
 letter-spacing: 0.2px;
-<<<<<<< HEAD
 color: #858585;
-=======
-color: #735F46;;
-text-align: center;
-}
-
-.servicio:hover {
-    transform: scale(1.05); 
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
 }
 
 #store-estrella{
     width: 20px;
     color: darkgoldenrod;
     font-size: 20px;
-<<<<<<< HEAD
+
 }
 
 .div--container{
@@ -67,14 +44,7 @@ text-align: center;
 #store--desc:hover{
     transform: scale(1.05);
 }
-=======
-   margin: 0;
-   display: none;
-}
 
-
-
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
 
 #store--desc {
   display: flex;
@@ -82,26 +52,22 @@ text-align: center;
   width: 100% !important;
   margin: 0 auto;
   flex-wrap: wrap;
-<<<<<<< HEAD
   border: #858585;
   overflow: hidden;
   gap: 20px !important;
   border-style: solid;
-=======
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
+
 }
 
 .servicio {
     display: flex;
-<<<<<<< HEAD
+
     flex-direction: row;
-=======
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
+
     align-items: center;
     font-size: 10px;
     max-width: 670px;
     height: 300px;
-<<<<<<< HEAD
 }
 
 .servicio p{
@@ -115,8 +81,6 @@ text-align: center;
 .servicio-imagen img {
     max-width: 300px;
     height: 300px;
-}
-=======
     border-style: solid;
     border-color: #858585;
     margin-top: 20px;
@@ -133,7 +97,7 @@ text-align: center;
     border-color: #858585;
     border-width: 1px;
 }
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
+
 
 .servicio-imagen {
     max-width: 300px;
@@ -143,11 +107,7 @@ text-align: center;
 
 .servicio-info {
     display: flex;
-<<<<<<< HEAD
     height: 311px !important;
-=======
-    height: 300px !important;
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -156,16 +116,11 @@ text-align: center;
 #boton--contactar{
     background-color: #735F46;
     font-family: "Montserrat";
-<<<<<<< HEAD
+
     font-size: 10px;
     width: 70px;
     height: 30px;
     border-radius: 10px;
-=======
-    font-size: 13px;
-    width: 150px;
-    height: 40px;
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
     color:#f2f2f2;
     justify-content: center;
     align-items: center;
@@ -212,8 +167,7 @@ text-align: center;
 
 }
 
-<<<<<<< HEAD
-=======
+
 @media screen and (max-width: 600px){
     .servicio {
   display: flex;
@@ -222,8 +176,3 @@ text-align: center;
   padding: 10px;
    }
 }
-
-
-
-
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f

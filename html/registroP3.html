@@ -23,7 +23,8 @@
     <header>
         <!-- Aqui va a estar la navbar version web-->
         <nav class="navBar--container" id="navBarWeb">
-            <h2>Construclick</h2>
+            <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
+          
             <!-- Boton con menu desplegable y los otros botones-->
             <div class="links--container">
                 <div class="dropdown">
@@ -32,59 +33,54 @@
                         Contrata
                     </button>
                     <ul type="none" class="dropdown-menu">
-<<<<<<< HEAD
-                        <li><a class="item" href="#">Albañileria</a></li>
-                        <li><a class="item" href="#">Plomeria</a></li>
-                        <li><a class="item" href="#">Carpinteria</a></li>
-                        <li><a class="item" href="#">Herreria</a></li>
-                        <li><a class="item" href="#">Vidrieria</a></li>
-                        <li><a class="item" href="#">Jardineria</a></li>
-                        <li><a class="item" href="#">Otros</a></li>
-=======
-                        <li><a class="item" href="./html/CatalogoServicios.html">Albañilería</a></li>
-                        <li><a class="item" href="./html/CatalogoServicios.html">Plomería</a></li>
-                        <li><a class="item" href="./html/CatalogoServicios.html">Carpintería</a></li>
-                        <li><a class="item" href="./html/CatalogoServicios.html">Herrería</a></li>
-                        <li><a class="item" href="./html/CatalogoServicios.html">Vidriería</a></li>
-                        <li><a class="item" href="./html/CatalogoServicios.html">Jardinería</a></li>
-                        <li><a class="item" href="./html/CatalogoServicios.html">Otros</a></li>
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
+                        <li><a class="item" href="./catalogo.html">Albañilería</a></li>
+                        <li><a class="item" href="./catalogo.html">Plomería</a></li>
+                        <li><a class="item" href="./catalogo.html">Carpintería</a></li>
+                        <li><a class="item" href="./catalogo.html">Herrería</a></li>
+                        <li><a class="item" href="./catalogo.html">Vidriería</a></li>
+                        <li><a class="item" href="./catalogo.html">Jardinería</a></li>
+                        <li><a class="item" href="./catalogo.html">Otros</a></li>
                     </ul>
                 </div>
-                <a href="./html/publicarServicio.html" class="buttonNavBar item">Anunciate</a>
-                <a href="./html/AcercaDeNosotros.html" class="buttonNavBar item">Conocenos</a>
+                <div>
+                <a href="./publicarServicio.html" class="buttonNavBar">Anúnciate</a>
             </div>
-
+                <div>
+                <a href="./AcercaDeNosotros.html" class="buttonNavBar">Conócenos</a>
+            </div>
+        </div>
             <!-- Botones iniciar sesion y registrate -->
-            <div class="links--container" id="usuarios">
-                <a href="./html/login.html" class="buttonNavBar item">Iniciar Sesion</a>
+            <div id="usuarios">
+                <a href="./login.html" class="buttonNavBar">Iniciar Sesión</a>
                 /
-                <a href="./html/registroPagina1.html" class="buttonNavBar item">Registrate</a>
-            </div>
-
+                <a href="./registroPagina1.html" class="buttonNavBar">Regístrate</a>
+            
+    
             <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=25>
-
+        
             <!-- Barra de busqueda -->
             <form action="" method="post" class="searchNavBar">
                 <button type="submit" class="searchNavBar"><img src="../assets/GuiaDiseno/IconoLupa.svg" alt="Icono de una lupa"></button>
-                <input type="search" placeholder="Search" class="searchNavBar" style="width: 300px;">
+                <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 300px;">
             </form>
-        </nav>
-
+            </div>
+        </div>
+    </nav>
+    
         <!-- Aqui va a estar la navbar version movil -->
         <nav class="navBar--container navbar" id="navBarMobile">
-            <img src="../assets/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="81">
-            <h2>Construclick</h2>
+            <img src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="80">
+            <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
             <!-- Funcionalidad de la lupa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lupa"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btnlupa">
-                <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="40">
+                <img src="../assets/GuiaDiseno/IconoLupa.svg" alt="IconoLupa" width="35">
             </button>
-            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=40>
+            <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width="35">
             <!-- Menu de hamburguesa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menuHamburguesa">
-                <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="60">
+                <img src="../assets/GuiaDiseno/IconoBotonHamburguesa.svg" alt="Boton del menu" width="45" class="menuHamburguesa">
             </button>
             <div class="collapse navbar-collapse" id="menu">
                 <ul type="none">
@@ -94,33 +90,35 @@
                                 data-bs-target="#categorias" aria-expanded="false" id="btnCategorias">
                                 Contrata
                             </button>
-                            <ul type="none" class="collapse navbar-collapse" id="categorias">
-                                <li><a class="item" href="">Albañileria</a></li>
-                                <li><a class="item" href="">Plomeria</a></li>
-                                <li><a class="item" href="">Carpinteria</a></li>
-                                <li><a class="item" href="">Herreria</a></li>
-                                <li><a class="item" href="">Vidrieria</a></li>
-                                <li><a class="item" href="">Jardineria</a></li>
-                                <li><a class="item" href="">Otros</a></li>
+                            <ul type="none" class="dropdown-menu">
+                                <li><a class="item" href="./catalogo.html">Albañilería</a></li>
+                                <li><a class="item" href="./catalogo.html">Plomería</a></li>
+                                <li><a class="item" href="./catalogo.html">Carpintería</a></li>
+                                <li><a class="item" href="./catalogo.html">Herrería</a></li>
+                                <li><a class="item" href="./catalogo.html">Vidriería</a></li>
+                                <li><a class="item" href="./catalogo.html">Jardinería</a></li>
+                                <li><a class="item" href="./catalogo.html">Otros</a></li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a href="./html/publicarServicio.html" class="buttonNavBar item">Anunciate</a>
+                        <a href="./html/publicarServicio.html" class="buttonNavBar item">Anúnciate</a>
                     </li>
                     <li>
-                        <a href="./html/AcercaDeNosotros.html" class="buttonNavBar item">Conocenos</a>
+                        <a href="./html/AcercaDeNosotros.html" class="buttonNavBar item">Conócenos</a>
                     </li>
                 </ul>
             </div>
             <div class="collapse navbar-collapse" id="lupa">
                 <form action="" method="post" class="searchNavBar">
-                    <input type="search" placeholder="Search" class="searchNavBar" style="width: 90%;">
-                    <button type="submit" class="searchNavBar" style="width: 9%;"><img src="../assets/Pagina_Principal/IconoLupa.svg" alt="Icono de una lupa"></button>
+                    <input type="search" name="" id="" placeholder="Search" class="searchNavBar" style="width: 90%;">
+                    <button type="submit" class="searchNavBar" style="width: 9%;"><img src="./assets/Pagina_Principal/IconoLupa.svg"
+                            alt="Icono de una lupa"></button>
                 </form>
             </div>
         </nav>
     </header>
+
 <!-- termina NavBar -->     
     
 <!-- Seccion formulario-->
@@ -140,10 +138,6 @@
                             name="Nombre"
                             placeholder="Escribe tu nombre completo" id="userName">
                     </label>
-<<<<<<< HEAD
-=======
-                    
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
                     <div class="alert alert-danger" id="name--alert" hidden role="alert">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
                         <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
@@ -156,7 +150,7 @@
                 </li>
 
                 <li class="input-foto">Sube tu foto de perfil. (Opcional)
-                    <label for="formFile" class="form-label"> formato .jpg .png .jpeg max. 100KB
+                    <label for="formFile" class="form-label"> formato .jpg .png .jpeg max. 100KB<br>
                     <input type="file" id="fotoperfil" accept="image/png, image/jpeg"/> </label>
                 </li>
 
@@ -244,21 +238,8 @@
                         <option value="no">No</option>
                     </select>
                 </li>
-
-                <li class="input-INE">Subir foto de perfil                 
-                    </div>           
-                    <label for="formFile" class="form-label">formato .jpg .png .jpeg max. 100KB
-                        <input type="file">
-                    </label>
-                    <div class="alert alert-danger" hidden id="ine--alert" role="alert">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" i class="bi bi-exclamation-triangle d-flex align-items-center" id="img--alert">
-                            <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
-                            <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
-                        </svg>
-                        <div id="alert--message" class="d-flex align-items-center">
-                            Selecciona un archivo con tu INE
-                        </div>
-                </li>
+                <br>
+         
                 <!-- <li class="input-referencia">Subir referencia de trabajo   
                     <label for="formFile" class="form-label">
                         Carta recomendación/patronal,
@@ -282,7 +263,7 @@
                 </li>
             </ul>
             </form>
-       
+            <br> <br>
     </section>
 <!-- Aqui va a estar el footer -->
 <footer>
@@ -295,7 +276,7 @@
     </div>
     <div>
         <h2><a href="./catalogo.html">Catálogo</a></h2>
-        <a href="./catalogo.html">Contrata</a>
+        <a href="./Contratar_Servicio.html">Contrata</a>
         <a href="./publicarServicio.html">Anúnciate</a>
     </div>
     <div>

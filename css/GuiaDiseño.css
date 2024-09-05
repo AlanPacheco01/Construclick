@@ -37,6 +37,8 @@ h3{
     letter-spacing: 0.1px;
     line-height: 32px;
 }
+
+
 /* Se crea un metodo para darle estilos al boton color cafe y letra blanca reutilizable */
 .buttonBrownWhite--container{
     color: white;
@@ -62,7 +64,6 @@ h3{
     
 }
 
-
 button:hover{
     cursor: pointer;
 	background: #bfbab0;
@@ -72,6 +73,8 @@ button:hover{
     border-top: 1px solid #D9D4CC;
     color: #735f46;
 } 
+
+
 
 /* Se define el estilo de la navbar */
 /* Contenedores */
@@ -108,6 +111,72 @@ button:hover{
     text-decoration: none;
     letter-spacing: 0.2px;
    
+}
+.container-form input{
+    border-color: #D9D4CC;
+}
+.container-form input::placeholder{
+    font-family: "Montserrat";
+    color: #D9D4CC;
+    font-size: 12px;
+
+}
+
+.container-form input:hover{
+background-color: #FAFAFA;
+color: #735F46;
+border-color: #8C7E6C;
+}
+
+.container-form input::placeholder{
+    font-family: "Montserrat";
+    color: #D9D4CC;
+    font-size: 12px;
+}
+
+.container-form input::file-selector-button  {
+    background-color: #FAFAFA;
+    color: #8C7E6C;
+    font-family: "Montserrat";
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600; 
+    letter-spacing: 0.2px;
+    border-bottom: 2px solid #D9D4CC;
+    border-right: 2px solid #D9D4CC;
+    border-left: 1px solid #D9D4CC;
+    border-top: 1px solid #D9D4CC;
+    transition:  0.5s;
+    border-radius: 10px;
+    display: flex;
+    flex-direction:column;
+    max-width: fit-content;
+ 
+}
+
+.container-form input::file-selector-button:hover{
+    cursor: pointer;
+	background-color:#D9D4CC;
+    color: #735F46;
+
+
+}
+
+
+@media (max-width: 950px){
+
+
+
+    .container-form input::file-selector-button {
+        display:flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+
+
+        
+    }
+
 }
 /* Texto de los botones */
 
@@ -163,6 +232,8 @@ button:hover{
     }
     #navBarMobile{
         display: flex;
+        position:fixed;
+        z-index:1;
     }
     #menuHamburguesa{
         height: 40px;
@@ -186,7 +257,7 @@ button:hover{
     .BrandName a{
         font-size: 30px;
     }
-    
+
     
 }
 
@@ -205,7 +276,7 @@ footer{
     z-index:1;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1250px) {
     footer {
         box-shadow: 0px 0px 5px 0px #bfbab0;
         height: 100%;
@@ -277,3 +348,4 @@ footer a{
     bottom: 15px;
     font-size: 8px;
 }
+

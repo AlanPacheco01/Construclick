@@ -7,6 +7,9 @@
     color: #735F46;
 
 }
+section{
+    padding-top: 258px;
+}
 
 .form--container {
     max-width: 784px;
@@ -17,8 +20,7 @@ max-height: 413px;
     display: flex;
     flex-direction: column;
     margin: 0 auto; 
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     border: 2px solid #d3c5b0;
     border-radius: 8px;
 }

@@ -16,7 +16,7 @@
     <header>
         <!-- Aqui va a estar la navbar version web-->
         <nav class="navBar--container" id="navBarWeb">
-            <h2 class="BrandName"><a href="./index.html">Construclick</a></h2>
+            <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
           
             <!-- Boton con menu desplegable y los otros botones-->
             <div class="links--container">
@@ -26,29 +26,29 @@
                         Contrata
                     </button>
                     <ul type="none" class="dropdown-menu">
-                        <li><a class="item" href="./html/CatalogoServicios.html">Albañilería</a></li>
-                        <li><a class="item" href="./html/CatalogoServicios.html">Plomería</a></li>
-                        <li><a class="item" href="./html/CatalogoServicios.html">Carpintería</a></li>
-                        <li><a class="item" href="./html/CatalogoServicios.html">Herrería</a></li>
-                        <li><a class="item" href="./html/CatalogoServicios.html">Vidriería</a></li>
-                        <li><a class="item" href="./html/CatalogoServicios.html">Jardinería</a></li>
-                        <li><a class="item" href="./html/CatalogoServicios.html">Otros</a></li>
+                        <li><a class="item" href="./catalogo.html">Albañilería</a></li>
+                        <li><a class="item" href="./catalogo.html">Plomería</a></li>
+                        <li><a class="item" href="./catalogo.html">Carpintería</a></li>
+                        <li><a class="item" href="./catalogo.html">Herrería</a></li>
+                        <li><a class="item" href="./catalogo.html">Vidriería</a></li>
+                        <li><a class="item" href="./catalogo.html">Jardinería</a></li>
+                        <li><a class="item" href="./catalogo.html">Otros</a></li>
                     </ul>
                 </div>
                 <div>
-                <a href="./html/publicarServicio.html" class="buttonNavBar">Anúnciate</a>
+                <a href="./publicarServicio.html" class="buttonNavBar">Anúnciate</a>
             </div>
                 <div>
-                <a href="./html/AcercaDeNosotros.html" class="buttonNavBar">Conócenos</a>
+                <a href="./AcercaDeNosotros.html" class="buttonNavBar">Conócenos</a>
             </div>
         </div>
             <!-- Botones iniciar sesion y registrate -->
             <div id="usuarios">
-                <a href="./html/login.html" class="buttonNavBar">Iniciar Sesión</a>
+                <a href="./login.html" class="buttonNavBar">Iniciar Sesión</a>
                 /
-                <a href="./html/registroPagina1.html" class="buttonNavBar">Regístrate</a>
+                <a href="./registroPagina1.html" class="buttonNavBar">Regístrate</a>
             
-
+    
             <img src="../assets/GuiaDiseno/IconoCarritoCompra.svg" alt="Icono de carrito de compra" width=25>
         
             <!-- Barra de busqueda -->
@@ -59,11 +59,11 @@
             </div>
         </div>
     </nav>
-
+    
         <!-- Aqui va a estar la navbar version movil -->
         <nav class="navBar--container navbar" id="navBarMobile">
             <img src="../assets/GuiaDiseno/LogotipoConstruclick.svg" alt="Logotipo de Construclick" width="80">
-            <h2 class="BrandName">Construclick</h2>
+            <h2 class="BrandName"><a href="../index.html">Construclick</a></h2>
             <!-- Funcionalidad de la lupa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lupa"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btnlupa">
@@ -83,14 +83,14 @@
                                 data-bs-target="#categorias" aria-expanded="false" id="btnCategorias">
                                 Contrata
                             </button>
-                            <ul type="none" class="collapse navbar-collapse" id="categorias">
-                                <li><a class="item" href="./html/CatalogoServicios.html">Albañilería</a></li>
-                                <li><a class="item" href="./html/CatalogoServicios.html">Plomería</a></li>
-                                <li><a class="item" href="./html/CatalogoServicios.html">Carpintería</a></li>
-                                <li><a class="item" href="./html/CatalogoServicios.html">Herrería</a></li>
-                                <li><a class="item" href="./html/CatalogoServicios.html">Vidriería</a></li>
-                                <li><a class="item" href="./html/CatalogoServicios.html">Jardinería</a></li>
-                                <li><a class="item" href="./html/CatalogoServicios.html">Otros</a></li>
+                            <ul type="none" class="dropdown-menu">
+                                <li><a class="item" href="./catalogo.html">Albañilería</a></li>
+                                <li><a class="item" href="./catalogo.html">Plomería</a></li>
+                                <li><a class="item" href="./catalogo.html">Carpintería</a></li>
+                                <li><a class="item" href="./catalogo.html">Herrería</a></li>
+                                <li><a class="item" href="./catalogo.html">Vidriería</a></li>
+                                <li><a class="item" href="./catalogo.html">Jardinería</a></li>
+                                <li><a class="item" href="./catalogo.html">Otros</a></li>
                             </ul>
                         </div>
                     </li>
@@ -113,81 +113,98 @@
     </header>
 
     <div class="container--formularioPublicarServicio">
-    <form id="form" class="form--container">
-        <legend style="color: #735F46; font-weight: bold; text-align: center;">Promociona tu producto</legend>
-        <div class="mb-3" style="margin-top: -30px; color: #735F46;">
-            <label for="exampleFormControlInput1" class="form-label">Nombre de tu producto (Ej. Esmeril T800 con mango
-                intercambiable)</label>
-            <input type="text" class="form-control" enctype="multipart/form-data" id="productName" name="productName"
-                required>
-        </div>
-        <div class="mb-3" style="margin-top: -20px; color: #735F46;">
-            <label for="formFileMultiple" class="form-label">Sube las fotos de tu producto</label>
-            <input class="form-control" style="color: #735F46;" type="file" id="photo" name="photo" multiple
-                enctype="multipart/form-data">
-        </div>
-        <select class="form-select" style="color: #735F46; font-weight: bold;" aria-label="Default select example"
-            id="shippingOptions" name="shippingOptions" required>
-            <option class="option" selected>Selecciona tipo de entrega</option>
-            <option class="option" value="Entregar en punto medio">Entregar en punto medio</option>
-            <option class="option" value="Servicio de paqueteria">Servicio de paquetería</option>
-        </select>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Escribe una descipción</label>
-            <textarea id="productDescription" name="productDescription" maxlength="150" class="form-control" rows="3"
-                required></textarea>
-        </div>
-        <div style="margin: 0 auto; margin-top: 0 !important;" class="my-5 justify-content-center">
-            <button id="button--publicarServicio" type="submit" class="btn btn-secondary btn-lg"
-                style="background-color: #735F46; width: 200px;">Guardar y Enviar</button>
-        </div>
-    </form>
-</div>
-    <!-- Aqui va a estar el footer -->
-    <footer>
-        <div>
-<<<<<<< HEAD
-            <h2><a href="./contacto.html"></a>Contacto</a></h2>
-=======
-            <h2><a href="./html/contacto.html">Contacto</a></h2>
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
-            <a href="mailto:service@construclick.com">service@construclick.com</a>
-            <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25">
-            <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25">
-            <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25">
-        </div>
-        <div>
-<<<<<<< HEAD
-            <h2><a href="./catalogo.html">Catálogo</a></h2>
-            <a href="./catalogo.html">Contrata</a>
-            <a href="./publicarServicio.html">Anúnciate</a>
-        </div>
-        <div>
-            <h2><a href="./login.html">Mi cuenta</a></h2>
-            <a href="./registroPagina1.html">Regístrate</a>
-            <a href="./login.html">Inicia sesión</a>
-        </div>
-        <div>
-            <h2><a href="./AcercaDeNosotros.html">Conócenos</a></h2>
-            <a href="./TerminosCondiciones.html">Términos y condiciones</a>
-            <a href="./AvisoPrivacidad.html">Aviso de privacidad</a>
-=======
-            <h2><a href="./html/catalogo.html">Catálogo</a></h2>
-            <a href="./html/Contratar_Servicio.html">Contrata</a>
-            <a href="./html/publicarServicio.html">Anúnciate</a>
-        </div>
-        <div>
-            <h2><a href="./html/login.html">Mi cuenta</a></h2>
-            <a href="./html/registroPagina1.html">Regístrate</a>
-            <a href="./html/login.html">Inicia sesión</a>
-        </div>
-        <div>
-            <h2><a href="./html/AcercaDeNosotros.html">Conócenos</a></h2>
-            <a href="./html/TerminosCondiciones.html">Términos y condiciones</a>
-            <a href="./html/AvisoPrivacidad.html">Aviso de privacidad</a>
->>>>>>> de523c0761a831b8449966801668c439dbfe6b7f
-        </div>
-    </footer>
+        <form id="form" class="form--container" novalidate>
+            <legend style="color: #735F46; font-weight: bold; text-align: center; margin-bottom: 40px;">Promociona tu producto</legend>
+            <div class="mb-3" style="margin-top: -30px; color: #735F46;">
+                <label for="exampleFormControlInput1" class="form-label">Nombre de tu producto (Ej. Esmeril T800 con mango intercambiable)</label>
+                <input type="text" class="form-control" enctype="multipart/form-data" id="productName" name="productName" required>
+                <div class="alert alert-danger" id="name-alert" hidden role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle d-flex align-items-center">
+                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                    </svg>
+                    <div id="alert-name-message" class="d-flex align-items-center">
+                        Escribe un nombre de al menos 5 letras.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fotos del producto -->
+            <div class="mb-3" style="margin-top: -20px; color: #735F46;">
+                <label for="formFileMultiple" class="form-label">Selecciona un archivo </label>
+                <input class="form-control" style="color: #735F46;" type="file" id="photo" name="photo" multiple enctype="multipart/form-data">
+                <div class="alert alert-danger" id="photo-alert" hidden role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle d-flex align-items-center">
+                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                    </svg>
+                    <div id="alert-photo-message" class="d-flex align-items-center">
+                        Selecciona un archivo válido.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tipo de entrega -->
+            <select class="form-select" style="color: #735F46; font-weight: bold;" aria-label="Default select example" id="shippingOptions" name="shippingOptions" required>
+                <option class="option" selected>Selecciona tipo de entrega</option>
+                <option class="option" value="Entregar en punto medio">Entregar en punto medio</option>
+                <option class="option" value="Servicio de paquetería">Servicio de paquetería</option>
+            </select>
+                <div class="alert alert-danger" id="shipping-alert" hidden role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle d-flex align-items-center">
+                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                    </svg>
+                    <div id="alert-shipping-message" class="d-flex align-items-center">
+                        Selecciona un tipo de entrega
+                    </div>
+                </div>
+    
+            <!-- Descripción del producto -->
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Escribe una descripción</label>
+                <textarea id="productDescription" name="productDescription" maxlength="150" class="form-control" rows="3" required></textarea>
+                <div class="alert alert-danger" id="description-alert" hidden role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle d-flex align-items-center">
+                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                    </svg>
+                    <div id="alert-description-message" class="d-flex align-items-center">
+                        Agrega una descripción con al menos 10 letras
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 0 auto; margin-top: 0 !important;" class="my-5 justify-content-center">
+                <button id="button--publicarServicio" type="submit" class="btn btn-secondary btn-lg"
+                    style="background-color: #735F46; width: 200px;">Guardar y Enviar</button>
+            </div>
+        </form>
+    </div>
+        <!-- Aqui va a estar el footer -->
+        <footer>
+            <div>
+                <h2><a href="./contacto.html">Contacto</a></h2>
+                <a href="mailto:service@construclick.com">service@construclick.com</a>
+                <img src="../assets/GuiaDiseno/IconoFacebook.svg" alt="Icono Facebook" width="25">
+                <img src="../assets/GuiaDiseno/IconoInstragam.svg" alt="Icono Instagram" width="25">
+                <img src="../assets/GuiaDiseno/IconoTwitter.svg" alt="Icono Twitter" width="25">
+            </div>
+            <div>
+                <h2><a href="./catalogo.html">Catálogo</a></h2>
+                <a href="./Contratar_Servicio.html">Contrata</a>
+                <a href="./publicarServicio.html">Anúnciate</a>
+            </div>
+            <div>
+                <h2><a href="./login.html">Mi cuenta</a></h2>
+                <a href="./registroPagina1.html">Regístrate</a>
+                <a href="./login.html">Inicia sesión</a>
+            </div>
+            <div>
+                <h2><a href="./AcercaDeNosotros.html">Conócenos</a></h2>
+                <a href="./TerminosCondiciones.html">Términos y condiciones</a>
+                <a href="./AvisoPrivacidad.html">Aviso de privacidad</a>
+            </div>
+        </footer>
     <script src="../javascript/PublicarServicio2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

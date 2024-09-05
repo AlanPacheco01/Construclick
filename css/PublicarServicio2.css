@@ -32,19 +32,33 @@
 }
 
 
+.alert {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 !important;
+  color: darkred !important;
+  background-color: white !important;
+  border-style: none !important;
+  border: none !important;
+}
+
+
 /* Se agrega media query para que sea responsiva */
 
  
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .form--container {
     padding: 20px;
     margin: 50px auto;
     overflow-x: hidden; 
-    color: #735F46;
+    background-color: white;
   }
   
-  .btn {
-    width: 100%; 
-  } 
-  
+.btn{
+  max-width: 100%;
+}  
+
 }
