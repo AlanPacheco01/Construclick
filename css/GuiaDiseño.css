@@ -236,7 +236,7 @@ border-color: #8C7E6C;
         z-index:1;
     }
     #menuHamburguesa{
-        height: 40px;
+        height: 30px;
         border: none;
     }
     #menu{
@@ -251,11 +251,15 @@ border-color: #8C7E6C;
         font-size: 25px;
     }
     #btnlupa{
-        height: 35px;
+        height: 20px;
         border: none;
     }
     .BrandName a{
-        font-size: 30px;
+        font-size: 28px;
+        padding-top: 5px;
+        padding-bottom: 0%;
+        line-height: 30px;
+  
     }
 
     
