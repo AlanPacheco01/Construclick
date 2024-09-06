@@ -43,19 +43,20 @@ color: #858585;
 
 #store--desc:hover{
     transform: scale(1.05);
+
 }
 
 
 #store--desc {
+padding: 180px;
   display: flex;
   justify-content: space-evenly;
   width: 100% !important;
   margin: 0 auto;
   flex-wrap: wrap;
-  border: #858585;
+  border: none;
   overflow: hidden;
   gap: 20px !important;
-  border-style: solid;
 
 }
 
