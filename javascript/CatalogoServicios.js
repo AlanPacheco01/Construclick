@@ -1,79 +1,93 @@
-const catalogo = document.getElementById("store--desc");
-let servicios = null;
+function generarCatalogo(servicios) {
+    const catalogoContainer = document.getElementById('catalogo');
+    catalogoContainer.innerHTML = '';  
 
-const url = "/.vscode/servicios.json";
-fetch(url)
-    .then(response => response.json())
-    .then(response => {
-        servicios = response;
-        mostrarServicios(servicios);
-    })
-    .catch(error => console.error());
+    servicios.forEach(servicio => {
+        const servicioHTML = `
+            <div class="catalogo--container">
+                <div class="catalogo--image">
+                    <img class="img" src="${servicio.fotosServicios}" alt="${servicio.tipoServicio}">
+                </div>
+                <div class="catalogo--information">
+                    <h3 class="catalogo--title">${servicio.tipoServicio}</h3>
+                    <h5 class="catalogo--price">${servicio.nombrePrestador}</h5>
+                    <p class="catalogo--paragraph">${servicio.descripcionServicio}</p>
+                    <div class="catalogo--buttons">
+                        <button class="catalogo--options">Contratar</button>
+                        <div class="button--container">
+                            <img class="butto--heart" src="../assets/catalogo/heart.svg" alt="heart icon" data-id="${servicio.id}" data-favorito="false">
+                        </div>
+                        <div class="button--container">
+                            <img class="butto--eye" src="../assets/catalogo/eye-fill.svg" alt="eye icon" data-id="${servicio.id}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
 
-const mostrarServicios = (servicios) => {
-    servicios.map((servicio) => {
+        catalogoContainer.innerHTML += servicioHTML;
+    });
 
-        // Crear un div para cada servicio
-        const divServicio = document.createElement("div");
-        divServicio.className = "servicio"; // Clase para estilizar cada servicio
+    heartEvent();
+    eyeEvent();
+}
 
-        // Crear el contenedor para la imagen
-        const divImagen = document.createElement("div");
-        divImagen.className = "servicio-imagen";
+function fetchService() {
+    fetch('../.vscode/servicios.json')
+        .then(response => response.json())
+        .then(data => {
+            generarCatalogo(data);
+        })
+        .catch(error => {
+            console.error('Error al cargar los servicios:', error);
+        });
+}
 
-        const fotosServicios = document.createElement("img");
-        fotosServicios.src = servicio.fotosServicios;
-        fotosServicios.alt = "Imagen del servicio";
+function heartEvent() {
+    const heartButtons = document.querySelectorAll('.butto--heart');
 
-        divImagen.appendChild(fotosServicios);
-
-        // Crear el contenedor para la información
-        const divInfo = document.createElement("div");
-        divInfo.className = "servicio-info";
-
-        const nombrePrestador = document.createElement("h4");
-        nombrePrestador.textContent = servicio.nombrePrestador;
-
-        const tipoServicio = document.createElement("h4");
-        tipoServicio.textContent = servicio.tipoServicio;
-
-        const ubicacionPrestador = document.createElement("h4");
-        ubicacionPrestador.textContent = servicio.ubicacionPrestador;
-
-        const descripcionServicio = document.createElement("p");
-        descripcionServicio.textContent = servicio.descripcionServicio;
-
-        const boton = document.createElement("button");
-        boton.innerHTML = `Contactar`;
-        boton.id = `boton--contactar`;
-
-        const botonCorazon = document.createElement("button");
-        botonCorazon.innerHTML = `♥`;
-        botonCorazon.id = `boton--corazon`;
-
-        const botonOjo = document.createElement("button");
-        botonOjo.innerHTML = `👁️‍🗨️`;
-        botonOjo.id = `boton--ojo`;
-        const estrella = document.createElement("label");
-        estrella.innerHTML = `★★★★★`;
-        estrella.id=`store-estrella`
-
-        // Añadir los elementos al contenedor de información
-        divInfo.appendChild(nombrePrestador);
-        divInfo.appendChild(tipoServicio);
-        divInfo.appendChild(ubicacionPrestador);
-        divInfo.appendChild(estrella);
-        divInfo.appendChild(descripcionServicio);
-        divInfo.appendChild(boton);
-        /*
-        divInfo.appendChild(botonCorazon);
-        divInfo.appendChild(botonOjo);
-*/
-        // Añadir imagen e información al div del servicio
-        divServicio.appendChild(divImagen);
-        divServicio.appendChild(divInfo);
-
-        // Añadir el div del servicio al catálogo
-        catalogo.appendChild(divServicio);
+    heartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const like = button.getAttribute('data-favorito') === 'true';
+            if (like) {
+                button.src = '../assets/catalogo/heart.svg';
+                button.setAttribute('data-favorito', 'false');
+            } else {
+                button.src = '../assets/catalogo/heart-fill.svg';
+                button.setAttribute('data-favorito', 'true');
+            }
+        });
     });
 }
+
+function eyeEvent() {
+    const eyeButtons = document.querySelectorAll('.butto--eye');
+
+    eyeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const container = button.closest('.catalogo--container');
+            const img = container.querySelector('.img');
+            const modal = document.createElement('div');
+            modal.classList.add('modal');
+            modal.innerHTML = `
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <img class="modal-image" src="${img.src}" alt="${img.alt}">
+                </div>
+            `;
+            document.body.appendChild(modal);
+
+            modal.querySelector('.close-button').addEventListener('click', () => {
+                modal.remove();
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.remove();
+                }
+            });
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', fetchService);
