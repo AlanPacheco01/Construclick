@@ -67,27 +67,30 @@ function eyeEvent() {
         button.addEventListener('click', () => {
             const container = button.closest('.catalogo--container');
             const img = container.querySelector('.img');
+            const title = container.querySelector('.catalogo--title').textContent;
             const modal = document.createElement('div');
             modal.classList.add('modal');
             modal.innerHTML = `
                 <div class="modal-content">
                     <span class="close-button">&times;</span>
+                     <h3 class="modal-title">${title}</h3>
                     <img class="modal-image" src="${img.src}" alt="${img.alt}">
                 </div>
             `;
             document.body.appendChild(modal);
 
+            modal.style.display = 'block';
+
             modal.querySelector('.close-button').addEventListener('click', () => {
-                modal.remove();
+                modal.style.display = 'none';
             });
 
             window.addEventListener('click', (event) => {
                 if (event.target === modal) {
-                    modal.remove();
+                    modal.style.display = 'none';
                 }
             });
         });
     });
 }
-
 document.addEventListener('DOMContentLoaded', fetchService);
