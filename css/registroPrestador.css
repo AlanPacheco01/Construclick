@@ -97,13 +97,119 @@ body{
     border: none !important;
 }
 
-#img--alert {
-    display: flex;
-    margin-right: 7px;
+#registroPrestador--img--alert1{
+    position: relative;
+    top: 15px;
+    margin-right: 6px;
+}
+#registroPrestador--img--alert2{
+    position: relative;
+    top: 15px;
+    margin-right: 6px;
+}
+#registroPrestador--img--alert3{
+    position: relative;
+    top: 1px;
+    margin-right: 6px;
 }
 
-#alert--message {
-    display: flex;
+#registroPrestador--img--alert4{
+    position: relative;
+    top: 1px;
+    margin-right: 6px;
+}
+
+#registroPrestador--img--alert5{
+    position: relative;
+    top: 15px;
+    margin-right: 6px;
+}
+
+#registroPrestador--img--alert6{
+    position: relative;
+    top: 15px;
+    margin-right: 13px;
+}
+
+#registroPrestador--img--alert7{
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+}
+
+#registroPrestador--img--alert{
+    color: green;
+    margin-right: 3px;
+}
+
+#saved--alert--message{
+    position: relative;
+    top: 1px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600; 
+    color: green;
+}
+
+#ine--alert--message{
+    position: relative;
+    top: 4px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600; 
+}
+
+#sentimos--alert--message{
+    position: relative;
+    top: 15px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600; 
+    text-align: justify;
+    width: 85%;
+}
+
+#telefono--alert--message{
+    position: relative;
+    top: 15px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600; 
+}
+
+#contrasena--alert--message{
+    position: relative;
+    top: 2px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600; 
+}
+
+#contrasenaCoincide--alert--message{
+    position: relative;
+    top: 2px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600;
+}
+
+#correo--alert--message{
+    position: relative;
+    top: 16px;
+    height:fit-content;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 600;
+}
+#name--alert--message {
+    position: relative;
+    top: 16px;
     height:fit-content;
     font-family: "Montserrat";
     font-size: 10px;
