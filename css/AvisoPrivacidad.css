@@ -10,12 +10,16 @@ body {
     align-items: center;
     justify-content: center;
     justify-items: center;
-    gap: 100px;
-    padding: 165px;
     color: #735F46;
-    max-height: 100%;
-
+    padding: 120px;
 }
+
+#DerechosArco, #TratamientoDatos{
+    width: 1000px;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
 
 @media(max-width: 500px) {
     #main-container {
@@ -40,8 +44,6 @@ body {
 #list-container {
     padding-bottom: 20px;
     padding-top: 70px;
-    padding-left: 500px;
-    padding-right: 0px;
     width: 1200px;
 }
 
@@ -110,3 +112,4 @@ body {
         font-size: 18px;
     }
 }
+
