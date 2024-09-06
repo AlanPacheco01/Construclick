@@ -33,7 +33,7 @@ function generarCatalogo(servicios) {
 }
 
 function fetchService() {
-    fetch('../.vscode/servicios.json')
+    fetch("../.vscode/servicios.json")
         .then(response => response.json())
         .then(data => {
             generarCatalogo(data);
