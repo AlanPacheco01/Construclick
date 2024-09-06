@@ -16,9 +16,7 @@ ineAlert.hidden = true;
 const savedAlert = document.getElementById("saved--alert");
 savedAlert.hidden = true;
 
-//boton del formulario, desactivado por default
-const botonEnvio = document.getElementById("send--form");
-botonEnvio.disabled = true;
+
 //información de los botones
 const placeOptions = document.getElementById("placeOption");
 
@@ -116,9 +114,9 @@ formServices.addEventListener('submit', (event) => {
     localStorage.setItem('telephone', telefono)
     localStorage.setItem('INE', ineCarga)
 
-   
+   if(validacion){
     savedAlert.hidden = false;
-
+   }
 // Conexión con el backend
 const user = {
     'username': nombre,
@@ -142,4 +140,3 @@ fetch(URL, {
 
 })
 formServices.reset()
-
